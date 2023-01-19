@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@drawable/gradient_border_selector"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:padding="@dimen/dp_10"
+           android:gravity="center_vertical"
+           android:minHeight="@dimen/dp_55"
+           android:layout_gravity="center"
+           android:layout_height="wrap_content">
+
+
+
+           <com.app.mschooling.utils.BuzzTextView
+               style="@style/Gotham_Medium"
+               android:layout_width="match_parent"
+               android:layout_gravity="center"
+               android:layout_height="wrap_content"
+               android:id="@+id/name"
+               android:textColor="@color/military_blue"
+               android:paddingLeft="@dimen/dp_10"
+               android:text="@string/class_wise"/>
+
+           <com.app.mschooling.utils.BuzzTextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textAlignment="center"
+               android:id="@+id/description"
+               android:paddingLeft="@dimen/dp_10"
+               android:textSize="@dimen/dp_12"
+               android:textColor="@color/black"
+               android:text="@string/description"/>
+       </LinearLayout>
+
+        <TextView
+            style="@style/font"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:text="@string/religion"
+            android:textSize="@dimen/dp_12" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/selector"
+        android:layout_height="wrap_content">
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

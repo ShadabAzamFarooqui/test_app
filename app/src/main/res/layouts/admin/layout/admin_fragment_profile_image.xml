@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical"
+    tools:context="com.app.mschooling.add_student.AddStudentProfileImageActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/captureImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_350"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_50"
+        android:gravity="center"
+        android:background="@drawable/gradient_border_selector"
+        android:padding="@dimen/dp_10"
+        android:orientation="horizontal">
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@color/divider_menu"/>
+
+
+        <ImageView
+            android:id="@+id/imageCapture"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/add_student"
+            android:tint="@color/divider_menu" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:id="@+id/image"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/font"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@drawable/gradient_button"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_16" />
+
+
+
+</LinearLayout>

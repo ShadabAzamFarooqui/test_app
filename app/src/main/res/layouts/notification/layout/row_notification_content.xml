@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context="com.app.mschooling.notification.activity.NotificationListActivity">
+
+
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_50"
+                    android:src="@drawable/notification"
+                    android:tint="@color/divider_menu"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Gotham_Book"
+                android:id="@+id/tittle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp_5"
+                android:text="@string/content"
+                android:textColor="@color/black" />
+
+
+            <com.app.mschooling.utils.BuzzTextView
+                style="@style/Gotham_Light"
+                android:id="@+id/time"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:text="@string/time"
+                android:textColor="@color/default_text"
+                android:textSize="@dimen/sp_8" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/divider_menu" />
+
+
+    </LinearLayout>
+
+</layout>

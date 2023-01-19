@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:cardElevation="@dimen/dp_3"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmerFrameLayout"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="@dimen/dp_70"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dp_5"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dp_70"
+                        android:layout_height="@dimen/dp_70"
+                        android:background="@drawable/circle_image_bg"
+                        android:orientation="vertical" />
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="@dimen/dp_70"
+                    android:layout_margin="@dimen/dp_5"
+                    android:src="@drawable/app_icon" />
+            </RelativeLayout>
+
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/fname"
+                style="@style/Gotham_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/first_name_w_star"
+                android:textAlignment="center"
+                android:textColor="@color/military_blue"
+                android:textSize="@dimen/dp_17"
+                android:textStyle="bold" />
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/lname"
+                style="@style/Gotham_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/last_name_w_star"
+                android:textAlignment="center"
+                android:textColor="@color/military_blue"
+                android:textSize="@dimen/dp_17"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_12"
+                    android:layout_height="@dimen/dp_12"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_toLeftOf="@+id/enrolmentId"
+                    android:src="@drawable/key" />
+
+                <TextView
+                    android:id="@+id/enrolmentId"
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/enrollment_id"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_toLeftOf="@+id/mobile"
+                    android:src="@drawable/ic_call" />
+
+                <TextView
+                    android:id="@+id/mobile"
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/mobile_w_star"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_14" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/clas"
+                style="@style/font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/class_w_star"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_12" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_toLeftOf="@+id/gender"
+                    android:src="@drawable/gender"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/gender_w_star"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_12" />
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/divider_menu" />
+
+            <RelativeLayout
+                android:id="@+id/multipleSelectLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="@dimen/dp_30"
+                android:padding="@dimen/dp_5">
+
+                <TextView
+                    android:id="@+id/selectTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/select"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:id="@+id/delete"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="end"
+                    android:visibility="invisible">
+
+
+                    <ImageView
+                        android:id="@+id/deleteIcon"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_25"
+                        android:src="@drawable/delete_black" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

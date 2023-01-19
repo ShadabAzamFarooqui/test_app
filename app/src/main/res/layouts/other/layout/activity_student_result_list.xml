@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_menu"
+    android:orientation="vertical"
+    tools:context="com.app.mschooling.examination.activity.StudentResultListActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_weight="1"
+       android:layout_height="match_parent">
+       <include layout="@layout/header_search" />
+       <include layout="@layout/no_record2"/>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:paddingTop="@dimen/dp_5"
+           android:paddingBottom="@dimen/dp_5"
+           android:id="@+id/recyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/font"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/gradient_button_rectangle"
+        android:text="@string/print_amp_preview"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_16" />
+</LinearLayout>

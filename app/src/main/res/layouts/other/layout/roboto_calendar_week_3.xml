@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:tag="weekRow3"
+    android:weightSum="7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:tag="dayOfMonthContainer15">
+
+        <com.app.mschooling.utils.calenderview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:tag="dayOfMonthText15"
+            android:text="@string/_15" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:tag="dayOfMonthContainer16">
+
+        <com.app.mschooling.utils.calenderview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:tag="dayOfMonthText16"
+            android:text="@string/_16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:tag="dayOfMonthContainer17">
+
+        <com.app.mschooling.utils.calenderview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:tag="dayOfMonthText17"
+            android:text="@string/_17" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:tag="dayOfMonthContainer18">
+
+        <com.app.mschooling.utils.calenderview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:tag="dayOfMonthText18"
+            android:text="@string/_18" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:tag="dayOfMonthContainer19">
+
+        <com.app.mschooling.utils.calenderview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:tag="dayOfMonthText19"
+            android:text="@string/_19" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:tag="dayOfMonthContainer20">
+
+        <com.app.mschooling.utils.calenderview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:tag="dayOfMonthText20"
+            android:text="@string/_20" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:tag="dayOfMonthContainer21">
+
+        <com.app.mschooling.utils.calenderview.DayView
+            style="@style/CalendarView.DayOfTheMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:tag="dayOfMonthText21"
+            android:text="@string/_21" />
+    </RelativeLayout>
+
+</LinearLayout>

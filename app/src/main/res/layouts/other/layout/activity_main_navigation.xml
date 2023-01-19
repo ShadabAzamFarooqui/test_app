@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <include
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--    android:layout_marginLeft="-64dp"-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#fff"
+        app:headerLayout="@layout/header_admin">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="180dp"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:fillViewport="true"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/mainLayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="visible">
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:visibility="gone"
+                                        android:background="@color/divider_menu" />
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.app.mschooling.utils.BuzzTextView
+                                            style="@style/Gotham_Medium"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:text="@string/general"
+                                            android:textColor="@color/military_blue"
+                                            android:textSize="@dimen/text_size_18"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#ffe0e0e0"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/menu1"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/add_address"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="16dp"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#ffe0e0e0"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/menu2"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/show_pdf"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+                                    </LinearLayout>
+
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#ffe0e0e0"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:onClick="comingSoon"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/leave_calender"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+                                    </LinearLayout>
+
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#ffe0e0e0"
+                                        android:visibility="gone" />
+
+                                    <LinearLayout
+                                        android:id="@+id/timeTable"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/add_time_table"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+                                    </LinearLayout>
+
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:visibility="gone"
+                                        android:background="#ffe0e0e0" />
+
+
+
+
+
+
+                                    <LinearLayout
+                                        android:id="@+id/myProfile"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.app.mschooling.utils.BuzzTextView
+                                            style="@style/Gotham_Medium"
+                                            android:textColor="@color/military_blue"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/profile"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1.0dip"
+                                        android:background="#ffe0e0e0" />
+
+                                    <LinearLayout
+                                        android:id="@+id/generate_qr_code"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.app.mschooling.utils.BuzzTextView
+                                            style="@style/Gotham_Medium"
+                                            android:textColor="@color/military_blue"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/generate_qr_code"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+                                    </LinearLayout>
+
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#ffe0e0e0" />
+
+                                    <LinearLayout
+                                        android:id="@+id/aboutUs"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.app.mschooling.utils.BuzzTextView
+                                            style="@style/Gotham_Medium"
+                                            android:textColor="@color/military_blue"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/about_us"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#ffe0e0e0" />
+
+                                    <LinearLayout
+                                        android:id="@+id/share"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.app.mschooling.utils.BuzzTextView
+                                            style="@style/Gotham_Medium"
+                                            android:textColor="@color/military_blue"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/share_app"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey"
+                                            tools:ignore="ContentDescription" />
+                                    </LinearLayout>
+
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#ffe0e0e0" />
+
+                                    <LinearLayout
+                                        android:id="@+id/schoolInfo"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.app.mschooling.utils.BuzzTextView
+                                            style="@style/Gotham_Medium"
+                                            android:textColor="@color/military_blue"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/about_school"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+                                    </LinearLayout>
+
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#ffe0e0e0" />
+
+                                    <LinearLayout
+                                        android:id="@+id/reportSupport"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.app.mschooling.utils.BuzzTextView
+                                            style="@style/Gotham_Medium"
+                                            android:textColor="@color/military_blue"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/help_support"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+                                    </LinearLayout>
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1.0dip"
+                                        android:background="#ffe0e0e0" />
+
+                                    <LinearLayout
+                                        android:id="@+id/changePassCode"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.app.mschooling.utils.BuzzTextView
+                                            style="@style/Gotham_Medium"
+                                            android:textColor="@color/military_blue"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/change_passcode"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+
+                                    </LinearLayout>
+
+
+
+
+
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:visibility="visible">
+
+
+                                        <View
+                                            android:visibility="gone"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="1dp"
+                                            android:background="#ffe0e0e0" />
+
+                                        <LinearLayout
+                                            android:visibility="gone"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/dp_50"
+                                            android:layout_gravity="left"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <com.app.mschooling.utils.BuzzTextView
+                                                style="@style/Gotham_Medium"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/dp_20"
+                                                android:layout_marginTop="@dimen/dp_10"
+                                                android:layout_marginBottom="@dimen/dp_10"
+                                                android:text="@string/setting"
+                                                android:textColor="@color/military_blue"
+                                                android:textSize="@dimen/text_size_18"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+
+                                        <View
+                                            android:visibility="gone"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="1.0dip"
+                                            android:background="#ffe0e0e0" />
+
+
+                                        <LinearLayout
+                                            android:visibility="gone"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/dp_50"
+                                            android:layout_gravity="left"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <com.app.mschooling.utils.BuzzTextView
+                                                style="@style/Gotham_Medium"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/dp_20"
+                                                android:layout_marginTop="@dimen/dp_10"
+                                                android:layout_marginBottom="@dimen/dp_10"
+                                                android:text="@string/_1_configurations"
+                                                android:textColor="@color/grayish_black"
+                                                android:textSize="@dimen/dp_16"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+
+                                        <View
+                                            android:visibility="gone"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="1.0dip"
+                                            android:background="#ffe0e0e0" />
+
+                                        <LinearLayout
+                                            android:visibility="gone"
+                                            android:id="@+id/addClass"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/dp_50"
+                                            android:layout_gravity="left"
+                                            android:background="@drawable/selector"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                style="@style/font"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/dp_20"
+                                                android:layout_marginTop="@dimen/dp_10"
+                                                android:layout_marginBottom="@dimen/dp_10"
+                                                android:layout_weight="1"
+                                                android:text="@string/add_class"
+                                                android:textSize="@dimen/text_size_15" />
+
+                                            <ImageView
+                                                android:layout_width="@dimen/dp_20"
+                                                android:layout_height="16dp"
+                                                android:layout_margin="@dimen/dp_10"
+                                                android:src="@drawable/icon_next_grey" />
+                                        </LinearLayout>
+
+                                        <View
+                                            android:visibility="gone"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="1.0dip"
+                                            android:background="#ffe0e0e0" />
+
+                                        <LinearLayout
+                                            android:visibility="gone"
+                                            android:id="@+id/addSubject"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/dp_50"
+                                            android:layout_gravity="left"
+                                            android:background="@drawable/selector"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                style="@style/font"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/dp_20"
+                                                android:layout_marginTop="@dimen/dp_10"
+                                                android:layout_marginBottom="@dimen/dp_10"
+                                                android:layout_weight="1"
+                                                android:text="@string/add_subject"
+                                                android:textSize="@dimen/text_size_15" />
+
+                                            <ImageView
+                                                android:layout_width="@dimen/dp_20"
+                                                android:layout_height="@dimen/dp_20"
+                                                android:layout_margin="@dimen/dp_10"
+                                                android:src="@drawable/icon_next_grey" />
+
+                                        </LinearLayout>
+
+
+                                        <View
+                                            android:visibility="gone"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="1.0dip"
+                                            android:background="#ffe0e0e0" />
+
+                                        <LinearLayout
+                                            android:visibility="gone"
+                                            android:id="@+id/addComplaintReason"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/dp_50"
+                                            android:layout_gravity="left"
+                                            android:background="@drawable/selector"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                style="@style/font"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/dp_20"
+                                                android:layout_marginTop="@dimen/dp_10"
+                                                android:layout_marginBottom="@dimen/dp_10"
+                                                android:layout_weight="1"
+                                                android:text="@string/add_complaint_reason"
+                                                android:textSize="@dimen/text_size_15" />
+
+                                            <ImageView
+                                                android:layout_width="@dimen/dp_20"
+                                                android:layout_height="@dimen/dp_20"
+                                                android:layout_margin="@dimen/dp_10"
+                                                android:src="@drawable/icon_next_grey" />
+                                        </LinearLayout>
+
+
+                                        <View
+                                            android:visibility="gone"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="1.0dip"
+                                            android:background="#ffe0e0e0" />
+
+                                        <LinearLayout
+                                            android:visibility="gone"
+                                            android:id="@+id/addApplicationReason"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="@dimen/dp_50"
+                                            android:layout_gravity="left"
+                                            android:background="@drawable/selector"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                style="@style/font"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/dp_20"
+                                                android:layout_marginTop="@dimen/dp_10"
+                                                android:layout_marginBottom="@dimen/dp_10"
+                                                android:layout_weight="1"
+                                                android:text="@string/add_application_reason"
+                                                android:textSize="@dimen/text_size_15" />
+
+                                            <ImageView
+                                                android:layout_width="@dimen/dp_20"
+                                                android:layout_height="@dimen/dp_20"
+                                                android:layout_margin="@dimen/dp_10"
+                                                android:src="@drawable/icon_next_grey" />
+                                        </LinearLayout>
+
+
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:visibility="visible">
+
+                                            <View
+                                                android:visibility="gone"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="1.0dip"
+                                                android:background="@color/divider_menu" />
+
+                                            <LinearLayout
+                                                android:visibility="gone"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="@dimen/dp_50"
+                                                android:layout_gravity="left"
+                                                android:gravity="center_vertical"
+                                                android:orientation="horizontal">
+
+                                                <com.app.mschooling.utils.BuzzTextView
+                                                    style="@style/Gotham_Medium"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="@dimen/dp_20"
+                                                    android:layout_marginTop="@dimen/dp_10"
+                                                    android:layout_marginBottom="@dimen/dp_10"
+                                                    android:text="@string/_2_applications"
+                                                    android:textColor="@color/grayish_black"
+                                                    android:textSize="@dimen/dp_16"
+                                                    android:textStyle="bold" />
+                                            </LinearLayout>
+
+                                            <View
+                                                android:visibility="gone"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="1.0dip"
+                                                android:background="#ffe0e0e0" />
+
+                                            <LinearLayout
+                                                android:visibility="gone"
+                                                android:id="@+id/theme"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="@dimen/dp_50"
+                                                android:layout_gravity="left"
+                                                android:background="@drawable/selector"
+                                                android:gravity="center_vertical"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    style="@style/font"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="@dimen/dp_20"
+                                                    android:layout_marginTop="@dimen/dp_10"
+                                                    android:layout_marginBottom="@dimen/dp_10"
+                                                    android:layout_weight="1"
+                                                    android:text="@string/change_theme"
+                                                    android:textSize="@dimen/text_size_15" />
+
+                                                <ImageView
+                                                    android:layout_width="@dimen/dp_20"
+                                                    android:layout_height="16dp"
+                                                    android:layout_margin="@dimen/dp_10"
+                                                    android:src="@drawable/icon_next_grey" />
+                                            </LinearLayout>
+
+                                            <View
+                                                android:visibility="gone"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="1.0dip"
+                                                android:background="#ffe0e0e0" />
+
+                                            <LinearLayout
+                                                android:visibility="gone"
+                                                android:layout_width="fill_parent"
+                                                android:layout_height="@dimen/dp_50"
+                                                android:layout_gravity="left"
+                                                android:background="@drawable/selector"
+                                                android:gravity="center_vertical"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    style="@style/font"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="@dimen/dp_20"
+                                                    android:layout_marginTop="@dimen/dp_10"
+                                                    android:layout_marginBottom="@dimen/dp_10"
+                                                    android:layout_weight="1"
+                                                    android:text="@string/change_language"
+                                                    android:textSize="@dimen/text_size_15" />
+
+                                                <ImageView
+                                                    android:layout_width="@dimen/dp_20"
+                                                    android:layout_height="@dimen/dp_20"
+                                                    android:layout_margin="@dimen/dp_10"
+                                                    android:src="@drawable/icon_next_grey" />
+
+                                            </LinearLayout>
+
+
+
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="visible">
+
+                                    <View
+                                        android:visibility="gone"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#ffe0e0e0" />
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.app.mschooling.utils.BuzzTextView
+                                            style="@style/Gotham_Medium"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:text="@string/other"
+                                            android:textColor="@color/military_blue"
+                                            android:textSize="@dimen/text_size_18"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+
+
+
+                                    <View
+                                        android:visibility="gone"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#ffe0e0e0" />
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:onClick="comingSoon"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/event_log"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+                                    </LinearLayout>
+
+
+                                    <View
+                                        android:visibility="gone"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#ffe0e0e0" />
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:id="@+id/aboutApp"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/about_app"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+                                    </LinearLayout>
+
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:visibility="gone"
+                                        android:background="#ffe0e0e0" />
+
+
+                                    <LinearLayout
+                                        android:visibility="gone"
+                                        android:id="@+id/tnc"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/terms_and_condition"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#ffe0e0e0" />
+
+                                    <LinearLayout
+                                        android:id="@+id/privacy"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.app.mschooling.utils.BuzzTextView
+                                            style="@style/Gotham_Medium"
+                                            android:textColor="@color/military_blue"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/privacy_policy"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/icon_next_grey" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#ffe0e0e0" />
+
+                                    <LinearLayout
+                                        android:id="@+id/logout"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="@dimen/dp_50"
+                                        android:layout_gravity="left"
+                                        android:background="@drawable/selector"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.app.mschooling.utils.BuzzTextView
+                                            style="@style/Gotham_Medium"
+                                            android:textColor="@color/military_blue"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_20"
+                                            android:layout_marginTop="@dimen/dp_10"
+                                            android:layout_marginBottom="@dimen/dp_10"
+                                            android:layout_weight="1"
+                                            android:text="@string/logout"
+                                            android:textSize="@dimen/text_size_15" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_20"
+                                            android:layout_height="@dimen/dp_20"
+                                            android:layout_margin="@dimen/dp_10"
+                                            android:src="@drawable/logout"
+                                            app:tint="@color/divider_menu" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="1.0dip"
+                                        android:background="#ffe0e0e0" />
+
+
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+
+
+                        <com.app.mschooling.utils.BuzzTextView
+                            android:id="@+id/version"
+                            style="@style/Gotham_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/version"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dp_12" />
+
+                        <include
+                            android:id="@+id/logo"
+                            layout="@layout/logo2" />
+                        <include layout="@layout/made_with_love" />
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

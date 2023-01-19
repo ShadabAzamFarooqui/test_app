@@ -1,0 +1,2 @@
+Application section to be add,
+Setting section with configuration and common setting to be add .

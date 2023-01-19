@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/divider_menu"
+    android:orientation="vertical">
+
+    <com.app.mschooling.utils.BuzzTextView
+        style="@style/Gotham_Medium"
+        android:id="@+id/pleaseWait"
+        android:textColor="@color/military_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/please_wait"
+        android:layout_marginTop="@dimen/dp_160"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/header_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_border"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/yearSpinner"
+                        style="@style/Gotham_Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:entries="@array/year"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_40"
+                        android:textAlignment="center"
+                        android:textColor="@color/military_blue"
+                        android:textSize="@dimen/dp_18" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_border"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/monthSpinner"
+                        style="@style/Gotham_Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:entries="@array/month"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_40"
+                        android:textAlignment="center"
+                        android:textColor="@color/military_blue"
+                        android:textSize="@dimen/dp_18" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/no_record2" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <include layout="@layout/teacher_date_heading" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                    <!--            <HorizontalScrollView-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:fillViewport="true"-->
+                    <!--                android:layout_height="wrap_content">-->
+
+
+                    <!--            </HorizontalScrollView>-->
+                </androidx.core.widget.NestedScrollView>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/font"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/gradient_button_rectangle"
+            android:text="@string/print_amp_preview"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+
+
+
+    <include layout="@layout/custom_fab"
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="@dimen/dp_70"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_height="@dimen/dp_70"
+                        android:src="@drawable/mschooling_text_logo"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/please_give_you_valuable_feedback"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_35"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    style="@style/Gotham_Bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_20" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/a"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_height="wrap_content">
+                       <ImageView
+                           android:id="@+id/love"
+                           android:layout_width="80dp"
+                           android:layout_height="80dp"
+                           android:padding="10dp"
+                           android:scaleType="fitXY"
+                           android:src="@drawable/love_unselect" />
+
+                       <com.app.mschooling.utils.BuzzTextView
+
+                           android:id="@+id/loveTxt"
+                           android:layout_width="match_parent"
+                           android:textAlignment="center"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/grey"
+                           style="@style/Gotham_Bold"
+                           android:text="@string/love"/>
+                   </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/happy"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/happy_unselected" />
+
+                        <com.app.mschooling.utils.BuzzTextView
+                            android:id="@+id/happyTxt"
+                            android:layout_width="match_parent"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            style="@style/Gotham_Bold"
+                            android:text="@string/happy"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/unsure"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:padding="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/unsure_unselect" />
+
+                        <com.app.mschooling.utils.BuzzTextView
+                            android:id="@+id/unsureTxt"
+                            android:layout_width="match_parent"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            style="@style/Gotham_Bold"
+                            android:text="@string/not_sure"/>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/sad"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:padding="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/upset_unselect" />
+
+                        <com.app.mschooling.utils.BuzzTextView
+                            android:id="@+id/sadTxt"
+                            android:layout_width="match_parent"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            style="@style/Gotham_Bold"
+                            android:text="@string/sad"/>
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_50"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/writeReview"
+                    android:maxLines="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:hint="@string/write_your_review" />
+
+                <Button
+                    android:id="@+id/submit"
+                    style="@style/Gotham_Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:background="@drawable/gradient_button"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

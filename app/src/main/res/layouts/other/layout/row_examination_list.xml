@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_5"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="@dimen/dp_5"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+
+            android:background="@drawable/gradient_border_selector"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.app.mschooling.utils.BuzzTextView
+                    android:id="@+id/name"
+                    style="@style/Gotham_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:text="@string/group_name"
+                    android:textColor="@color/military_blue" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/publishLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:id="@+id/publish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@drawable/gradient_button"
+                    android:orientation="horizontal"
+                    android:text="@string/start"
+                    android:textColor="@color/white">
+
+                    <com.app.mschooling.utils.BuzzTextView
+                        style="@style/Gotham_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_8"
+                        android:text="Publish"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <!-- android:background="@drawable/button_disable"-->
+                <LinearLayout
+                    android:id="@+id/published"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:orientation="horizontal"
+                    android:text="@string/start"
+                    android:textColor="@color/white">
+
+                    <com.app.mschooling.utils.BuzzTextView
+                        style="@style/Gotham_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_8"
+                        android:paddingRight="@dimen/dp_10"
+                        android:paddingBottom="@dimen/dp_8"
+                        android:text="Published"
+                        android:textColor="@color/military_blue" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/tick"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:src="@drawable/untick_location" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/action"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".1"
+                    android:src="@drawable/three_dot"
+                    app:tint="@color/military_blue" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

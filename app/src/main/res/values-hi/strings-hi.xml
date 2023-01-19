@@ -1,0 +1,1466 @@
+<resources>
+    <string name="app_name">mSchooling</string>
+<!--    <string name="app_name">Little Steps</string>-->
+    <string name="school_contact">स्कूल संपर्क</string>
+    <string name="principal">(प्रधान अध्यापक)</string>
+    <string name="api_key">AIzaSyDcRd8kn1lhjYdEAkGR6Ns7VUPE5YsRIOs</string>
+
+    <!--    <string name="app_name">Chanakya</string>-->
+<!--    <string name="school_contact">चाणक्य प्रशासन</string>-->
+<!--    <string name="principal">(प्राचार्य चाणक्य कॉलेज)</string>-->
+
+
+
+    <string name="ad_app_id">ca-app-pub-2465479969938764~8886544691</string>
+    <string name="interstitial_unit_id">ca-app-pub-2465479969938764/2708805692</string>
+    <string name="banner_unit_id">ca-app-pub-2465479969938764/2351064111</string>
+    <string name="native_advanced_unit_id">ca-app-pub-2465479969938764/4594084077</string>
+
+    <string name="login">साइन इन करें</string>
+    <string name="register">पंजीकृत करें</string>
+    <string name="verify">सत्यापित</string>
+    <string name="submit">सुरक्षित करें</string>
+    <string name="update">अपडेट</string>
+    <string name="terms_condition"> (नियम और शर्त)</string>
+    <string name="alert_message">अलर्ट संदेश</string>
+    <string name="invalid_token">आपका सत्र समाप्त हो गया है!</string>
+    <string name="permission_camera_rationale">कैमरे के लिए उपयोग का पता लगाने के लिए आवश्यक है</string>
+    <string name="facebook_app_id">254590668733634</string>
+    <string name="fb_login_protocol_scheme">fb254590668733634</string>
+    <string name="ok">ठीक</string>
+    <string name="def">An Android activity is one screen of the Android apps user interface. In that way an Android activity is very similar to windows in a desktop application. An Android app may contain one or more activities, meaning one or more screens. The Android app starts by showing the main activity, and from there the app may make it possible to open additional activities.
+    When an Android app is first started the main activity is created. The activity then goes through 3 states before it is ready to serve the user: Created, started and resumed.
+If the main activity can open any other activities (screens) these activities will go through the same 3 states when they are opened.</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">डिवाइस स्टोरेज कम होने के कारण ओसीआर निर्भरता डाउनलोड नहीं की जा सकती</string>
+    <string name="ocr_header">पाठ का पता लगाने के लिए &quot;डिटेक्ट टेक्स्ट&quot; क्लिक करें</string>
+    <string name="read_text">टेक्स्ट का पता लगाएं</string>
+    <string name="auto_focus">ऑटो फोकस</string>
+    <string name="use_flash">फ्लैश का उपयोग करें</string>
+    <string name="ocr_success">पाठ सफलतापूर्वक पढ़ा</string>
+    <string name="ocr_failure">कोई पाठ कैप्चर नहीं किया गया</string>
+    <string name="ocr_error">"त्रुटि पढ़ने का पाठ: %1$s"</string>
+    <string name="send_email_text">ईमेल भेजें</string>
+    <string name="mail_intent_chooser_text">ईमेल भेजें…</string>
+    <string name="no_email_client_error">कोई ईमेल ग्राहक स्थापित नहीं हैं।</string>
+    <string name="copy_text">क्लिपबोर्ड पर कॉपी करें</string>
+    <string name="clipboard_copy_successful_message">क्लिपबोर्ड के लिए कॉपी किया गया।</string>
+    <string name="hint_enrol"><font size="12"> नामांकन संख्या दर्ज करें</font></string>
+    <string name="hint_mobile"><font size="12"> मोबाइल दर्ज करें</font></string>
+    <string name="hint_name"><font size="12"> नाम दर्ज करें</font></string>
+    <string name="hint_email"><font size="12"> ईमेल दर्ज करें</font></string>
+    <string name="hint_school"><font size="12"> स्कूल का नाम</font></string>
+    <string name="hint_password"><font size="12"> पासवर्ड दर्ज करें</font></string>
+    <string name="hint_dob"><font size="12"> जन्म तिथि</font></string>
+    <string name="hint_address"><font size="12"> पता दर्ज करें</font></string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_home">होम</string>
+
+    <string name="title_notice">सूचना</string>
+
+    <string name="title_complaint">शिकायत</string>
+
+    <string name="title_menu">मेनू</string>
+    <string name="syllabus">पाठ्यक्रम</string>
+    <string name="dashboard">डैशबोर्ड</string>
+    <string name="report">रिपोर्ट</string>
+    <string name="gallery">गैलरी</string>
+    <string name="examination">परीक्षा</string>
+    <string name="broad_cast">प्रसारण</string>
+    <string name="inbox">इनबॉक्स</string>
+    <string name="file_upload">फाइल अपलोड</string>
+    <string name="student">छात्र</string>
+    <string name="parent">माता पिता</string>
+    <string name="teacher">शिक्षक</string>
+    <string name="Student_list">छात्र सूची</string>
+    <string name="attendance">उपस्थिति</string>
+    <string name="compliance">शिकायतों</string>
+    <string name="suggestions">सुझाव</string>
+<!--    <string name="notice">सूचना</string>-->
+    <string name="no_address_found">क्षमा करें, कोई पता नहीं मिला</string>
+    <string name="no_location_data_provided">कोई स्थान डेटा प्रदान नहीं किया गया</string>
+    <string name="service_not_available">क्षमा करें, सेवा उपलब्ध नहीं है</string>
+    <string name="invalid_lat_long_used">अमान्य अक्षांश या देशांतर का इस्तेमाल किया</string>
+
+    <string name="add_student">छात्र जोड़ें</string>
+
+    <string name="wallet">बटुआ</string>
+    <string name="download">डाउनलोड</string>
+    <string name="write_file">इस ऐप को आपके फ़ाइल स्टोरेज तक पहुंच की आवश्यकता है ताकि यह फ़ाइलें लिख सके।</string>
+    <string name="attach_excel_file">एक्सेल फाइल संलग्न</string>
+    <string name="attach_image_file">इमेज चुनें</string>
+    <string name="attach_pdf">पीडीएफ चुनें</string>
+    <string name="preview">पूर्वावलोकन</string>
+    <string name="enter_title_here"><font size="12"> यहां शीर्षक दर्ज करें...</font></string>
+    <string name="enter_notice_here"><font size="12">यहां नोटिस दर्ज करें...</font></string>
+    <string name="email_message"><font size="12">यहां संदेश दर्ज करें...</font></string>
+    <string name="broad_cast_message"><font size="12">मैसेज 145 से ज्यादा नहीं होना चाहिए...</font></string>
+    <string name="support_share"><![CDATA[समर्थन और शेयर]]></string>
+    <string name="help_support"><![CDATA[मदद और समर्थन]]></string>
+    <string name="title_activity_dummy">DummyActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="title_activity_main_teacher">TeacherMainActivity</string>
+    <string name="title_activity_main_student">StudentMainActivity</string>
+    <string name="enter_reason">कारण दर्ज करें</string>
+    <string name="enter_subject">कृपया विषय दर्ज करें</string>
+    <string name="enter_application">आवेदन दर्ज करें…</string>
+    <string name="add_teacher">शिक्षक जोड़ें</string>
+    <string name="teacher_list">शिक्षक सूची</string>
+    <string name="mschooling">mSchooling is a professional, most trusted and verified school mobile app developed by mSchooling community to simplify the daily life of educators. mSchooling offers one of the best e-governance ERP and best-in-class mobile applications to educational institutions such as schools, coachings, and colleges across the india.</string>
+    <string name="mschooling2">mSchooling is a professional, most trusted and verified school mobile app developed by mSchooling community to simplify the daily life of educators. mSchooling offers one of the best e-governance ERP and best-in-class mobile applications to educational institutions such as schools, coachings, and colleges across the india. There are some following functionality provided by mSchooling.
+        \n<b>1.</b> Useful for CBSE, STATE, ICSE, IB Boards and Residential / Madrasa / Ashram Schools of any size and strength.
+\n<b>2.</b> Supports all latest technologies - RFID, on-Line payment, SMS, e-mail, Smart Phones.
+\n<b>3.</b> Assured On-site &amp; On-Line support.
+\n<b>4.</b> Technology - Cloud, Smart Phone, Client / Server or Web based
+\n<b>5.</b> Integrated, Multi-User, Time tested.
+\n<b>6.</b> User friendly interface. Easy to use.
+\n<b>7.</b> Multilingual Fonts - English / Hindi, Urdu… Fonts
+\n<b>8.</b> Immediate implementation.
+\n<b>9.</b> SMS &amp; Email alerts to all.
+\n<b>10.</b> Reports export to Word, Excel, PDF…
+\n<b>11.</b> High-level data security</string>
+    <string name="no_record">उफ़! कोई रिकॉर्ड नहीं मिला</string>
+    <string name="aadhaar_back">आधार कार्ड का पीछे का पेज</string>
+    <string name="aadhaar_back_review">आधार पीछे की समीक्षा करें</string>
+
+
+    <string name="aadhaar_first">आधार कार्ड का सामने का पेज</string>
+    <string name="aadhaar_front_review">आधार सामने की समीक्षा करें</string>
+    <string name="action_sign_in_short">साइन इन करें</string>
+
+
+    <string name="camera_error">यह डिवाइस Camera2 API का समर्थन नहीं करता है। </string>
+
+
+    <string name="cheque_info">Click Image of Cheque</string>
+
+    <string name="cheque_review">REVIEW CHEQUE</string>
+
+    <string name="cio_info">Click Image of CIO</string>
+
+
+    <string name="coi_review">REVIEW COI</string>
+
+    <string name="description_info">जानकारी</string>
+
+
+    <string name="file_limit_size_upload_format">फ़ाइलें %sMB से कम होनी चाहिए </string>
+
+    <string name="pan_info">पैन कार्ड का फ्रंट पेज</string>
+
+    <string name="pancard_review">पैनकार्ड की समीक्षा करें</string>
+
+
+    <string name="picture">पिक्चर</string>
+
+    <string name="prompt_email">उपयोगकर्ता नाम दर्ज करें</string>
+
+    <string name="prompt_password">पासवर्ड दर्ज करें</string>
+    <string name="alert_other_is_sharing">आप स्क्रीन शेयर शुरू नहीं कर सकते, जबकि अन्य प्रतिभागी साझा कर रहा है।</string>
+
+    <string name="request_permission">इस नमूने को कैमरे की अनुमति की आवश्यकता है।</string>
+    <string name="sign_in_forgot_pwd">पासवर्ड भूल गया</string>
+    <string name="sign_in_login">साइन इन करें</string>
+    <string name="title_error_no_network">कोई इंटरनेट कनेक्शन नहीं</string>
+    <string name="message_error_no_network">कृपया अपने इंटरनेट कनेक्शन की जांच करें !!!</string>
+    <string name="permission_camera_rationale_barcode">बारकोड डिटेक्शन के लिए कैमरे तक पहुंच की जरूरत होती है।</string>
+    <string name="signup_message">\"</string>
+    <string name="quiz_without_completion">आप पूरा किए बिना इस प्रश्नोत्तरी से बाहर नहीं आ पाएंगे</string>
+        <string name="your_app_version">आपका ऐप संस्करण</string>
+    <string name="available_app_version">उपलब्ध ऐप संस्करण</string>
+    <string name="last_updated">अंतिम अपडेट</string>
+    <string name="search">खोजे....</string>
+    <string name="title">शीर्षक *</string>
+    <string name="heading">शीर्ष *</string>
+    <string name="enter_description">विवरण दर्ज करें *</string>
+    <string name="social_media_address">सोशल मीडिया का पता</string>
+    <string name="mobile">मोबाइल *</string>
+    <string name="email">ईमेल *</string>
+    <string name="facebook_profile">फेसबुक प्रोफाइल </string>
+    <string name="twitter_profile">ट्विटर प्रोफाइल</string>
+    <string name="instagram_profile">इंस्टाग्राम प्रोफाइल </string>
+    <string name="inkedin_profile">लिंक्डइन प्रोफाइल</string>
+    <string name="quora_profile">कौरा प्रोफाइल </string>
+    <string name="school_address">स्कूल का पता</string>
+    <string name="flat_house_no">फ्लैट/मकान नं. *</string>
+    <string name="street_locality">गली/इलाका *</string>
+    <string name="city">शहर *</string>
+    <string name="pin_code">पिन कोड *</string>
+    <string name="state">राज्य *</string>
+    <string name="country">देश *</string>
+    <string name="mark_your_location_on_map">मानचित्र पर अपना स्थान चिह्नित करें </string>
+    <string name="save">सहेजें</string>
+    <string name="about_us">हमारे बारे में</string>
+    <string name="enter_user_name">उपयोगकर्ता नाम दर्ज करें</string>
+    <string name="class_amp_subject"><![CDATA[कक्षा और विषय *]]></string>
+    <string name="details">विवरण *</string>
+    <string name="attach_image">संलग्न छवि</string>
+    <string name="enter_question">प्रश्न दर्ज करें *</string>
+    <string name="add_option"><![CDATA[विकल्प जोड़ें >]]></string>
+    <string name="category">कोटि *</string>
+    <string name="religion">धर्म *</string>
+    <string name="blood_group">रुधिर-वर्ग *</string>
+    <string name="upload_aadhaar_card">आधार कार्ड अपलोड करें</string>
+    <string name="upload">अपलोड</string>
+    <string name="aadhaar_number">आधार नंबर</string>
+    <string name="save_amp_next"><![CDATA[सहेजें & आगे बढे]]></string>
+    <string name="roll_number">रोल नंबर *</string>
+    <string name="doa">डी ओ ए</string>
+    <string name="last_school">अंतिम स्कूल *</string>
+    <string name="last_class">अंतिम कक्षा *</string>
+    <string name="upload_previous_year_mark_sheet">अपलोड पिछले साल अंकपत्र</string>
+    <string name="class_incharge_name">कक्षा प्रभारी का नाम *</string>
+    <string name="sport_incharge_name">खेल प्रभारी का नाम *</string>
+    <string name="music_incharge_name">म्यूजिक प्रभारी का नाम *</string>
+    <string name="pan_card_no">पैन कार्ड नं.</string>
+    <string name="school_name">स्कूल का नाम *</string>
+    <string name="first_name">पहला नाम *</string>
+    <string name="last_name">अंतिम नाम *</string>
+    <string name="last_name2">अंतिम नाम</string>
+    <string name="gender">लिंग *</string>
+    <string name="dob">जन्म तिथि</string>
+    <string name="sign_up">पंजीकरण</string>
+    <string name="alternate_local_address">वैकल्पिक/स्थानीय पता</string>
+    <string name="landmark">सीमा चिन्ह</string>
+    <string name="check_if_local_address_is_same_as_permanent">जांच करें कि क्या स्थानीय पता स्थायी के समान है</string>
+    <string name="permanent_address">स्थायी पता</string>
+    <string name="flat_house_no_w_start">फ्लैट/मकान नं.</string>
+    <string name="street_locality_w_star">गली/इलाका</string>
+    <string name="pin_code_w_start">पिन कोड</string>
+    <string name="city_w_star">शहर </string>
+    <string name="state_w_star">राज्य</string>
+    <string name="skip">छोड़ें</string>
+    <string name="aadhar_card">आधार कार्ड</string>
+    <string name="pan_card">पैन कार्ड</string>
+    <string name="upload_pan_card">पैन कार्ड अपलोड करें</string>
+    <string name="account_holder_name">खाताधारक का नाम</string>
+    <string name="account_number">खाता संख्या</string>
+    <string name="name_of_the_bank">बैंक का नाम</string>
+    <string name="branch_name">शाखा का नाम</string>
+    <string name="ifsc_code">आईएफएससी कोड</string>
+    <string name="bank_address">बैंक पता</string>
+    <string name="class_section">कक्षा (अनुभाग)</string>
+    <string name="sr_no">सीरियल नंबर</string>
+    <string name="time_day">समय                    दिन </string>
+    <string name="monday">सोमवार</string>
+    <string name="tuesday">मंगलवार</string>
+    <string name="wednesday">बुधवार</string>
+    <string name="thursday">गुरूवार</string>
+    <string name="friday">शुक्रवार</string>
+    <string name="saturday">शनिवार</string>
+    <string name="sunday">रविवार</string>
+    <string name="add_more_period">अधिक घंटी जोड़ें</string>
+    <string name="address">पता</string>
+    <string name="set_your_location">अपना स्थान सेट करें</string>
+    <string name="choose_nearest_location">निकटतम स्थान चुनें</string>
+    <string name="print_amp_preview"><![CDATA[प्रिंट & पूर्वावलोकन]]></string>
+    <string name="date">दिनांक</string>
+    <string name="view">देखना</string>
+    <string name="select_class">कक्षा का चयन करें</string>
+    <string name="send_via">के माध्यम से भेजें *</string>
+    <string name="select_staff_faculty_student">स्टाफ/फैकल्टी/स्टूडेंट का चयन करें *</string>
+    <string name="select_class_amp_section"><![CDATA[कक्षा और अनुभाग का चयन करें *]]></string>
+    <string name="enter_subject_w_dot">विषय दर्ज करें *</string>
+    <string name="enter_message">संदेश दर्ज करें *</string>
+    <string name="enter_old_passcode">पुराना पासकोड दर्ज करें *</string>
+    <string name="enter_new_passcode">नया पासकोड दर्ज करें *</string>
+    <string name="confirm_passcode">पासकोड की पुष्टि करें *</string>
+    <string name="select_enrolled">नामांकित का चयन करें *</string>
+    <string name="select_class_star">कक्षा का चयन करें *</string>
+    <string name="select_section">अनुभाग का चयन करें *</string>
+    <string name="select_section_w">अनुभाग का चयन करें</string>
+    <string name="next">आगे</string>
+
+    <string name="change">बदलें</string>
+    <string name="enter_group">समूह दर्ज करें *</string>
+    <string name="quiz_name">प्रश्नोत्तरी का नाम *</string>
+    <string name="difficulty_level">कठिनाई स्तर *</string>
+    <string name="name">नाम </string>
+    <string name="gender_w_star">लिंग</string>
+    <string name="adhar_no">आधार नंबर</string>
+    <string name="father_name">पिता का नाम</string>
+    <string name="type">प्रकार</string>
+    <string name="sub_type">उप प्रकार</string>
+    <string name="incorporation_date">निगमन तिथि</string>
+    <string name="pan_no">पैन नंबर</string>
+    <string name="bank_name">बैंक का नाम</string>
+    <string name="account_no_short">खाता संख्या</string>
+    <string name="company_name">कंपनी का नाम</string>
+    <string name="company_cin">कंपनी सी आई एन</string>
+    <string name="current_event">वर्तमान आयोजन</string>
+    <string name="all_event">सभी आयोजनक्रम</string>
+    <string name="we_are_happy_to_help_you">हम आपकी मदद करने के लिए खुश हैं!</string>
+    <string name="team">Team</string>
+    <string name="star">********</string>
+    <string name="_24_7_available">24/7 Available</string>
+    <string name="phone_static">9506228028</string>
+    <string name="email_static">info.mschooling@gmail.com</string>
+    <string name="version">version</string>
+    <string name="made_with">Made with</string>
+    <string name="heart_symbol"> 💓</string>
+    <string name="in_india">in India</string>
+    <string name="mschooling_name"> mSchooling</string>
+    <string name="your_digital_manager">YOUR DIGITAL MANAGER</string>
+    <string name="enrollment_id_static">0000001</string>
+    <string name="first_first">प्रथम (प्रथम)</string>
+    <string name="male">पुरुष</string>
+    <string name="total_paid">कुल भुगतान</string>
+    <string name="total_paid2">कुल भुगतान : </string>
+    <string name="total_due">कुल देय राशि</string>
+    <string name="total_due2">कुल देय राशि : </string>
+    <string name="image">फोटो</string>
+    <string name="enter_limit">सीमा दर्ज करें</string>
+    <string name="open_multimedia_picker">ओपन मल्टीमीडिया पिकर</string>
+    <string name="general">सामान्य</string>
+    <string name="add_address">पता जोड़ें</string>
+    <string name="show_pdf">पीडीएफ दिखाएं</string>
+    <string name="leave_calender">छुट्टी कैलेंडर </string>
+    <string name="add_time_table">टाइम टेबल जोड़ें</string>
+    <string name="view_timetable">समय सारिणी देखें</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="generate_qr_code">क्यूआर कोड</string>
+    <string name="change_passcode">पासकोड बदलें</string>
+    <string name="school_info">स्कूल की जानकारी</string>
+    <string name="share">शेयर करें</string>
+    <string name="setting">सेटिंग</string>
+    <string name="_1_configurations">1. कॉन्फ़िगरेशन</string>
+    <string name="add_class">कक्षा जोड़ें</string>
+    <string name="add_subject">विषय जोड़ें</string>
+    <string name="add_complaint_reason">शिकायत कारण जोड़ें</string>
+    <string name="add_application_reason">आवेदन कारण जोड़ें</string>
+    <string name="_2_applications">2. आवेदन</string>
+    <string name="change_theme">थीम बदलें</string>
+    <string name="change_language">भाषा बदलें</string>
+    <string name="change_custom_font">परम्परा फ़ॉन्ट बदलें</string>
+    <string name="other">दूसरे</string>
+    <string name="event_log">इवेंट लॉग</string>
+    <string name="about_app">ऐप के बारे में</string>
+    <string name="terms_and_condition">नियम और शर्त</string>
+    <string name="privacy_policy">गोपनीयता नीति</string>
+    <string name="logout">लॉगआउट</string>
+    <string name="scan_aadhaar">आधार स्कैन करें</string>
+    <string name="scan_pancard">पैनकार्ड स्कैन करें</string>
+    <string name="scan_chegue">चेक स्कैन करें</string>
+    <string name="scan_cio">सीआईओ स्कैन करें</string>
+    <string name="attach_a_front_of_aadhaar">आधार का एक मोर्चा संलग्न करें</string>
+    <string name="click">क्लिक करें</string>
+    <string name="choose">चुनें</string>
+    <string name="attach_back_of_aadhaar">आधार का बैक अटैच करें</string>
+    <string name="attach_pancard">पैनकार्ड संलग्न</string>
+    <string name="attach_cheque">चेक अटैच करें</string>
+    <string name="powered_by">   Powered by  </string>
+    <string name="view_qr_code">क्यूआर कोड देखें</string>
+    <string name="subject">विषय *</string>
+    <string name="teacher_star">शिक्षक *</string>
+    <string name="student_star">छात्र/छात्रा *</string>
+    <string name="select_date">तिथि चुनें *</string>
+    <string name="select_date_w_star">तिथि चुनें</string>
+    <string name="select_teacher">शिक्षक का चयन करें</string>
+    <string name="select_student">छात्र का चयन करें</string>
+    <string name="classz">कक्षा *</string>
+    <string name="marks">अंक (प्रति प्रश्न) *</string>
+    <string name="attempts">प्रयास *</string>
+    <string name="minutes">मिनट *</string>
+    <string name="select_subject">विषय का चयन करें</string>
+    <string name="measurement">माप</string>
+    <string name="zero">0</string>
+    <string name="questions">सवाल</string>
+    <string name="time">समय </string>
+    <string name="end_test">अंत परीक्षण</string>
+    <string name="clear_response">स्पष्ट प्रतिक्रिया</string>
+    <string name="configurations">कॉन्फ़िगरेशन</string>
+    <string name="applications">अनुप्रयोगों</string>
+    <string name="sign_up_guide_1">1.स्वागत पृष्ठ पर \'साइन अप\' पर टैप करें। </string>
+    <string name="sign_up_guide_2">2.\t क्यूआर कोड दर्ज करें या अपने स्कूल के प्रशासन द्वारा प्रदान की गई क्यूआर कोड फोटो को स्कैन करें।</string>
+    <string name="sign_up_guide_3">3.\t</string>
+    <string name="sign_up_guide_4">4. सफल प्रस्तुत करने के बाद अपने आवेदन स्कूल के प्रशासन की मंजूरी के अधीन किया जाएगा ।</string>
+    <string name="sign_up_guide_5">5. एक बार इसे मंजूरी मिलने के बाद आपको एसएमएस द्वारा सूचित किया जाएगा।</string>
+    <string name="welcome">Welcome</string>
+    <string name="a_complete_solution">एक पूरा समाधान</string>
+    <string name="the_most_verified">सबसे अधिक सत्यापित</string>
+    <string name="trusted">विश्वसनीय</string>
+    <string name="professional">अनुभवी</string>
+    <string name="effected">प्रभावित</string>
+    <string name="and_structured_way">और संरचित तरीका</string>
+    <string name="version_1_3_2">Version: 1.3.2</string>
+    <string name="obtainedmarks_totalmarks">प्राप्त अंक/कुल अंक</string>
+    <string name="total_questions">कुल प्रश्न</string>
+    <string name="total_attempted">कुल प्रयास</string>
+    <string name="correct_attempted">सही प्रयास</string>
+    <string name="no_of_attempt">प्रयास की संख्या</string>
+    <string name="level">स्तर</string>
+    <string name="start">प्रारंभ</string>
+    <string name="starting">प्रारंभ हो रहा है</string>
+    <string name="logining">लॉगिन किया जा रहा है…</string>
+    <string name="select_time">समय का चयन करें *</string>
+    <string name="d_p">D/P</string>
+    <string name="enter_class">कक्षा दर्ज करें *</string>
+    <string name="enter_class_w">कृपया कक्षा दर्ज करें</string>
+    <string name="enter_description_w_star">विवरण दर्ज करें</string>
+    <string name="add_section"><![CDATA[अनुभाग जोड़ें >]]></string>
+    <string name="enter_reason_star">कारण दर्ज करें *</string>
+    <string name="enter_notice">सूचना दर्ज करें *</string>
+    <string name="enter_event_name">आयोजन का नाम दर्ज करें</string>
+    <string name="enter_event_description">आयोजन विवरण दर्ज करें</string>
+    <string name="selected_date">चयनित तिथि</string>
+    <string name="description">विवरण *</string>
+    <string name="description2">विवरण</string>
+    <string name="date_star">दिनांक *</string>
+    <string name="last_name_w_star">अंतिम नाम</string>
+    <string name="student_parent_mobile_number">छात्र/अभिभावक मोबाइल नंबर *</string>
+    <string name="roll_number_w_star">रोल नंबर</string>
+    <string name="email_w_star">ईमेल</string>
+    <string name="dob_star">जन्म तिथि *</string>
+    <string name="optional_paper">वैकल्पिक पेपर</string>
+    <string name="upload_excel">एक्सेल अपलोड करें</string>
+    <string name="father_s_detail">पिता की डिटेल</string>
+    <string name="father_s_name">पिता का नाम</string>
+    <string name="mobile_no">मोबाइल नं.</string>
+    <string name="occupation">व्यवसाय</string>
+    <string name="qualification">योग्यता</string>
+    <string name="annual_income">वार्षिक आय</string>
+    <string name="mother_s_detail">मां की डिटेल</string>
+    <string name="candidate_s_id">उम्मीदवार की आईडी</string>
+    <string name="upload_candidate_s_aadhaar_card">उम्मीदवार का आधार कार्ड अपलोड करें</string>
+    <string name="father_s_id">पिता की आईडी</string>
+    <string name="upload_father_s_aadhaar_card">पिता का आधार कार्ड अपलोड करें</string>
+    <string name="father_s_aadhar_card_no">पिता का आधार कार्ड नं.</string>
+    <string name="father_s_pan_card_no">पिता का पैन कार्ड नं.</string>
+    <string name="transport">परिवहन *</string>
+    <string name="scholarship">छात्रवृत्ति</string>
+    <string name="student_type">छात्र प्रकार *</string>
+    <string name="sports">खेल *</string>
+    <string name="past_academic_detail">पिछले अकादमिक विस्तार</string>
+    <string name="select_group">कृपया समूह का चयन करें</string>
+    <string name="enter_subject_star">विषय दर्ज करें *</string>
+    <string name="select_subject_type">विषय दर्ज करें *</string>
+    <string name="select_group_star">समूह का चयन करें *</string>
+    <string name="jack">जैक</string>
+    <string name="address_static">201/34 BLock A, Sector 10, Noida UP</string>
+    <string name="father_husband_name">पिता/पति का नाम</string>
+    <string name="d_o_b">@string/dob</string>
+    <string name="show_all_details">विवरण देखें</string>
+    <string name="passcode">पासकोड</string>
+    <string name="name_static">mSchooling Management</string>
+    <string name="discussion">विचार-विमर्श</string>
+
+    <string name="enrollment_id">नामांकन आईडी</string>
+    <string name="class_w_star">कक्षा</string>
+    <string name="mother_name">मां का नाम</string>
+    <string name="enter_qr_code">क्यूआर कोड दर्ज करें</string>
+    <string name="type_your_suggestion_here">यहां अपना सुझाव दर्ज करें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="send">भेजें</string>
+    <string name="suggest_new_feature">नई सुविधा का सुझाव दें</string>
+    <string name="attachment">संलग्नक</string>
+    <string name="coming_soon_details">क्षमा करें, इस धारा का विकास किया जा रहा है। उपलब्ध होने पर आवेदन को अपडेट करें।\nधन्यवाद</string>
+    <string name="team_mschooling">Team mSchooling</string>
+    <string name="month_2014">माह 2014</string>
+    <string name="sun">रवि</string>
+    <string name="mon">सोम</string>
+    <string name="tue">मंगल</string>
+    <string name="wed">बुध</string>
+    <string name="thu">गुरू</string>
+    <string name="fri">शुक्र</string>
+    <string name="sat">शानि</string>
+    <string name="apply">आवेदन करें</string>
+    <string name="please_wait">कृपया प्रतीक्षा करें…</string>
+    <string name="dismiss">खारिज</string>
+    <string name="scanning">स्कैनिंग…</string>
+    <string name="fetching_records">Fetching records…</string>
+    <string name="uploading">अपलोड हो रहा  है…</string>
+    <string name="testing">परीक्षण</string>
+    <string name="test_notification_message_from_xml">यह एक्सएमएल से एक परीक्षण अधिसूचना संदेश, यह एफसीएम के मूल्य से बी की जगह लेगा।</string>
+    <string name="date_static">09 apr 2018</string>
+    <string name="select_date_range">तिथि सीमा चुनें</string>
+    <string name="from">से</string>
+    <string name="to">तक</string>
+    <string name="delete">हटाएँ</string>
+    <string name="delete_this_record">क्या आप सुनिश्चित हैं कि आप इस रिकॉर्ड को हटाना चाहते हैं?</string>
+    <string name="enter_reason_dot">कारण दर्ज करें…</string>
+    <string name="success">सफल</string>
+    <string name="please_check_your_internet_connection">कृपया अपने इंटरनेट कनेक्शन की जांच करें, और फिर से प्रयास करें।</string>
+    <string name="add_more">और जोड़ें</string>
+    <string name="alert">चेतावनी</string>
+    <string name="want_to_cancel">क्या आप सुनिश्चित हैं कि आप डिलीट करना चाहते हैं?</string>
+    <string name="no">नहीं</string>
+    <string name="yes">हाँ</string>
+    <string name="enter_delete_reason">डिलीट कारण दर्ज करें…</string>
+    <string name="sorry">क्षमा करें</string>
+    <string name="no_internet">कोई इंटरनेट नहीं !</string>
+    <string name="retry">पुनर्प्रयास</string>
+    <string name="regular">नियमित</string>
+    <string name="additional">अतिरिक्त</string>
+
+    <string name="icon">ICON</string>
+    <string name="camera">कैमरा</string>
+    <string name="update_required">अपडेट जरूरी</string>
+    <string name="digit_static">1</string>
+    <string name="disable">अक्षम</string>
+    <string name="enable">सक्षम</string>
+    <string name="write_your_review">अपनी समीक्षा लिखें</string>
+    <string name="please_give_you_valuable_feedback">कृपया अपनी मूल्यवान प्रतिक्रिया दें</string>
+    <string name="love">प्यार</string>
+    <string name="happy">Happy</string>
+    <string name="not_sure">निश्चित नहीं</string>
+    <string name="sad">उदास</string>
+    <string name="list">सूची</string>
+    <string name="name_space">       नाम</string>
+    <string name="day">दिन</string>
+    <string name="female">महिला</string>
+    <string name="add_by_attaching_excel_file_from_here">यदि आपको एक से अधिक छात्र जोड़ना है तो आप यहां से एक्सेल फ़ाइल संलग्न करके जोड़ सकते हैं।</string>
+    <string name="don_t_have_format">प्रारूप नहीं है?</string>
+    <string name="excel">एक्सेल</string>
+    <string name="csv">सीएसवी</string>
+    <string name="note_file_size_should_not_be_more_than_10mb">नोट: फ़ाइल का आकार 10mb से अधिक नहीं होना चाहिए।</string>
+    <string name="enter_mobile_number">मोबाइल नंबर दर्ज करें</string>
+    <string name="please_enter_your_mobile_number_associated">कृपया अपने स्कूल से जुड़ा मोबाइल नंबर दर्ज करें</string>
+    <string name="header">शीर्ष लेख</string>
+    <string name="footer">पाद लेख</string>
+    <string name="session_static">सत्र 2018–2019</string>
+    <string name="administration_setup">प्रशासन सेटअप</string>
+    <string name="setup">रजिस्टर करें</string>
+    <string name="students">छात्रों</string>
+    <string name="teachers">शिक्षकों</string>
+    <string name="support">समर्थन</string>
+    <string name="login_static">लॉगिन</string>
+    <string name="forget_enrolment_id">नामांकन आईडी भूल गए?</string>
+    <string name="verified">सत्यापित</string>
+    <string name="select_board">बोर्ड का चयन करें</string>
+    <string name="enter_enrollment_id">नामांकन आईडी दर्ज करें</string>
+    <string name="enter_enrollment_id_mobile">नामांकन आईडी/मोबाइल नंबर</string>
+    <string name="forget_enrolment_id_passcode">नामांकन आईडी/पासकोड भूल गए?</string>
+    <string name="forget_passcode">पासकोड भूल गए?</string>
+    <string name="staging">Staging</string>
+    <string name="production">Production</string>
+    <string name="select_attendance">उपस्थिति का चयन करें *</string>
+    <string name="attendance_submitted">उपस्थिति प्रस्तुत</string>
+    <string name="feedback">प्रतिक्रिया</string>
+    <string name="about_school">स्कूल के बारे में</string>
+
+    <string name="share_qr_msg">इस क्यूआर कोड को अपने छात्रों और शिक्षकों को साझा करें, ताकि वे आपके स्कूल में पंजीकरण कर सकें।</string>
+    <string name="share_qr">क्यूआर कोड साझा करें</string>
+    <string name="edit">संपादित</string>
+    <string name="delete2">हटाएँ</string>
+
+    <string name="call">कॉल</string>
+    <string name="whatsapp">व्हाट्सएप्प</string>
+    <string name="email_new">ई-मेल</string>
+    <string name="sms">एसएमएस</string>
+    <string name="event_name">आयोजन का नाम *</string>
+    <string name="note_video">नोट: कृपया केवल यूट्यूब यूआरएल (लिंक) दर्ज/पेस्ट करें</string>
+
+
+
+    <string name="please_enter_name">कृपया नाम दर्ज करें</string>
+    <string name="please_mobile_number">कृपया मोबाइल नंबर दर्ज करें</string>
+    <string name="please_valid_mobile_number">कृपया मान्य मोबाइल नंबर दर्ज करें</string>
+    <string name="please_select_dob">कृपया जन्म तिथि चुनें</string>
+    <string name="tool_parents_detail">माता-पिता विस्तार से</string>
+    <string name="tool_address_detail">पते का विवरण</string>
+    <string name="tool_identification">पहचान</string>
+    <string name="tool_other_details">अन्य जानकारी</string>
+    <string name="enter_your_last_school">अपना आखिरी स्कूल दर्ज करें</string>
+    <string name="enter_your_last_class">अपनी अंतिम कक्षा दर्ज करें</string>
+    <string name="tool_add_students">छात्रों को जोड़ें</string>
+    <string name="please_select_file">कृपया फ़ाइल चुनें</string>
+    <string name="file_success_fully_downloaded">फ़ाइल सफलतापूर्वक डाउनलोड की गई!</string>
+    <string name="no_application_found_open_the_file">कोई एप्लिकेशन नहीं मिला जो फ़ाइल को खोल सके</string>
+    <string name="file_successfully_uploaded">फ़ाइल सफलतापूर्वक अपलोड की गई</string>
+    <string name="tool_image">छवि</string>
+    <string name="album">एल्बम</string>
+    <string name="tap_to_select">चयन करने के लिए टैप करें</string>
+    <string name="select_profile_image">प्रोफ़ाइल छवि का चयन करें</string>
+    <string name="please_enter_father_husband_name">कृपया पिता / पति का नाम दर्ज करें</string>
+    <string name="tool_identification_detail">पहचान का विवरण</string>
+    <string name="tool_bank_details">बैंक विवरण</string>
+    <string name="classes">कक्षायें</string>
+    <string name="subjects">विषय</string>
+    <string name="tool_complaint_reason">शिकायत का कारण</string>
+    <string name="please_write_your_message">कृपया अपना संदेश लिखें</string>
+    <string name="tool_update_video">वीडियो अपडेट करें</string>
+    <string name="tool_add_video">वीडियो जोड़ें</string>
+    <string name="enter_url_w_star">यूआरएल दर्ज करें/चिपकाएँ</string>
+    <string name="enter_valid_url">मान्य यूआरएल दर्ज करें</string>
+    <string name="videos">वीडियो</string>
+    <string name="adhaar_card">आधार कार्ड</string>
+    <string name="place_adhaar_card_inside_the_box">बॉक्स के अंदर सामने वाला आधार कार्ड रखें</string>
+    <string name="place_pancard_inside_the_box">बॉक्स के अंदर पैनकार्ड रखें</string>
+    <string name="focuse_camera_account_number_for_better_result">बेहतर परिणाम के लिए खाता संख्या पर ध्यान दें</string>
+    <string name="focuse_camera_on_cin_for_better_result">बेहतर परिणाम के लिए CIN पर ध्यान दें</string>
+    <string name="place_adhaar_card_backside_the_box">बॉक्स के अंदर आधार कार्ड बैक साइड रखें</string>
+    <string name="select_aadhaar_front">सामने वाले आधार कार्ड का चयन करें</string>
+    <string name="select_adhaar_back">पीछे की ओर आधार कार्ड चयन करें</string>
+    <string name="all_allow">सभी को अनुमति दें</string>
+    <string name="remind_me_later">मुझे बाद में याद दिलाना</string>
+    <string name="check_runtiome_permission_message"><![CDATA[\"<p>प्रिय उपयोगकर्ता , </p><p>तुम्हारे जैसा लगता है <b>\"निषेध\"</b> आवेदन की अधिक सुविधाओं का उपयोग करने के लिए न्यूनतम आवश्यकता अनुमति।</p><p>आपको करना ही होगा <b>\"अनुमति\"</b> सभी अनुमति। हम आपके डेटा को किसी और के साथ साझा नहीं करेंगे।</p><p>क्या आप सभी आवश्यकताओं की अनुमति सक्षम करना चाहते हैं?</p><p>सेटिंग्स में जाओ >> एप्लिकेशन > \"]]></string>
+    <string name="count">\" गिनती: \"</string>
+    <string name="select_enrolled_w_star">नामांकित का चयन करें</string>
+    <string name="academic">अकादमिक</string>
+    <string name="tool_parent">माता-पिता</string>
+    <string name="basic">बुनियादी</string>
+    <string name="bank">बैंक</string>
+    <string name="update_profile">प्रोफ़ाइल अपडेट करें</string>
+    <string name="personal">व्यक्तिगत</string>
+    <string name="create_questions">प्रश्न बनाएं</string>
+    <string name="update_questions">प्रश्न अपडेट करें</string>
+    <string name="enter_option">\"विकल्प डालें \"</string>
+    <string name="select_right_answer">\"सही उत्तर का चयन करें \"</string>
+    <string name="create_quiz">क्विज बनाएं</string>
+    <string name="please_enter_quiz_name">कृपया क्विज नाम दर्ज करें</string>
+    <string name="please_select_quiz_type">कृपया क्विज प्रकार चुनें</string>
+
+    <string name="assign_quiz">क्विज असाइन करें</string>
+    <string name="please_select_subject">कृपया विषय का चयन करें</string>
+    <string name="please_enter_marks">कृपया अंक दर्ज करें</string>
+    <string name="please_enter_no_of_attempts">कृपया प्रयासों की संख्या दर्ज करें</string>
+    <string name="please_enter_time">कृपया समय दर्ज करें</string>
+    <string name="end_this_test">क्या आप वाकई इस परीक्षा को समाप्त करना चाहते हैं?</string>
+    <string name="submit_this_test">क्या आप वाकई यह परीक्षण सबमिट करना चाहते हैं?</string>
+    <string name="hour">\" घंटे\"</string>
+    <string name="minute">\" मिनट\"</string>
+    <string name="test_time_up">आपका समय समाप्त हो गया है, कृपया प्रश्नोत्तरी जमा करें।</string>
+    <string name="scorecard">उपलब्धिः</string>
+    <string name="student_or_date">छात्र/तिथि</string>
+    <string name="email_subject_message">निःशुल्क mSchooling अनुप्रयोग के बारे में प्रश्न</string>
+    <string name="whatsapp_not_exist">WhatsApp मौजूद नहीं है</string>
+    <string name="you_have_added_any_reason">आपने कोई कारण जोड़ा है</string>
+    <string name="update_class">कक्षा अपडेट करें</string>
+    <string name="enter_section_name">कृपया अनुभाग नाम दर्ज करें</string>
+    <string name="cant_create_more_section">क्षमा करें आप 6 से अधिक अनुभाग नहीं बना सकते हैं</string>
+    <string name="add_omplaint">शिकायत जोड़ें</string>
+    <string name="please_select_reason">कृपया कारण चुनें।</string>
+    <string name="please_enter_message">कृपया संदेश दर्ज करें।</string>
+    <string name="select_reason">कारण चुनें</string>
+    <string name="select_reason_s">कारण चुनें *</string>
+    <string name="add_event">आयोजन जोड़ें</string>
+    <string name="update_event">आयोजन अपडेट करें</string>
+    <string name="please_enter_event_name">कृपया आयोजन नाम दर्ज करें</string>
+    <string name="please_enter_event_description">कृपया आयोजन विवरण दर्ज करें</string>
+    <string name="enter_title">शीर्षक दर्ज करें</string>
+    <string name="error_msg_something_went_wrong">कुछ गलत हो गया। कृपया पुन: प्रयास करें।</string>
+    <string name="add_notice">सूचना जोड़ें</string>
+    <string name="please_enter_notice_title">कृपया सूचना शीर्षक दर्ज करें।</string>
+    <string name="please_enter_notice">कृपया सूचना दर्ज करें।</string>
+    <string name="location">स्थान</string>
+    <string name="location_not_enable">स्थान सक्षम नहीं है!</string>
+    <string name="open_location_setting">स्थान सेटिंग खोलें</string>
+    <string name="location_not_support_device">इस मोबाइल में स्थान समर्थित नहीं है</string>
+    <string name="unable_to_create_maps">माफ़ करना! नक्शे बनाने में असमर्थ</string>
+    <string name="google_play_services_not_available">\"गूगल प्ले सेवाएँ उपलब्ध नहीं हैं: \"</string>
+    <string name="update_subject">विषय अपडेट करें</string>
+    <string name="admin_login_message">आपने व्यवस्थापक भूमिका के साथ लॉग इन किया है। यह भूमिका अनधिकृत उपयोगकर्ताओं के लिए प्रतिबंधित है यदि आप इसका उपयोग करने के लिए अधिकृत नहीं हैं तो कृपया तुरंत लॉग आउट करें।</string>
+    <string name="backpress_message">बाहर निकलने के लिए फिर से दबाएं</string>
+    <string name="app_update_message">\"mSchooling का एक नया संस्करण उपलब्ध है। कृपया संस्करण में अपडेट करें\"</string>
+    <string name="now">\" अभी \"</string>
+    <string name="coming_soon">जल्द आ रहा है</string>
+    <string name="enter_complete_old_passcode">पुराना पासकोड दर्ज करें</string>
+    <string name="enter_complete_new_passcode">नया पासकोड दर्ज करें</string>
+    <string name="enter_confirm_passcode">पासकोड की पुष्टि करें</string>
+    <string name="enter_complete_confirm_passcode">पूर्ण पुष्टि पासकोड दर्ज करें</string>
+    <string name="password_confirm_does_not_match">पासवर्ड और पुष्टि पासवर्ड मेल नहीं खाते</string>
+    <string name="Ppease_select_at_least_class_section">कृपया कम से कम एक वर्ग / अनुभाग चुनें</string>
+    <string name="please_select_the_class">कृपया कक्षा का चयन करें</string>
+    <string name="tool_complaints">शिकायत</string>
+    <string name="tool_add_group">समूह जोड़ें</string>
+    <string name="update_add_group">अपडेट समूह</string>
+    <string name="enter_group_name">समूह का नाम दर्ज करें</string>
+    <string name="tool_events">आयोजन</string>
+    <string name="please_give_the_feedback">कृपया प्रतिक्रिया दें</string>
+
+    <string name="forget">भूल जाओ</string>
+    <string name="tool_groups">समूहों</string>
+    <string name="help">सहायता</string>
+    <string name="please_suggest_new_features">कृपया नई सुविधाओं का सुझाव दें</string>
+    <string name="tool_i_cards">पहचान पत्र</string>
+    <string name="upload_image">तस्वीर डालिये</string>
+    <string name="please_insert_image">कृपया छवि डालें</string>
+    <string name="please_insert_pdf">कृपया पीडीएफ डालें</string>
+    <string name="tool_select_language">भाषा का चयन करें</string>
+    <string name="tool_login">लॉग इन करें</string>
+<!--    <string name="login_privacy_poicy">\"जारी रखकर, आप संकेत दे रहे हैं कि आपने उपयोग की शर्तों और गोपनीयता नीति को पढ़ लिया है और इससे सहमत हैं \"</string>-->
+    <string name="login_privacy_poicy">By continuing, you are indicating that you have read and agree to the Terms of Use and  Privacy Policy</string>
+    <string name="invalid_enrollment_id">अमान्य नामांकन आईडी</string>
+    <string name="tool_notices">नोटिस</string>
+    <string name="tool_verify_passcode">पासकोड सत्यापित करें</string>
+    <string name="enter_complete_otp">पूरा OTP दर्ज करें</string>
+    <string name="time_remaining">समय शेष: </string>
+    <string name="done">पूर्ण</string>
+    <string name="tool_timetable">समय सारणी</string>
+    <string name="update_student">नवीनीकृत छात्र</string>
+    <string name="download_pdf_viewer">उत्पन्न पीडीएफ को देखने के लिए एक पीडीएफ व्यूअर डाउनलोड करें</string>
+    <string name="qr_code_not_generated">क्यूआर कोड उत्पन्न नहीं होता है</string>
+    <string name="enter_school_name">स्कूल का नाम दर्ज करें</string>
+    <string name="enter_school_description">स्कूल विवरण दर्ज करें</string>
+    <string name="select_opening_time">खुलने का समय चुनें</string>
+    <string name="select_closing_time">समापन समय का चयन करें</string>
+    <string name="enter_building_number">भवन संख्या दर्ज करें</string>
+    <string name="enter_street_locality_number">गली / मोहल्ला नंबर दर्ज करें</string>
+    <string name="enter_city_number">शहर का नंबर दर्ज करें</string>
+    <string name="enter_pin_code">पिन कोड दर्ज करें</string>
+    <string name="enter_valid_pin_code">मान्य पिन कोड दर्ज करें</string>
+    <string name="select_state">राज्य चुनें</string>
+    <string name="select_geo_location">स्थान चुनें</string>
+    <string name="enter_school_contact_number">स्कूल संपर्क नंबर दर्ज करें</string>
+    <string name="enter_school_email">स्कूल ईमेल दर्ज करें</string>
+    <string name="enter_valid_school_email">मान्य स्कूल ईमेल आईडी दर्ज करें</string>
+    <string name="enter_valid_admin_email">मान्य व्यवस्थापक ईमेल आईडी दर्ज करें</string>
+    <string name="enter_admin_name">व्यवस्थापक नाम दर्ज करें</string>
+    <string name="enter_admin_mobile">व्यवस्थापक मोबाइल दर्ज करें</string>
+    <string name="enter_valid_admin_mobile">मान्य व्यवस्थापक मोबाइल दर्ज करें</string>
+    <string name="enter_principle_name">प्रधान अध्यापक नाम दर्ज करें</string>
+    <string name="enter_principle_mobile">प्रधान अध्यापक मोबाइल दर्ज करें</string>
+    <string name="enter_valid_principle_mobile">वैध ्रधान अध्यापक मोबाइल दर्ज करें</string>
+    <string name="location_marked_on_map">मानचित्र पर आपका स्थान चिह्नित किया गया है</string>
+    <string name="type_your_issue">अपना मुद्दा लिखें</string>
+    <string name="please_add_report_an_issue">कृपया रिपोर्ट को एक समस्या जोड़ें</string>
+    <string name="please_select_report_an_issue">कृपया किसी समस्या की रिपोर्ट चुनें</string>
+
+    <string name="message_is_not_working">संदेश काम नहीं कर रहा है</string>
+    <string name="notification_is_not_working">अधिसूचना ठीक से काम नहीं कर रही है</string>
+    <string name="student_details_not_working">छात्र का विवरण काम नहीं कर रहा है</string>
+    <string name="not_able_to_add_remove_student">छात्र को जोड़ने / हटाने में सक्षम नहीं</string>
+    <string name="not_able_to_add_remove_teacher">शिक्षक को जोड़ने / हटाने में सक्षम नहीं</string>
+    <string name="tool_salary">वेतन</string>
+    <string name="school_details">स्कूल का विवरण</string>
+    <string name="tool_student_details">जानकारी</string>
+    <string name="tool_teacher_details">जानकारी</string>
+    <string name="tool_guide">मार्गदर्शक</string>
+    <string name="are_you_sure">क्या आप ज़रूर ही यह कार्य करना चाहते हैं</string>
+    <string name="question_symbol">\?</string>
+    <string name="something_went_wrong">कुछ गलत हो गया</string>
+    <string name="tool_filter">फ़िल्टर</string>
+    <string name="end_date_should_be_greater">अंतिम तिथि प्रारंभ तिथि से अधिक होनी चाहिए!</string>
+    <string name="tool_subjects">विषय</string>
+    <string name="tool_absence">अनुपस्थित</string>
+    <string name="you_cant_delete_this_record">आप इस रिकॉर्ड को हटा नहीं सकते</string>
+    <string name="you_cant_disable_this_record">आप इस रिकॉर्ड को निष्क्रिय नहीं कर सकते</string>
+    <string name="title_delete">हटाएं?</string>
+    <string name="are_you_sure_to_delete_record">क्या आप पक्का इसे हटाना चाहते हैं?</string>
+    <string name="whatsApp_not_installed">व्हाट्सएप इंस्टॉल नहीं है</string>
+    <string name="email_not_found">ईमेल आईडी नहीं मिली</string>
+    <string name="there_is_no_email_client_installed">कोई ईमेल सेवा उपलब्ध नहीं है</string>
+    <string name="tool_upload_yllabus">पाठ्यक्रम जोड़ें</string>
+    <string name="tool_update_yllabus">पाठ्यक्रम अपडेट करें</string>
+    <string name="please_scan_only_qr_code">कृपया केवल QR कोड स्कैन करें!</string>
+    <string name="please_enter_subject">कृपया विषय दर्ज करें।</string>
+    <string name="please_write_application">कृपया आवेदन लिखें।</string>
+    <string name="first_school">यह मेरा पहला स्कूल है</string>
+    <string name="first_admission">यह मेरा पहला प्रवेश है</string>
+    <string name="enter_street">मोहल्ला दर्ज करें</string>
+    <string name="enter_city_name">शहर का नाम दर्ज करें</string>
+    <string name="please_select_image">कृपया फ़ोटो का चयन करें</string>
+    <string name="enter_father_name">पिता का नाम दर्ज करें</string>
+    <string name="enter_fathers_mobile">पिता का मोबाइल डालें</string>
+    <string name="enter_mother_name">माता का नाम दर्ज करें</string>
+    <string name="enter_flat_number">फ्लैट / हाउस नंबर दर्ज करें</string>
+    <string name="enter_account_holder_ame">खाता धारक का नाम दर्ज करें</string>
+    <string name="enter_account_number">खाता संख्या दर्ज करें</string>
+    <string name="enter_name_of_the_bank">बैंक का नाम दर्ज करें</string>
+    <string name="enter_branch_name">शाखा का नाम दर्ज करें</string>
+    <string name="enter_bank_address">बैंक का पता दर्ज करें</string>
+    <string name="enter_ifsc_code">IFSC कोड डालें</string>
+    <string name="tool_meetings">बैठक</string>
+    <string name="failed_initialize_mschooling_sdk">\"mSchooling SDK को प्रारंभ करने में विफल। त्रुटि: \"</string>
+    <string name="live_plugin_not_supported_android_version">लाइव आपके एंड्राइड वर्शन पर उपलब्ध नहीं हैं!</string>
+    <string name="class_not_started_now">अभी क्लास शुरू नहीं हुई</string>
+    <string name="tool_add_meeting">मीटिंग जोड़ें</string>
+    <string name="tool_update_meeting">मीटिंग अपडेट करें</string>
+    <string name="enter_class_subject">कक्षा के विषय दर्ज करें</string>
+    <string name="failed">असफल हुआ</string>
+    <string name="you_need_enter_user_and_pass">आपको उपयोगकर्ता नाम और पासवर्ड दर्ज करने की आवश्यकता है।</string>
+    <string name="mschooling_sdk_msg">mSchooling SDK has not been initialized successfully or sdk is logging in.</string>
+    <string name="mschooling_sdk_not_initialized">mSchooling Sdk has not been initialized successfully</string>
+    <string name="login_failed_result_code">\"लॉगिन विफल परिणाम कोड = \"</string>
+    <string name="failed_to_initialize_wait_15_second">\"Failed to initialize please wait 15 second. Error: \"</string>
+    <string name="lower_all_hands_successfully">Lower all hands successfully</string>
+    <string name="reclaim_host_successfully">होस्ट को सफलतापूर्वक पुनर्प्राप्त करें</string>
+    <string name="need_password_or_display_name">पासवर्ड या प्रदर्शन नाम की आवश्यकता है</string>
+    <string name="end_meeting">मीटिंग समाप्त</string>
+    <string name="end">समाप्त</string>
+    <string name="leave_meeting">मीटिंग छोड़े</string>
+    <string name="leave_bo">Leave BO</string>
+    <string name="meeting_fail">मीटिंग असफल</string>
+    <string name="error">त्रुटि:</string>
+    <string name="need_register_to_join_this_webinar_meeting">\"Need register to join this webinar meeting \"</string>
+    <string name="meeting_alert">Meeting Alert</string>
+    <string name="end_or_start_meeting">आपकी एक बैठक है जो वर्तमान में प्रगति पर है। कृपया एक नई बैठक शुरू करने के लिए इसे समाप्त करें।</string>
+    <string name="end_other_meeting">समाप्त अन्य बैठक</string>
+    <string name="the_host_is_inviting_you_to_join_breakout_room">\"The host is inviting you to join Breakout Room: \"</string>
+    <string name="later">बाद में</string>
+    <string name="join">शामिल हों</string>
+    <string name="joining">शामिल हो रहा है</string>
+    <string name="action">कार्य</string>
+    <string name="add_success_anonymously">गुमनाम रूप से सफलता जोड़ें:</string>
+    <string name="add_fail_anonymously">अनाम रूप से विफल जोड़ें:</string>
+    <string name="fails">fail</string>
+    <string name="first_create_break_room">सबसे पहले ब्रेक रूम बनाएं</string>
+    <string name="break_rooms_already_exists">ब्रेक रूम पहले से मौजूद हैं</string>
+    <string name="close_all_bo">Close All BO</string>
+    <string name="open_all_bo">Open All BO</string>
+    <string name="join_successfully">सफलतापूर्वक सम्मिलित हों</string>
+    <string name="join_failed">Join failed</string>
+    <string name="all_participants_breakout_rooms">All participants have been assigned to Breakout Rooms.</string>
+    <string name="mark_attendance">उपस्थिति लगाये</string>
+    <string name="tool_quiz">प्रश्नोत्तरी</string>
+    <string name="no_subject_found">कोई विषय नहीं मिला</string>
+    <string name="select_font">फ़ॉन्ट का चयन करें</string>
+    <string name="scan_enter_qr_code">QR कोड स्कैन / दर्ज करें</string>
+    <string name="pleaselook_the_form_and_filled_it_carefully">कृपया फॉर्म देखें और इसे ध्यान से भरें</string>
+    <string name="are_you_sure_you_want_to">क्या आप निस्चय ही यह कार्य करना चाहते हैं </string>
+    <string name="select_subject_star">विषय का चयन करें *</string>
+    <string name="sect">अनुभाग :</string>
+    <string name="section_star">अनुभाग *</string>
+    <string name="username2">उपयोगकर्ता नाम</string>
+    <string name="password2">पासवर्ड</string>
+    <string name="please_enter_password">कृप्या पास्वर्ड दर्ज करें</string>
+    <string name="please_enter_user_name">कृपया उपयोगकर्ता नाम दर्ज करें</string>
+    <string name="update_Setup">अपडेट व्यवस्था</string>
+    <string name="create_examination">परीक्षा बनाएँ</string>
+    <string name="enter_exam_name">परीक्षा का नाम दर्ज करें *</string>
+    <string name="please_enter_exam">कृपया परीक्षा दर्ज करें</string>
+    <string name="select_exam_type">Select exam type</string>
+    <string name="select_exam_type_star">परीक्षा प्रकार का चयन करें *</string>
+    <string name="update_examination">परीक्षा अपडेट करें</string>
+    <string name="select_exam_star">परीक्षा *</string>
+    <string name="select_exam">परीक्षा का चयन करें</string>
+    <string name="enter_total_mark">कुल अंक दर्ज करें *</string>
+    <string name="tatal_mark">कुल अंक  :</string>
+    <string name="obtained_mark">प्राप्त अंक</string>
+    <string name="mark">अंक</string>
+    <string name="please_enter_tatal_mark">कृपया कुल अंक दर्ज करें</string>
+    <string name="clas">कक्षा : </string>
+    <string name="sub">विषय :</string>
+    <string name="theory">सैद्धांतिक</string>
+    <string name="practical">व्यावहारिक</string>
+    <string name="enter_subject_code">विषय कोड दर्ज करें</string>
+    <string name="enter_priority">प्राथमिकता दर्ज करें(क्रम प्रदर्शित करने के लिए)</string>
+    <string name="upgrade_to_premium">प्रीमियम में अपग्रेड करें</string>
+    <string name="video_category">"श्रेणी का नाम *"</string>
+    <string name="enter_category_name">श्रेणी का नाम दर्ज करें</string>
+    <string name="categories">श्रेणियाँ</string>
+    <string name="add_category">श्रेणी जोड़ें</string>
+    <string name="update_category">अपडेट श्रेणी</string>
+    <string name="enter_zoom_email_id">ज़ूम ईमेल आईडी दर्ज करें *</string>
+    <string name="enter_zoom_password">ज़ूम पासवर्ड दर्ज करें *</string>
+    <string name="zoom_credentials">ज़ूम प्रत्यय-पत्र</string>
+    <string name="zoom_correct_login_id_password">इसके लिए आपको सही यूजर नेम और पासवर्ड डालना होगा।</string>
+    <string name="zoom">ज़ूम प्रत्यय-पत्र</string>
+
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_01">01</string>
+    <string name="_02">02</string>
+    <string name="_03">03</string>
+    <string name="_04">04</string>
+    <string name="_05">05</string>
+    <string name="_06">06</string>
+    <string name="_07">07</string>
+    <string name="_08">08</string>
+    <string name="_09">09</string>
+    <string name="_10">10</string>
+    <string name="_11">11</string>
+    <string name="_12">12</string>
+    <string name="_13">13</string>
+    <string name="_14">14</string>
+    <string name="_15">15</string>
+    <string name="_16">16</string>
+    <string name="_17">17</string>
+    <string name="_18">18</string>
+    <string name="_19">19</string>
+    <string name="_20">20</string>
+    <string name="_21">21</string>
+    <string name="_22">22</string>
+    <string name="_23">23</string>
+    <string name="_24">24</string>
+    <string name="_25">25</string>
+    <string name="_26">26</string>
+    <string name="_27">27</string>
+    <string name="_28">28</string>
+    <string name="_29">29</string>
+    <string name="_30">30</string>
+    <string name="_31">31</string>
+    <string name="_32">32</string>
+    <string name="_33">33</string>
+    <string name="_34">34</string>
+    <string name="_35">35</string>
+    <string name="_36">36</string>
+    <string name="view_profile">प्रोफाइल देखें</string>
+    <string name="id_card">आईडी कार्ड</string>
+    <string name="rate_us">हमें रेट करें</string>
+    <string name="enter_otp">ओटीपी डालें</string>
+    <string name="sent_four_digit_otp">हमने आपके रजिस्टर्ड मोबाइल नंबर  919506228028 पर चार अंकों का ओटीपी भेजा है।</string>
+    <string name="resend_otp">फिर से भेजें ओटीपी</string>
+    <string name="enter_verification_code">पासकोड दर्ज करें</string>
+    <string name="we_have_sent_you_a_4_digit_verification_code">हमने आपको 4 अंकों का सत्यापन कोड भेजा है</string>
+    <string name="show_quiz_for">के लिए प्रश्नोत्तरी दिखाएं:</string>
+    <string name="enter_name">नाम दर्ज करें</string>
+    <string name="admission_date">प्रवेश तिथि</string>
+    <string name="status">स्थिति</string>
+    <string name="active">सक्रिय</string>
+    <string name="disabled">अक्षम</string>
+    <string name="deleted">हटाए गए</string>
+    <string name="proceed">आगे बढे</string>
+    <string name="no_filter">कोई फ़िल्टर नहीं</string>
+    <string name="joining_date">शामिल होने की तारीख</string>
+    <string name="subject_w_star">विषय</string>
+    <string name="role">भूमिका</string>
+    <string name="_0000001">(0000001)</string>
+
+    <string name="report_an_issue">किसी समस्या की रिपोर्ट करें</string>
+    <string name="send_feedback">फीडबैक भेजें</string>
+    <string name="suggest_new_features">सुविधाओं का सुझाव दें</string>
+    <string name="contact_us">हमसे संपर्क करें</string>
+    <string name="invalid_qr_code">अमान्य क्यूआर कोड। वैध Qr कोड/फोटो के लिए अपने स्कूल Amdin से संपर्क करें ।</string>
+    <string name="need_help">मदद की जरूरत है?</string>
+    <string name="pancard">पैनकार्ड </string>
+    <string name="place_card_inside_the_box">बॉक्स के अंदर कार्ड रखें</string>
+    <string name="review_pan_card">पैन कार्ड की समीक्षा करें</string>
+    <string name="retake">फिर से लें</string>
+    <string name="class_description">कक्षा (विवरण)</string>
+    <string name="add_subject_plus">विषय जोड़ें</string>
+    <string name="no_record_found">कोई रिकॉर्ड नहीं मिला</string>
+    <string name="group_name">समूह का नाम</string>
+    <string name="d_o_a">प्रवेश तिथि</string>
+    <string name="mode">मोड</string>
+    <string name="profile_photo">प्रोफाइल फोटो</string>
+    <string name="father_s_name_star">पिता का नाम *</string>
+    <string name="mobile_no_star">मोबाइल नंबर *</string>
+    <string name="name_star">नाम *</string>
+    <string name="call_us">हमें कॉल करें</string>
+    <string name="sent">भेजा</string>
+    <string name="_5th">5वीं</string>
+    <string name="class_wise">कक्षावार</string>
+    <string name="full_name">पूरा नाम</string>
+    <string name="first_name_w_star">पहला नाम</string>
+    <string name="mobile_w_star">मोबाइल</string>
+    <string name="select">चुनें</string>
+    <string name="date_time_static">03/03/2019 2:49 AM</string>
+    <string name="posted_by">द्वारा पोस्ट किया गया</string>
+    <string name="notice_title">नोटिस शीर्षक</string>
+    <string name="present">उपस्थित</string>
+    <string name="absent">अनुपस्थित</string>
+    <string name="leave">छुट्टी</string>
+    <string name="p">P</string>
+    <string name="star_1">*</string>
+    <string name="name_other">नाम:</string>
+    <string name="enrl_id">नामांकन आईडी:</string>
+    <string name="time_other">समय:</string>
+    <string name="history">इतिहास</string>
+    <string name="pay">भुगतान</string>
+    <string name="rs_static">-1000</string>
+    <string name="time_static">12:45</string>
+    <string name="closing_amount">समापन राशि</string>
+    <string name="jan">जनवरी</string>
+    <string name="n_a">N/A</string>
+    <string name="total">कुल</string>
+    <string name="comma_symbol">-</string>
+    <string name="paid">भुगतान किया</string>
+    <string name="equal_symbol">=</string>
+    <string name="due">बाकी</string>
+    <string name="an_hour_ago">एक घंटे पहले</string>
+    <string name="student_name">छात्र/छात्रा का नाम</string>
+    <string name="remove">निकालें</string>
+    <string name="always_on_time">हमेशा समय पर</string>
+    <string name="class_other">कक्षा :</string>
+    <string name="first_a">प्रथम (क)</string>
+    <string name="first_name_other">पहला नाम:</string>
+    <string name="last_name_other">अंतिम नाम:</string>
+    <string name="mobile_number_other">मोबाइल नंबर:</string>
+    <string name="father_name_other">पिता का नाम:</string>
+    <string name="mother_name_other">मां का नाम:</string>
+    <string name="gender_other">लिंग:</string>
+    <string name="requested_on_other">पर अनुरोध किया:</string>
+    <string name="decline">इनकार</string>
+    <string name="accept">स्वीकार</string>
+    <string name="roll_number_other">रोल नंबर:</string>
+    <string name="email_other">ईमेल:</string>
+    <string name="section_other">अनुभाग:</string>
+    <string name="dob_other">जन्म तिथि:</string>
+    <string name="_0">0</string>
+    <string name="start_time_other">प्रारंभ समय:</string>
+    <string name="duration_other">अवधि:</string>
+    <string name="password_other">पासवर्ड:</string>
+    <string name="subject_other">विषय :</string>
+    <string name="hindi">हिंदी</string>
+    <string name="husband_father_other">पति/पिता:</string>
+    <string name="father_husband_other">पिता/पति:</string>
+    <string name="from_to">से - तक</string>
+    <string name="school_name_static">G.A.S. Memorial Public School</string>
+    <string name="open">खोलो</string>
+    <string name="first">पहले</string>
+    <string name="close">बंद करना</string>
+    <string name="school_code">स्कूल कोड</string>
+    <string name="qrcode">क्यूआर कोड</string>
+    <string name="qr_code">क्यूआर कोड</string>
+
+    <string name="office">(ऑफिस)</string>
+    <string name="contact_no">संपर्क नंबर</string>
+    <string name="adminname">adminName</string>
+    <string name="admin">(व्यवस्थापक)</string>
+    <string name="principalname">PrincipalName</string>
+
+    <string name="section">अनुभाग</string>
+    <string name="write_application">आवेदन लिखें *</string>
+    <string name="write_application_w">आवेदन लिखें</string>
+    <string name="add_bo">Add BO</string>
+    <string name="edit_bo_name">Edit BO name:</string>
+    <string name="input_a_bo_name">input a bo name</string>
+    <string name="bo_members">BO members:</string>
+    <string name="delete_bo">Delete BO</string>
+    <string name="save_bo_name">Save BO Name</string>
+    <string name="add_question">प्रश्न जोड़ें</string>
+    <string name="all">सब</string>
+    <string name="my">मेरा</string>
+    <string name="answered">दिया गया उत्तर</string>
+    <string name="dismissed">खारिज कर दिया</string>
+    <string name="bo1">bo1</string>
+    <string name="assign">सौंपे</string>
+    <string name="user1">user1</string>
+    <string name="assign_to">सौंपे</string>
+    <string name="move_to">ले जाएँ</string>
+    <string name="username">उपयोगकर्ता का नाम</string>
+    <string name="username_s">उपयोगकर्ता का नाम *</string>
+    <string name="password">पासवर्ड</string>
+    <string name="password_s">पासवर्ड *</string>
+    <string name="audio">ऑडियो</string>
+    <string name="video">वीडियो</string>
+    <string name="chats">चैट</string>
+    <string name="more">अधिक</string>
+    <string name="item">आइटम</string>
+    <string name="powered_by_mschooling">mSchooling</string>
+    <string name="join_bo">Join Bo</string>
+    <string name="request_for_help">मदद के लिए अनुरोध</string>
+    <string name="connecting">कनेक्ट हो रहा है…</string>
+    <string name="wait_host_to_start_this_meeting">इस बैठक को शुरू करने के लिए होस्ट का इंतजार करें …</string>
+    <string name="please_wait_the_meeting_host_will_let_you_in_soon">कृपया प्रतीक्षा करें, बैठक की मेजबानी आपको जल्द ही अंदर जाने देगी।</string>
+    <string name="pending">लंबित</string>
+    <string name="timetable">समय सारिणी</string>
+    <string name="please_select_class">कृपया कक्षा का चयन करें</string>
+    <string name="please_select_class_section">कृपया कक्षा / अनुभाग का चयन करें</string>
+    <string name="please_select_class_and_subject">कृपया कक्षा और विषय चुनें</string>
+    <string name="enter_meeting_subject">मीटिंग विषय दर्ज करें!</string>
+    <string name="select_role">भूमिका का चयन करें</string>
+    <string name="select_time_w_star">समय का चयन करें</string>
+    <string name="homework">होमवर्क</string>
+    <string name="notification">सूचनाएँ</string>
+    <string name="network_error_msg">कुछ गलत हो गया है, कृपया अपना इंटरनेट कनेक्शन जांचें और पुनः प्रयास करें।</string>
+    <string name="register_message">यदि आपका स्कूल mSchooling के साथ रजिस्टर नहीं है, कृपया इसे अभी रजिस्टर करें (केवल प्रशासन के लिए)</string>
+
+    <string name="application_reason">आवेदन कारण</string>
+    <string name="subs_mgs">mSchooling आपके लिए एक भुगतान योजना प्रदान करता है, कृपया हमारी सदस्यता योजना खरीदें।</string>
+    <string name="subs_mgs2">आपके स्कूल ने हमारी सेवा की सदस्यता नहीं ली है । कृपया अपने स्कूल प्रशासन तक पहुंचें ।</string>
+    <string name="apply_subs">सदस्यता के लिए आवेदन करें</string>
+    <string name="applied_subs">सदस्यता के लिए आवेदन किया गया है</string>
+    <string name="plan">योजना</string>
+    <string name="per_st_per_mnth">प्रति छात्र प्रति माह</string>
+    <string name="error_player">YouTube प्लेयर को प्रारंभ करने में एक त्रुटि हुई थी (%1$s)</string>
+    <string name="video_name">वीडियो का नाम दर्ज करें*</string>
+    <string name="enter_url">यूआरएल दर्ज/पेस्ट करें*</string>
+    <string name="open_time">खोलने का समय *</string>
+    <string name="close_time">बंद करने का समय *</string>
+    <string name="gstin">जीएसटीआईएन</string>
+    <string name="address_details">पता विवरण</string>
+    <string name="building_no">बिल्डिंग नं. *</string>
+    <string name="contact_details">संपर्क विवरण</string>
+    <string name="school_contact2">स्कूल संपर्क *</string>
+    <string name="school_email">स्कूल ईमेल *</string>
+    <string name="admin_details">व्यवस्थापक विवरण</string>
+    <string name="email2">ईमेल</string>
+    <string name="principal_detail">प्रिंसिपल विवरण</string>
+    <string name="social_media">सोशल मीडिया</string>
+    <string name="welcome_to_mschooling">mSchooling में आपका स्वागत है!</string>
+    <string name="mschooling_description">mSchooling एक अनुभवी, सबसे विश्वसनीय और सत्यापित स्कूल मोबाइल ऐप है जिसे mSchooling Community द्वारा जो Innobins Decision Science Pvt Ltd. की एक आंतरिक इकाई है, के द्वारा विकसित किया गया है। शिक्षकों के दैनिक जीवन को सरल बनाने के लिए । mSchooling देश भर में स्कूलों, कोचिंग और कॉलेजों जैसे शैक्षिक संस्थानों के लिए सबसे अच्छा ई-गवर्नेंस ईआरपी और सर्वश्रेष्ठ श्रेणी के मोबाइल अनुप्रयोगों में से एक प्रदान करता है ।</string>
+    <string name="step1">चरण 1</string>
+    <string name="all_class_message">कृपया सभी कक्षाओं को जोड़ें।</string>
+    <string name="step2">चरण 2</string>
+    <string name="add_all_subject">कृपया सभी अनिवार्य और वैकल्पिक विषयों को जोड़ें।</string>
+    <string name="session_expire">आपका सत्र समाप्त हो गया है कृपया फिर से लॉगिन करें।</string>
+    <string name="setup2">सेटअप</string>
+    <string name="add_study_material">अध्ययन सामग्री जोड़ें</string>
+    <string name="update_study_material">अपडेट अध्ययन सामग्री</string>
+    <string name="study_material">अध्ययन सामग्री</string>
+    <string name="select_category">श्रेणी का चयन करें</string>
+    <string name="upload__aadhaar_card">आधार कार्ड अपलोड करें</string>
+    <string name="pan_number">पैन नंबर</string>
+    <string name="enrollment_id_s">नामांकन आईडी *</string>
+    <string name="group_name_cant_other">समूह का नाम Other नहीं हो सकता</string>
+    <string name="priority">प्राथमिकता</string>
+    <string name="fee_payment_not_working">शुल्क भुगतान काम नहीं कर रहा है</string>
+
+    <string name="note_attendance_mode">नोट: आप इसे आगे नहीं बदल पाएंगे, इसलिए सुरक्षित करने से पहले सोच लेें ।</string>
+    <string name="select_s">मोड का चयन करें *</string>
+    <string name="attendance_mode_error_message">क्षमा करें, उपस्थिति मोड सेटअप नहीं है, कृपया अपने स्कूल प्रशासन से संपर्क करें।</string>
+    <string name="result">परिणाम</string>
+    <string name="add_fee">शुल्क जोड़ें</string>
+    <string name="update_fee">अपडेट शुल्क</string>
+    <string name="enter_fee_amount">शुल्क राशि दर्ज करें (सालाना)*</string>
+    <string name="fees">शुल्क</string>
+    <string name="fee_details">Fee Details</string>
+    <string name="enter_fee_type_name_s">शुल्क प्रकार का नाम दर्ज करें *</string>
+    <string name="enter_fee_type_name">शुल्क प्रकार का नाम दर्ज करें</string>
+    <string name="enter_fee_amount_msg">शुल्क राशि दर्ज करें</string>
+    <string name="select_fee">शुल्क का चयन करें</string>
+    <string name="select_fee_s">शुल्क का चयन करें *</string>
+    <string name="select_student_s">छात्र का चयन करें *</string>
+    <string name="enter_amount">राशि दर्ज करें *</string>
+    <string name="enter_late_fee">लेट फीस दर्ज करें (यदि है)</string>
+    <string name="enter_note">नोट दर्ज करें</string>
+    <string name="enter_paid_fee" >भुगतान शुल्क दर्ज करें *</string>
+    <string name="publish" >प्रकाशित करें</string>
+    <string name="unpublish">अप्रकाशित</string>
+    <string name="published" >प्रकाशित है</string>
+    <string name="publish_confirmation" >क्या आप सुनिश्चित हैं कि आप प्रकाशित करना चाहते हैं?</string>
+    <string name="unpublish_confirmation">क्या आप वाकई अप्रकाशित करना चाहते हैं?</string>
+    <string name="request_submitted">अनुरोध प्रस्तुत किया गया</string>
+    <string name="enter_prayer_s">प्रार्थना दर्ज करें *</string>
+    <string name="enter_prayer">प्रार्थना दर्ज करें </string>
+    <string name="enter_title_s">शीर्षक दर्ज करें *</string>
+    <string name="add_prayer">प्रार्थना जोड़ें</string>
+    <string name="update_prayer">प्रार्थना अपडेट करें</string>
+    <string name="pay_fee">भुगतान शुल्क</string>
+    <string name="prayer">प्रार्थना</string>
+    <string name="verify_otp">ओटीपी सत्यापित करें</string>
+    <string name="you_will_receive_otp">(आपको इस नंबर पर ओटीपी प्राप्त होगा)</string>
+
+    <string-array name="class_arr">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4rd</item>
+    </string-array>
+    <string-array name="subject_type">
+        <item>MANDATORY</item>
+        <item>OPTIONAL</item>
+        <item>OTHER</item>
+    </string-array>
+    <string-array name="select_dept">
+        <item>TEACHER</item>
+        <item>STUDENT</item>
+    </string-array>
+    <string-array name="send_via">
+<!--        <item>Email</item>-->
+        <item>SMS</item>
+    </string-array>
+    <string-array name="session_arr">
+        <item>2017 – 2018</item>
+        <item>2018 – 2019</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+
+    </string-array>
+
+
+    <string-array name="exam">
+        <item>ASSESSMENT</item>
+        <item>GRADING</item>
+
+    </string-array>
+    <string-array name="quizType">
+        <item>Select</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+
+    </string-array>
+
+
+    <string-array name="attendance">
+        <item>Tab to mark</item>
+        <item>Present</item>
+        <item>Absent</item>
+        <item>Leave</item>
+<!--        <item>Half Day</item>-->
+
+    </string-array>
+    <string-array name="bloodGroup">
+        <item>Not Confirmed</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+
+    </string-array>
+    <string-array name="transport">
+        <item>Self</item>
+        <item>Schools Transport</item>
+        <item>No need</item>
+
+    </string-array>
+    <string-array name="student_type">
+        <item>Regular</item>
+        <item>Distance</item>
+    </string-array>
+    <string-array name="sport">
+        <item>Cricket</item>
+        <item>Hockey</item>
+        <item>Football</item>
+        <item>Volleyball</item>
+
+    </string-array>
+    <string-array name="category">
+        <item>General</item>
+        <item>OBC</item>
+        <item>SC</item>
+        <item>ST</item>
+
+    </string-array>
+    <string-array name="religion">
+        <item>Hindu</item>
+        <item>Islam</item>
+        <item>Cristian</item>
+        <item>Sikh</item>
+        <item>Other</item>
+
+    </string-array>
+    <string-array name="blood">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+
+    </string-array>
+    <string-array name="state">
+        <item>Select State</item>
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+
+    </string-array>
+    <string-array name="last_school">
+        <item>This is my first school</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="last_class">
+        <item>This is my first admission</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="country">
+        <item>India</item>
+    </string-array>
+
+
+    <string-array name="states">
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>JANUARY</item>
+        <item>FEBUARY</item>
+        <item>MARCH</item>
+        <item>APRIL</item>
+        <item>MAY</item>
+        <item>JUNE</item>
+        <item>JULY</item>
+        <item>AUGUST</item>
+        <item>SEPTEMBER</item>
+        <item>OCTOBER</item>
+        <item>NOVEMBER</item>
+        <item>DECEMBER</item>
+
+    </string-array>
+
+
+    <string-array name="year">
+        <item>2020</item>
+        <item>2021</item>
+    </string-array>
+
+
+    <string-array name="days">
+        <item>ALL</item>
+        <item>MONDAY</item>
+        <item>TUESDAY</item>
+        <item>WEDNESDAY</item>
+        <item>THURSDAY</item>
+        <item>FRIDAY</item>
+        <item>SATURDAY</item>
+        <item>SUNDAY</item>
+    </string-array>
+
+    <string-array name="select_role">
+        <item>SELECT</item>
+        <item>TEACHER</item>
+        <item>STUDENT</item>
+    </string-array>
+
+    <string-array name="select_enrolled">
+        <item>ENROLLED</item>
+    </string-array>
+
+    <string name="min40">40 मि.</string>
+    <string name="please_select_student">कृपया छात्र का चयन करें</string>
+    <string name="academic_session">शैक्षणिक सत्र</string>
+    <string name="facebook">फेसबुक</string>
+    <string name="twitter">ट्विटर</string>
+    <string name="linkedIn">लिंक्डइन</string>
+    <string name="scroll">दाएं से बाएं स्क्रॉल करें</string>
+    <string name="are_you_sure2">क्या आप वाकई करना चाहते हैं?</string>
+    <string name="enter_content">सामग्री दर्ज करें</string>
+    <string name="content">सामग्री *</string>
+    <string name="start_time">प्रश्नोत्तरी प्रारंभ समय *</string>
+    <string name="end_time">प्रश्नोत्तरी समाप्ति समय *</string>
+    <string name="create_result">परिणाम बनाएं</string>
+    <string name="quiz">परिणाम</string>
+    <string name="assignment">असाइनमेंट</string>
+    <string name="update_quiz">प्रश्नोत्तरी अपडेट करें</string>
+    <string name="low">कम</string>
+    <string name="medium">मध्यम</string>
+    <string name="high">उच्च</string>
+    <string name="assigned_quiz">असाइन किया गया प्रश्नोत्तरी</string>
+    <string name="start_time_cant_less">समाप्ति समय प्रारंभ समय से कम नहीं हो सकता</string>
+    <string name="select_quiz_s">प्रश्नोत्तरी का चयन करें *</string>
+    <string name="select_quiz">प्रश्नोत्तरी का चयन करें</string>
+    <string name="please_select_quiz">कृपया प्रश्नोत्तरी का चयन करें</string>
+    <string name="total_marks">कुल अंक</string>
+    <string name="total_attempts">कुल प्रयास</string>
+    <string name="start_time2">समय शुरू</string>
+    <string name="end_time2">अंत समय</string>
+    <string name="total_time">कुल समय</string>
+    <string name="unassigned">अनअसाइन</string>
+    <string name="edit2">संपादित करें</string>
+    <string name="are_you_sure_you_want_to_unassigned">क्या आप वाकई अनअसाइन करना चाहते हैं</string>
+    <string name="enter_name_s">नाम दर्ज करे *</string>
+    <string name="share_app">ऐप शेयर करें</string>
+    <string name="claz">कक्षा</string>
+    <string name="start_quiz">प्रश्नोत्तरी शुरू करें</string>
+    <string name="enter_valid_qr_code">मान्य क्यूआर कोड दर्ज करें</string>
+    <string name="cant_create_more_options">आप 6 से अधिक विकल्प नहीं बना सकते</string>
+    <string name="same_as_monday">सोमवार के समान</string>
+    <string name="same_as_tuesday">मंगलवार के समान</string>
+    <string name="same_as_wednesday">बुधवार के समान</string>
+    <string name="same_as_thursday">गुरुवार के समान</string>
+    <string name="same_as_friday">शुक्रवार के समान</string>
+    <string name="same_as_saturday">शनिवार के समान</string>
+    <string name="public_resource">सार्वजनिक संसाधन</string>
+    <string name="defaults">डिफ़ॉल्ट</string>
+
+    <string name="percentage">प्रतिशत</string>
+    <string name="fee_type">शुल्क प्रकार</string>
+    <string name="total_fee">कुल शुल्क :</string>
+    <string name="paid_fee">भुगतान किया गया शुल्क : </string>
+    <string name="late_fee_charges">विलंब शुल्क शुल्क:</string>
+    <string name="mark_per_question">प्रति प्रश्न अंक</string>
+    <string name="something_went_wrong_please_try_again">माफ़ करें ! कुछ गलत हो गया, कृपया पुन: प्रयास करें।</string>
+    <string name="clear">Clear</string>
+    <string name="clear_all">Clear All</string>
+    <string name="not_found">नहीं मिला</string>
+    <string name="change_mobile_number">मोबाइल नंबर बदलें</string>
+    <string name="new_mobile_number">नया मोबाइल नंबर दर्ज करें *</string>
+    <string name="please_check_form">कृपया फॉर्म की जांच करें</string>
+    <string name="homework_detail">कृपया फॉर्म की जांच करें</string>
+    <string name="reject">अस्वीकार</string>
+    <string name="rejected">अस्वीकार किया</string>
+    <string name="accepted">स्वीकार किया</string>
+    <string name="not_submitted_yet">अभी तक प्रस्तुत नहीं किया गया</string>
+    <string name="upload_fresh">फिर से अपलोड करें</string>
+    <string name="birthday">जन्मदिन</string>
+
+    <string name="session_migration">aren</string>
+    <string name="enter_session_name">सत्र का नाम दर्ज करें</string>
+    <string name="enter_session_name_s">सत्र का नाम दर्ज करें *</string>
+    <string name="migrate">माइग्रेट</string>
+    <string name="admin_name">व्यवस्थापक का नाम *</string>
+
+    <string name="new_school">नया विद्यालय</string>
+    <string name="free_to_use">उपयोग करने के लिए नि: शुल्क</string>
+    <string name="student_teacher">विद्यार्थी/शिक्षक</string>
+    <string name="obtained_mark_cant_be">प्राप्त अंक कुल अंकों से अधिक नहीं हो सकते</string>
+    <string name="copied">कॉपी हो गया</string>
+    <string name="change_session">सत्र बदलें</string>
+    <string name="change_session_small">सत्र बदलें</string>
+    <string name="enter_passcode">पासकोड दर्ज करें</string>
+    <string name="enter_complete_passcode">पूरा पासकोड दर्ज करें</string>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:background="@color/divider_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/layoutSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@drawable/gradient_border"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="@string/title"
+                        android:maxLength="50"
+                        android:textSize="@dimen/dp_12" />
+
+                    <Spinner
+                        android:id="@+id/reason_spinner"
+                        style="@style/font"
+                        android:minHeight="@dimen/dp_45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_10"
+                        android:drawSelectorOnTop="true"
+                        android:spinnerMode="dialog" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/reasonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@drawable/gradient_border"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:maxLength="50"
+                        android:text="@string/enter_reason_star"
+                        android:textSize="@dimen/dp_12" />
+
+                    <EditText
+                        android:id="@+id/other_reason"
+                        style="@style/font"
+                        android:minHeight="@dimen/dp_45"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:padding="@dimen/dp_10"
+                        android:drawSelectorOnTop="true"
+                        android:spinnerMode="dialog" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/gradient_border"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="@string/enter_notice"
+                        android:textSize="@dimen/dp_12" />
+
+                    <EditText
+                        android:id="@+id/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="@dimen/dp_5"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:maxHeight="@dimen/dp_200"
+                        android:minHeight="@dimen/dp_150"
+                        android:padding="@dimen/dp_10" />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/font"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/dp_30"
+                android:background="@drawable/gradient_button"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

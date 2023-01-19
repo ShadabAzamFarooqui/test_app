@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divider_menu"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/header_back" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_55"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/dateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:background="@drawable/gradient_border"
+                    android:gravity="center">
+
+                    <com.app.mschooling.utils.BuzzTextView
+                        android:id="@+id/date"
+                        style="@style/Gotham_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date"
+                        android:textColor="@color/military_blue"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+
+                <include layout="@layout/no_record2" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/font"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/gradient_button_rectangle"
+                android:text="@string/print_amp_preview"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <include layout="@layout/custom_fab"
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"/>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,66 @@
+///TODO: before updating the app on store, we need to do the changes in following files.
+Change Package name from gradle,
+Change icon from Manifest file,
+Change app name from String file and uncomment 3 lines,
+Change google-service.json
+
+/// TODO: In short
+Gradle
+Manifest
+String/String-hi
+google-service.json
+
+///TODO: we need to remove following classes.
+ SelectSubjectListActivity remove
+ SelectSubjectListAdapter remove
+ ClassSubjectSelectionFragment remove
+
+///TODO: Need to be work on identification for admin/teacher/student.
+///TODO: its important and urgent
+
+
+///TODO: branch description.
+v5 =old code
+v6= code and class refactor in some file
+v7= package refactor
+v8= creating directories in res folder.
+
+///TODO: remove files
+
+
+
+///TODO: new files
+
+
+
+/// TODO: crash at line number 1171, onMeetingNeedPasswordOrDisplayName commented
+
+        public void onMeetingNeedPasswordOrDisplayName(boolean needPassword, boolean needDisplayName, InMeetingEventHandler handler) {
+
+
+            String password = meetingPassword;
+            String userName = userName1;
+            if (needPassword && TextUtils.isEmpty(password) || (needDisplayName && TextUtils.isEmpty(userName))) {
+                if (builder != null) {
+                    builder.dismiss();
+                }
+    //            onMeetingNeedPasswordOrDisplayName(needPassword, needDisplayName, handler);
+                return;
+            }
+            handler.setMeetingNamePassword(password, userName);
+        }
+
+
+
+///TODO: this is key used in app
+//  String DEVELOPER_KEY = "AIzaSyDjXflOA9IVCq0pPFWy6_3-u5iriQGoDfY";
+//  String YOUTUBE_KEY = "AIzaSyDX06JENX3V5px7WNHiYJV3AgpEto0UYXc";
+// mSchooling Key
+
+
+///TODO:
+MANAGE_EXTERNAL_STORAGE in manifest
+QRCodeActivity
+PrintIdCardActivity
+ResultListPrintActivity
+ResultActivityActivity

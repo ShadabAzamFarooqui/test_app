@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="@dimen/dp_10">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_gravity="center"
+        android:src="@drawable/user" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:orientation="vertical">
+
+        <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/name"
+            android:text="Name"
+            style="?android:attr/spinnerDropDownItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+
+            android:textStyle="bold" />
+
+
+        <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/enrolmentId"
+            android:text="Enrollment Id"
+            style="?android:attr/spinnerDropDownItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dp_13"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+
+            android:textStyle="bold" />
+
+
+        <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/schoolName"
+            android:text="School Name"
+            style="?android:attr/spinnerDropDownItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+
+            android:textSize="@dimen/dp_12" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

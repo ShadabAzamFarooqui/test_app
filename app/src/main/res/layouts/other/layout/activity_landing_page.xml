@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.app.mschooling.utils.BuzzTextView
+            android:id="@+id/itsFree"
+            style="@style/Gotham_Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:paddingTop="@dimen/dp_2"
+            android:paddingBottom="@dimen/dp_2"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="@dimen/dp_12"
+            android:text="It's free"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:onClick="support"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingBottom="@dimen/dp_5">
+
+            <ImageView
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:onClick="support"
+                android:src="@drawable/settings"
+                app:tint="@color/colorPrimary" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.68"
+                android:orientation="vertical">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_50" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorPrimary"
+                        android:checked="true"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5" />
+
+
+                    <RadioButton
+                        android:id="@+id/radioButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-10dp"
+                        android:buttonTint="@color/colorPrimary"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/gradient_button"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textStyle="bold"
+                    style="@style/Gotham_Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_static"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_16" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30">
+
+                <LinearLayout
+                    android:id="@+id/signUp"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_button"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textStyle="bold"
+                        style="@style/Gotham_Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_up"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/register"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_button"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textStyle="bold"
+                        style="@style/Gotham_Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_12" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <com.app.mschooling.utils.BuzzTextView
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:text="@string/student_teacher"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <com.app.mschooling.utils.BuzzTextView
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_10"
+                        android:text="@string/new_school"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/terms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#60000000"
+                android:textColorLink="@color/blue"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.mschooling.home.admin.activity.AdminMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/colorPrimary">
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/title"
+                style="@style/Gotham_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_50"
+                android:layout_marginRight="@dimen/dp_50"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/change_mobile_number"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:id="@+id/close"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_15"
+                    android:src="@drawable/close"
+                    app:tint="@color/white"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/mobileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@drawable/gradient_border"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/new_mobile_number"
+                android:textSize="@dimen/sp_12" />
+
+            <EditText
+                android:id="@+id/mobile"
+                style="@style/font"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_15"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/otpView"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.app.mschooling.utils.BuzzTextView
+                style="@style/Gotham_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_otp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_18"
+                android:gravity="center">
+
+                <com.chaos.view.PinView
+                    android:id="@+id/pinView"
+                    style="@style/PinWidget.PinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:cursorVisible="false"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:itemBackground="@color/white"
+                    app:hideLineWhenFilled="false"
+                    app:itemRadius="5dp"
+                    app:itemSpacing="10dp"
+                    app:lineColor="#7e7e7e"
+                    app:lineWidth="1dp"
+                    app:viewType="rectangle" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_15"
+                android:gravity="center">
+
+
+                <RelativeLayout
+                    android:id="@+id/resendOtpLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp_5">
+
+                    <TextView
+                        android:id="@+id/resendOtp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_4"
+                        android:fontFamily="serif-monospace"
+                        android:text="@string/resend_otp"
+                        android:textColor="@color/parent_dark_blue"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/resendOtp"
+                        android:layout_alignStart="@+id/resendOtp"
+                        android:layout_alignEnd="@+id/resendOtp"
+                        android:background="@color/parent_dark_blue"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <com.app.mschooling.utils.BuzzTextView
+                    style="@style/Gotham_Medium"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/red"
+                    android:id="@+id/timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/font"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="@dimen/dp_30"
+            android:background="@drawable/gradient_button"
+            android:text="@string/verify"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_16" />
+
+
+    </LinearLayout>
+</RelativeLayout>

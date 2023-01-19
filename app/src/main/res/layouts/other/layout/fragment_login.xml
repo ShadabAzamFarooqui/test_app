@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_lin_id"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_menu">
+
+
+   <include layout="@layout/header_back"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:paddingBottom="@dimen/dp_45"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginTop="@dimen/dp_55"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/dp_55"
+                    android:text="@string/a_complete_solution"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_5"
+                    android:layout_gravity="center">
+
+                    <com.app.mschooling.utils.BuzzTextView
+                        style="@style/Gotham_Book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/dp_12"
+                        android:text="@string/verified"/>
+
+                    <View
+                        android:layout_width="@dimen/dp_5"
+                        android:layout_height="@dimen/dp_5"
+                        android:layout_margin="@dimen/dp_5"
+                        android:background="@drawable/circle"/>
+
+                    <com.app.mschooling.utils.BuzzTextView
+                        style="@style/Gotham_Book"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trusted"/>
+
+                    <View
+                        android:layout_width="@dimen/dp_5"
+                        android:layout_height="@dimen/dp_5"
+                        android:layout_margin="@dimen/dp_5"
+                        android:background="@drawable/circle"/>
+
+
+                    <com.app.mschooling.utils.BuzzTextView
+                        style="@style/Gotham_Book"
+                        android:textSize="@dimen/dp_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/professional"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:orientation="vertical">
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:background="@drawable/rectangular_border"
+                            android:visibility="visible"
+                            android:layout_height="40dp">
+
+                            <ImageView
+                                android:id="@+id/language_img"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="18dp"
+                                android:layout_marginStart="18dp"
+                                android:layout_centerVertical="true"
+                                />
+
+                            <Spinner
+                                android:id="@+id/profile_language_spi"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/dp_60"
+                                android:inputType="textPersonName"
+                                android:background="@null"
+                                android:text="@string/select_board"
+                                android:textSize="16sp"
+                                android:textColorHint="@color/black"/>
+
+                            <ImageView
+                                android:id="@+id/arrw_img_language"
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="vertical">
+
+
+
+
+                        <RelativeLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/rectangular_border"
+                            android:layout_height="40dp">
+
+                            <ImageView
+                                android:layout_width="17dp"
+                                android:layout_gravity="center"
+                                android:layout_height="17dp"
+                                android:layout_marginLeft="18dp"
+                                android:layout_marginStart="18dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/key" />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:maxLines="1"
+                                android:id="@+id/enrolmentId"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                style="@style/font"
+                                android:paddingLeft="-10dp"
+                                android:layout_marginLeft="@dimen/dp_40"
+                                android:layout_marginRight="@dimen/dp_40"
+                                android:textAlignment="center"
+                                android:inputType="number"
+                                android:maxLength="7"
+                                android:text="@string/enrollment_id_static"
+                                android:layout_toRightOf="@+id/user_img"
+                                android:background="@null"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:hint="@string/hint_enrol"
+                                android:textSize="@dimen/dp_14"
+                                android:layout_toLeftOf="@+id/profile_edit_fullname"
+                                android:textColorHint="@color/grey_level2"/>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/profile_reset_rel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_15">
+
+                        <TextView
+                            android:id="@+id/profile_reset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/parent_dark_blue"
+                            android:textSize="@dimen/text_size_14"
+                            android:fontFamily="serif-monospace"
+                            android:layout_marginLeft="@dimen/dp_4"
+                            android:text="@string/forget_enrolment_id"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignLeft="@+id/profile_reset"
+                            android:layout_alignRight="@+id/profile_reset"
+                            android:layout_below="@+id/profile_reset"
+                            android:visibility="visible"
+                            android:background="@color/parent_dark_blue"/>
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_marginRight="@dimen/dp_30"
+                        android:layout_marginTop="@dimen/dp_30"
+                        style="@style/font"                        android:layout_marginBottom="@dimen/dp_10"
+                        android:textAllCaps="false"
+                        android:background="@drawable/gradient_button"
+                        android:textSize="@dimen/text_size_16"
+                        android:text="@string/login_static" />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/profile_img_rel"
+                android:layout_width="120dp"
+                android:layout_height="125dp"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/home_user_img_rel"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/profile_bg"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/app_icon" />
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

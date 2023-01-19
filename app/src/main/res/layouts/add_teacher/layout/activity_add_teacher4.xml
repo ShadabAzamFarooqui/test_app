@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:background="@color/divider_menu"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_back"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/account_holder_name"
+                    android:textSize="@dimen/dp_12" />
+
+                <EditText
+                    style="@style/font"
+                    android:id="@+id/accountName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName|textCapWords"
+                    android:padding="10dp"
+                    android:maxLength="50"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/account_number"
+                    android:textSize="@dimen/dp_12" />
+
+                <EditText
+                    style="@style/font"
+                    android:id="@+id/accountNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:maxLength="50"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/name_of_the_bank"
+                    android:textSize="@dimen/dp_12" />
+
+                <EditText
+                    android:id="@+id/bankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@android:color/transparent"
+                    style="@style/font"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/branch_name"
+                    android:textSize="@dimen/dp_12" />
+
+                <EditText
+                    android:id="@+id/bankBranchName"
+                    style="@style/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/ifsc_code"
+                    android:textSize="@dimen/dp_12" />
+
+                <EditText
+                    android:id="@+id/ifsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@android:color/transparent"
+                    style="@style/font"
+                    android:inputType="textCapCharacters"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15"  />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/bank_address"
+                    android:textSize="@dimen/dp_12" />
+
+                <EditText
+                    android:id="@+id/bankAddress"
+                    style="@style/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName|textCapWords|textMultiLine"
+                    android:padding="10dp"
+                    android:maxLength="50"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/gradient_button"
+                style="@style/font"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_16" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

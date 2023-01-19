@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_menu"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_search" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dLayout"
+        android:layout_marginTop="@dimen/dp_50">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_3"
+            android:paddingRight="@dimen/dp_3" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include layout="@layout/no_record" />
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/fabLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/dp_23"
+            android:layout_marginBottom="@dimen/dp_70"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:onClick="sortByName"
+            android:padding="@dimen/dp_12"
+            android:visibility="gone"
+            app:layout_behavior="com.app.mschooling.utils.MoveUpwardBehavior">
+
+            <com.app.mschooling.utils.BuzzTextView
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_button"
+                android:onClick="sortByName"
+                android:paddingLeft="@dimen/dp_7"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_7"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="@string/name"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:onClick="sortByName"
+                android:tint="@color/white"
+                android:visibility="visible"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_user"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fabLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/dp_23"
+            android:layout_marginBottom="@dimen/dp_70"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:onClick="shortByEnrollment"
+            android:padding="@dimen/dp_12"
+            android:visibility="gone"
+            app:layout_behavior="com.app.mschooling.utils.MoveUpwardBehavior">
+
+            <com.app.mschooling.utils.BuzzTextView
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_button"
+                android:onClick="shortByEnrollment"
+                android:paddingLeft="@dimen/dp_7"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_7"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="@string/enrollment_id"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:onClick="shortByEnrollment"
+                android:tint="@color/white"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/key_padding"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/dp_60"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_12"
+            android:visibility="visible"
+            app:layout_behavior="com.app.mschooling.utils.MoveUpwardBehavior">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:src="@drawable/up_down"
+                app:fabSize="normal"
+                app:srcCompat="@drawable/up_down"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <LinearLayout
+        android:id="@+id/actionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/deleteButton"
+            style="@style/font"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_button"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/disableButton"
+            style="@style/font"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_button"
+            android:text="@string/disable"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_16" />
+
+        <Button
+            android:id="@+id/enableButton"
+            style="@style/font"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/gradient_button"
+            android:text="@string/enable"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_16" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

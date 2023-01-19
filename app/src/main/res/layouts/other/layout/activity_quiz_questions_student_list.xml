@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/light_greyish"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/header_back" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/layoutTime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@+id/a"
+        android:background="@color/grey_level4"
+        android:elevation="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:textColor="@color/black"
+               />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <cn.iwgang.countdownview.CountdownView
+                android:layout_weight="1"
+                android:id="@+id/countdownView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:isShowDay="false"
+                app:isShowHour="false"
+                app:isShowMillisecond="false"
+                app:isShowMinute="true"
+                app:isShowSecond="true"
+                app:suffixGravity="bottom"
+                app:suffixMinute="m"
+                app:suffixMinuteLeftMargin="5dp"
+                app:suffixMinuteRightMargin="10dp"
+                app:suffixSecond="s"
+                app:suffixSecondLeftMargin="5dp"
+                app:suffixTextColor="#000"
+                app:suffixTextSize="16sp"
+                app:timeTextColor="#000"
+                app:timeTextSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/tvEndTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/end_test"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/layoutTime"
+        android:id="@+id/layoutRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_20">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:fastScrollEnabled="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_below="@+id/layoutRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_100"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/fragment_change_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_greyish"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/btClearResponse"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_45"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/gradient_button_rectangle"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvPrevious"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clear_response"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/btSaveNext"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_45"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/gradient_button_rectangle"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvSaveNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save_amp_next"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

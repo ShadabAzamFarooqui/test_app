@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/dp_50"
+        android:id="@+id/mainLayout"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="@string/name"
+                android:textSize="@dimen/dp_16"
+                android:textColor="@color/black"
+                android:id="@+id/name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="@string/description"
+                android:id="@+id/description"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delete"
+            android:layout_width="@dimen/dp_40"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_20"
+                android:src="@drawable/icon_delete1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_menu"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/addSubject"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:minHeight="@dimen/dp_50"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_10"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/add_subject_plus"
+            android:textSize="@dimen/dp_16"
+            android:textColor="@color/blue"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_menu"
+        />
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divider_menu"
+        android:orientation="vertical"
+        tools:context="com.app.mschooling.homework.activity.StudentHomeworkUploadAndListActivity">
+
+        <include layout="@layout/header_back" />
+
+        <LinearLayout
+
+            android:id="@+id/listLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/font"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@drawable/gradient_button"
+                android:text="@string/upload_fresh"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <LinearLayout
+                android:id="@+id/actionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:layout_marginLeft="14dp"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="14dp"
+                android:baselineAligned="false">
+
+
+                <LinearLayout
+                    android:id="@+id/acceptLayout"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_accepted_border"
+                    android:gravity="center"
+                    android:transitionGroup="false">
+
+                    <com.app.mschooling.utils.BuzzTextView
+                        android:id="@+id/accept"
+                        style="@style/Gotham_Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/accept"
+                        android:textAlignment="center"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/sp_14"
+                        tools:ignore="NestedWeights" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/rejectLayout"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+
+                    android:background="@drawable/bg_rejected_border"
+                    android:gravity="center"
+                    android:transitionGroup="false">
+
+                    <com.app.mschooling.utils.BuzzTextView
+                        android:id="@+id/reject"
+                        style="@style/Gotham_Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/reject"
+                        android:textAlignment="center"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp_14"
+                        tools:ignore="NestedWeights" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/status"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:padding="@dimen/dp_10"
+                android:textAlignment="center"
+                style="@style/Gotham_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accept"
+                android:textColor="@color/green"
+                android:textSize="@dimen/sp_14"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/uploadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/insertImage"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_120"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/gradient_border"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/gradient_circle_button" />
+
+                <com.app.mschooling.utils.BuzzTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/attach_image"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/upload"
+                style="@style/font"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@drawable/gradient_button"
+                android:text="@string/upload"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

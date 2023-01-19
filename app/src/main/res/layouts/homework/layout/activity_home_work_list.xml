@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divider_menu">
+
+        <RelativeLayout
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <include layout="@layout/header_back"/>
+        </RelativeLayout>
+
+        <include layout="@layout/no_record"
+            android:id="@+id/noRecord"/>
+        <LinearLayout
+            android:layout_below="@+id/a"
+            android:id="@+id/dateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/gradient_border_selector"
+            android:gravity="center">
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/date"
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="@color/military_blue"
+                android:textSize="@dimen/dp_16" />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/dateLayout"
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerView"
+            android:layout_height="wrap_content">
+
+
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <include
+            android:id="@+id/add"
+            layout="@layout/custom_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end|bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp" />
+
+    </RelativeLayout>
+</layout>

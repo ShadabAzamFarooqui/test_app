@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/divider_menu"
+    tools:context="com.app.mschooling.broadcast.activity.BroadCastActivity">
+    <include layout="@layout/header_back" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:background="@drawable/gradient_border"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="@string/send_via"
+                        android:textSize="@dimen/dp_12" />
+
+                    <Spinner
+                        android:id="@+id/spinnerVia"
+                        style="@style/font"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:entries="@array/send_via"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:background="@drawable/gradient_border"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="@string/select_staff_faculty_student"
+                        android:textSize="@dimen/dp_12" />
+
+                    <Spinner
+                        android:id="@+id/spinnerDept"
+                        style="@style/font"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:entries="@array/select_dept"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:spinnerMode="dialog"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/layoutClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@drawable/gradient_border_selector"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="@string/select_class_amp_section"
+                        android:textSize="@dimen/dp_12" />
+
+                    <LinearLayout
+                        android:id="@+id/classLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/dp_45"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:layout_gravity="left"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/classSection"
+                            style="@style/font"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_weight="1"
+                            android:hint="@string/select_class"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_15" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_margin="@dimen/dp_5"
+                            android:src="@drawable/icon_next_grey" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layoutSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:background="@drawable/gradient_border"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="@string/enter_subject_w_dot"
+                        android:textSize="@dimen/dp_12" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:id="@+id/subject"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_15"
+                        android:background="@android:color/transparent"
+                        android:gravity="start"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingTop="@dimen/dp_5" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:background="@drawable/gradient_border"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="@string/enter_message"
+                        android:textSize="@dimen/dp_12" />
+
+                    <EditText
+                        android:id="@+id/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:hint="@string/broad_cast_message"
+                        android:maxHeight="@dimen/dp_200"
+                        android:minHeight="@dimen/dp_150"
+                        android:padding="@dimen/dp_5" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit"
+                    style="@style/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="@dimen/dp_25"
+                    android:background="@drawable/gradient_button"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_size_16" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

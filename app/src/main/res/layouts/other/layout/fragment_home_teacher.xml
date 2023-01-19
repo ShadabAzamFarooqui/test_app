@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_menu"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/home_page_slider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_3">
+
+
+                <com.app.mschooling.utils.BuzzTextView
+                    android:id="@+id/studentHeading"
+                    style="@style/Gotham_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/student"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_18" />
+
+                <com.mlsdev.animatedrv.AnimatedRecyclerView
+                    android:id="@+id/studentRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:nestedScrollingEnabled="false" />
+
+                <com.app.mschooling.utils.BuzzTextView
+                    android:id="@+id/otherHeading"
+                    style="@style/Gotham_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/other"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_18" />
+
+                <com.mlsdev.animatedrv.AnimatedRecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:nestedScrollingEnabled="false" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+

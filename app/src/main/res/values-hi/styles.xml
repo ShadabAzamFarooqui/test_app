@@ -1,0 +1,165 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="blueCheck">
+        <item name="colorAccent">#10afcc</item>
+    </style>
+
+
+    <style name="CheckboxStyle" parent="AppTheme">
+        <item name="colorAccent">@color/white</item>  <!-- for checked -->
+        <item name="android:textColorSecondary">@color/white</item>  <!-- for unchecked-->
+    </style>
+
+    <style name="MY.DIALOG" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+
+    <style name="MyTheme" parent="@style/Theme.AppCompat">
+        <item name="colorPrimary">@color/black</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+
+    <!-- custom dialog activity theme -->
+    <style name="AppTheme.Dialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <!-- removing the dialog's action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="Gotham_Light">
+        <item name="fontType">Gotham_Light</item>
+    </style>
+
+    <style name="Gotham_Book">
+        <item name="fontType">Gotham_Book</item>
+    </style>
+
+    <style name="Gotham_Medium">
+        <item name="fontType">Gotham_Medium</item>
+    </style>
+
+    <style name="Gotham_Bold">
+        <item name="fontType">Gotham_Bold</item>
+    </style>
+
+    <style name="Gothan_BookItalic">
+        <item name="fontType">Gotham_BookItalic</item>
+    </style>
+
+    <style name="Gotham_Black">
+        <item name="fontType">Gotham_Black</item>
+    </style>
+
+    <style name="Brown_Bag">
+        <item name="fontType">Brown_Bag</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="pinViewStyle">@style/PinWidget.PinView</style>
+
+
+    <declare-styleable name="ZoomageView">
+        <attr name="zoomage_zoomable" format="boolean" />
+        <attr name="zoomage_translatable" format="boolean" />
+        <attr name="zoomage_restrictBounds" format="boolean" />
+        <attr name="zoomage_animateOnReset" format="boolean" />
+        <attr name="zoomage_doubleTapToZoom" format="boolean" />
+        <attr name="zoomage_doubleTapToZoomScaleFactor" format="float" />
+        <attr name="zoomage_autoCenter" format="boolean" />
+        <attr name="zoomage_minScale" format="float" />
+        <attr name="zoomage_maxScale" format="float" />
+        <attr name="zoomage_autoResetMode" format="enum">
+            <enum name="UNDER" value="0" />
+            <enum name="OVER" value="1" />
+            <enum name="ALWAYS" value="2" />
+            <enum name="NEVER" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!-- <item name="android:fontFamily">serif</item>-->
+
+
+    <style name="font">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <!-- Custom Calender -->
+
+    <style name="CalendarView" />
+
+    <style name="CalendarView.MonthTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarView.DayOfTheWeek">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="CalendarView.DayOfTheMonth">
+        <item name="android:textSize">14sp</item>
+        <item name="android:minHeight">@dimen/minDayCellHeight</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">#597AA7E0
+        </item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="WelcomeErrorAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--edit_text color-->
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/grey_80</item>
+        <item name="android:textSize">15sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

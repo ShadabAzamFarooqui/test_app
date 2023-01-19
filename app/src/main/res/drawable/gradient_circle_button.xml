@@ -1,0 +1,36 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <gradient
+                android:angle="0"
+                android:endColor="@color/buttonStartColor"
+                android:startColor="@color/buttonEndColor" />
+            <size
+                android:width="56dp"
+                android:height="56dp" />
+        </shape>
+    </item>
+    <item
+        android:left="@dimen/dp_17"
+        android:right="@dimen/dp_17">
+        <shape android:shape="line">
+            <stroke
+                android:width="2dp"
+                android:color="#ffffff" />
+        </shape>
+    </item>
+    <item
+        android:left="@dimen/dp_17"
+        android:right="@dimen/dp_17">
+        <rotate
+            android:fromDegrees="90">
+            <shape android:shape="line">
+                <stroke
+                    android:width="2dp"
+                    android:color="#ffffff" />
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>

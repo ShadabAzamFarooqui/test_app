@@ -1,0 +1,5 @@
+/// TODO: Little Steps changes
+Gradle: change package name,
+Manifest: change app icon
+String/String-hi: change app name
+google-service.json: change file

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><!--<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_menu"
+    android:orientation="vertical"
+    tools:context="com.app.mschooling.video.activity.VideoListActivity">
+
+    <include layout="@layout/header_back" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="YoutubePlayer Example"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="110dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5" />
+
+
+    <include layout="@layout/no_record2" />
+
+</LinearLayout>

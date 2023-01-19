@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/rootLayout"
+    android:layout_height="match_parent"
+    android:background="@color/divider_menu"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/header_back" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/mainLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rlyHeaderImage"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/manager_bg">
+
+                        </FrameLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="100dp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/profile_cv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardBackgroundColor="#fff"
+                                app:cardCornerRadius="15dp"
+                                app:cardElevation="5dp"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="50dp"
+                                    android:orientation="vertical">
+
+
+                                    <com.app.mschooling.utils.BuzzTextView
+                                        android:id="@+id/name"
+                                        style="@style/Gotham_Medium"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="@string/jack"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/dp_18"
+                                        android:textStyle="bold" />
+
+
+                                    <com.app.mschooling.utils.BuzzTextView
+                                        android:id="@+id/fatherName"
+                                        style="@style/Gotham_Book"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="(C/o Saiyyad Salman Nadvi)"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/military_blue"
+                                        android:textSize="@dimen/dp_12"
+                                        android:textStyle="bold" />
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/dp_10"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="@dimen/dp_15"
+                                            android:layout_height="@dimen/dp_15"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="-15dp"
+                                            android:layout_marginRight="@dimen/dp_10"
+                                            android:layout_toLeftOf="@+id/enrolmentId"
+                                            android:src="@drawable/key" />
+
+                                        <TextView
+                                            android:id="@+id/enrolmentId"
+                                            style="@style/font"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_gravity="center"
+                                            android:text="@string/enrollment_id_static"
+                                            android:textColor="@color/blue"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center">
+
+                                        <ImageView
+                                            android:id="@+id/mobile_ic"
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginLeft="-10dp"
+                                            android:src="@drawable/mobile_icon" />
+
+                                        <TextView
+                                            android:id="@+id/mobile"
+                                            style="@style/font"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:layout_toRightOf="@+id/mobile_ic"
+                                            android:text="@string/phone_static"
+                                            android:textColor="@color/black" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/email"
+                                        style="@style/font"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="@string/email_static"
+                                        android:textColor="@color/black" />
+
+
+                                    <TextView
+                                        android:id="@+id/address"
+                                        style="@style/font"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/dp_10"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginRight="@dimen/dp_10"
+                                        android:gravity="center"
+                                        android:text="@string/address_static"
+                                        android:textColor="@color/black"
+                                        android:visibility="gone" />
+
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/dp_1"
+                                        android:layout_marginTop="@dimen/dp_10"
+                                        android:background="@color/divider_menu" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="@dimen/dp_5"
+                                            android:layout_weight="1"
+                                            android:padding="@dimen/dp_10"
+                                            android:text="@string/class_w_star"
+                                            android:textAlignment="textEnd" />
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/grey" />
+
+                                        <TextView
+                                            android:id="@+id/clazz"
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical"
+                                            android:padding="@dimen/dp_10"
+                                            android:textColor="@color/black" />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/grey" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="@dimen/dp_5"
+                                            android:layout_weight=".1"
+                                            android:padding="@dimen/dp_10"
+                                            android:text="@string/section"
+                                            android:textAlignment="textEnd" />
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/grey" />
+
+                                        <TextView
+                                            android:id="@+id/section"
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight=".1"
+                                            android:gravity="center_vertical"
+                                            android:padding="@dimen/dp_10"
+                                            android:textColor="@color/black" />
+
+
+                                    </LinearLayout>
+
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/grey" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_5"
+                                            android:layout_weight=".1"
+                                            android:padding="@dimen/dp_10"
+                                            android:text="@string/roll_number_w_star"
+                                            android:textAlignment="textEnd" />
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/grey" />
+
+                                        <TextView
+                                            android:id="@+id/rollNumber"
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight=".1"
+                                            android:gravity="center_vertical"
+                                            android:padding="@dimen/dp_10"
+                                            android:textColor="@color/black" />
+
+
+                                    </LinearLayout>
+
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/grey" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_5"
+                                            android:layout_weight=".1"
+                                            android:padding="@dimen/dp_10"
+                                            android:text="@string/gender_w_star"
+                                            android:textAlignment="textEnd" />
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/grey" />
+
+                                        <TextView
+                                            android:id="@+id/gender"
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight=".1"
+                                            android:gravity="center_vertical"
+                                            android:padding="@dimen/dp_10"
+                                            android:textColor="@color/black" />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/grey" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_5"
+                                            android:layout_weight=".1"
+                                            android:padding="@dimen/dp_10"
+                                            android:text="@string/status"
+                                            android:textAlignment="textEnd" />
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/grey" />
+
+                                        <TextView
+                                            android:id="@+id/status"
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight=".1"
+                                            android:gravity="center_vertical"
+                                            android:padding="@dimen/dp_10"
+                                            android:textColor="@color/black" />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/grey"
+                                        android:visibility="gone" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:visibility="gone">
+
+                                        <TextView
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/dp_5"
+                                            android:layout_weight=".1"
+                                            android:padding="@dimen/dp_10"
+                                            android:text="@string/passcode"
+                                            android:textAlignment="textEnd" />
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/grey" />
+
+                                        <TextView
+                                            android:id="@+id/passcode"
+                                            style="@style/font"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight=".1"
+                                            android:gravity="center_vertical"
+                                            android:padding="@dimen/dp_10"
+                                            android:textColor="@color/black" />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/grey" />
+
+
+                                    <include layout="@layout/enable_disable_layout" />
+
+                                    <com.app.mschooling.utils.BuzzTextView
+                                        android:id="@+id/deletedMessage"
+                                        android:textSize="@dimen/dp_10"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:padding="@dimen/dp_10"
+                                        android:text="@string/mschooling"/>
+
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/profile_img_rel"
+                            android:layout_width="120dp"
+                            android:layout_height="125dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                            android:layout_marginTop="@dimen/dp_40"
+                            android:gravity="center_vertical">
+
+
+                            <RelativeLayout
+                                android:id="@+id/home_user_img_rel"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/profile_bg">
+
+                                <ProgressBar
+                                    android:layout_width="@dimen/dp_20"
+                                    android:layout_height="@dimen/dp_20"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true" />
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/image"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/user" />
+
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/font"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradient_button_rectangle"
+            android:text="@string/show_all_details"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_16" />
+
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:id="@+id/fabLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/dp_23"
+            android:layout_marginBottom="@dimen/dp_23"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_12"
+            android:onClick="call"
+            android:visibility="gone"
+            app:layout_behavior="com.app.mschooling.utils.MoveUpwardBehavior">
+
+            <com.app.mschooling.utils.BuzzTextView
+                style="@style/Gotham_Medium"
+                android:onClick="call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_button"
+                android:paddingLeft="@dimen/dp_7"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_7"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="@string/call"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:fabSize="mini"
+                android:onClick="call"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_call"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fabLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/dp_23"
+            android:layout_marginBottom="@dimen/dp_23"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_12"
+            android:visibility="gone"
+            android:onClick="whatsApp"
+            app:layout_behavior="com.app.mschooling.utils.MoveUpwardBehavior">
+
+            <com.app.mschooling.utils.BuzzTextView
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_button"
+                android:paddingLeft="@dimen/dp_7"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_7"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="@string/whatsapp"
+                android:onClick="whatsApp"
+                android:textColor="@color/white" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                app:fabSize="mini"
+                android:tint="@color/white"
+                android:onClick="whatsApp"
+                app:srcCompat="@drawable/ic_whatsapp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fabLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/dp_23"
+            android:layout_marginBottom="@dimen/dp_23"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_12"
+            android:onClick="email"
+            android:visibility="gone"
+            app:layout_behavior="com.app.mschooling.utils.MoveUpwardBehavior">
+
+            <com.app.mschooling.utils.BuzzTextView
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_button"
+                android:paddingLeft="@dimen/dp_7"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_7"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="@string/email_new"
+                android:onClick="email"
+                android:textColor="@color/white" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:tint="@android:color/white"
+                app:fabSize="mini"
+                android:onClick="email"
+                app:maxImageSize="26dp"
+                android:padding="@dimen/dp_10"
+                app:srcCompat="@drawable/email" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fabLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/dp_23"
+            android:layout_marginBottom="@dimen/dp_23"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_12"
+            android:onClick="sms"
+            android:visibility="gone"
+            app:layout_behavior="com.app.mschooling.utils.MoveUpwardBehavior">
+
+            <com.app.mschooling.utils.BuzzTextView
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_button"
+                android:paddingLeft="@dimen/dp_7"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_7"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="@string/sms"
+                android:onClick="sms"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:tint="@android:color/white"
+                app:fabSize="mini"
+                android:onClick="sms"
+                app:srcCompat="@drawable/sms" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/fabLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/dp_23"
+            android:layout_marginBottom="@dimen/dp_23"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_12"
+            android:onClick="addContact"
+            android:visibility="gone"
+            app:layout_behavior="com.app.mschooling.utils.MoveUpwardBehavior">
+
+            <com.app.mschooling.utils.BuzzTextView
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_button"
+                android:paddingLeft="@dimen/dp_7"
+                android:onClick="addContact"
+                android:paddingTop="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_7"
+                android:paddingBottom="@dimen/dp_4"
+                android:text="@string/save"
+                android:textColor="@color/white" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addContact"
+                android:layout_marginLeft="10dp"
+                android:tint="@android:color/white"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_contact" />
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_12"
+            app:layout_behavior="com.app.mschooling.utils.MoveUpwardBehavior">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:gravity="center_vertical"
+                app:fabSize="normal"
+                app:srcCompat="@drawable/ic_toys" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>
+

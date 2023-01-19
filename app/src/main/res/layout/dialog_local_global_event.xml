@@ -1,0 +1,95 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/dp_25">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.app.mschooling.utils.BuzzTextView
+                        android:id="@id/title"
+                        style="@style/Gotham_Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_12"
+                        android:paddingBottom="@dimen/dp_12"
+                        android:gravity="center_vertical"
+                        android:layout_toStartOf="@+id/close"
+                        android:text="@string/select_date_range"
+                        android:textColor="@color/military_blue"
+                        android:textSize="@dimen/sp_20"
+                        />
+
+
+                    <LinearLayout
+                        android:id="@+id/close"
+                        android:layout_width="@dimen/dp_50"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="@dimen/dp_5"
+                            android:gravity="center"
+                            android:padding="@dimen/dp_5"
+                            android:src="@drawable/close"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:tint="@color/black"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <com.app.mschooling.utils.BuzzTextView
+                    android:id="@+id/message"
+                    style="@style/Gotham_Medium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_30"
+                    android:text="@string/mschooling"
+                    android:textColor="@color/grayish_black"
+                    android:textSize="15sp" />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

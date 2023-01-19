@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_back" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <include layout="@layout/logo2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                android:src="@drawable/mschooling_text_logo"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/your_app_version"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/yourVersion"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textAlignment="center"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/available_app_version"/>
+            <TextView
+                android:id="@+id/availableVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/last_updated"/>
+
+            <TextView
+                android:id="@+id/lastUpdated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/update"
+                style="@style/font"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_30"
+                android:background="@drawable/gradient_button"
+                android:text="@string/update"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_16" />
+
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/font"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_30"
+                android:background="@drawable/gradient_button"
+                android:text="@string/ok"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_16" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

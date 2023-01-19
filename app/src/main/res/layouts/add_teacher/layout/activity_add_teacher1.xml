@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_menu"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_5"
+
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/first_name"
+                    android:textSize="@dimen/dp_12" />
+
+                <EditText
+                    android:id="@+id/firstName"
+                    style="@style/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLength="50"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/last_name2"
+                    android:textSize="@dimen/dp_12" />
+
+                <EditText
+                    android:id="@+id/lastName"
+                    style="@style/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLength="50"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/mobile"
+                    android:textSize="@dimen/dp_12" />
+
+                <EditText
+                    android:id="@+id/mobile"
+                    style="@style/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="Father/Husband Name *"
+                    android:textSize="@dimen/dp_12" />
+
+                <EditText
+                    android:id="@+id/fatherName"
+                    style="@style/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName|textCapWords"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/gender"
+                    android:textSize="@dimen/dp_12" />
+
+                <Spinner
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    style="@style/font"
+                    android:entries="@array/gender"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName|textCapWords"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:maxLength="50"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/email_w_star"
+                    android:textSize="@dimen/dp_12" />
+
+                <EditText
+                    android:id="@+id/email"
+                    style="@style/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/dobLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/dob_tv"
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/dob"
+                    android:textSize="@dimen/dp_12" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dob_tv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+
+                <ImageView
+                    android:id="@+id/datePicker"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBaseline="@+id/dob_tv"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/date_icon" />
+            </RelativeLayout>
+
+
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/font"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/gradient_button"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_16" />
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

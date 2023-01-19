@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_rounded_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/full_rounded_white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/addhar_ll"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="@string/scan_aadhaar"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pancardclcik_ll"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="@string/scan_pancard"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:background="@drawable/full_rounded_white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/chegue_ll"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="@string/scan_chegue"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ciocard_ll"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="@string/scan_cio"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <Spinner
+            android:id="@+id/leave_type"
+            android:layout_width="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:spinnerMode="dialog"
+            android:layout_height="50dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="1sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/adhaarcard_ll"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/attach_a_front_of_aadhaar"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <ImageView
+                    android:id="@+id/imgView_adhaar_f"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_pic_button"
+                    android:orientation="horizontal"
+                    android:layout_alignParentTop="true"
+                    android:weightSum="2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/clickimage_adhar_f"
+                        android:text="@string/click"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnChoose_adhar_f"
+                        android:text="@string/choose"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/attach_back_of_aadhaar"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <ImageView
+                    android:id="@+id/imgView_adhaar_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_button"
+                    android:orientation="horizontal"
+                    android:layout_alignParentTop="true"
+                    android:weightSum="1"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/click_adhar_b"
+                        android:text="@string/click"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnChoose_adhar_b"
+                        android:text="@string/choose"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnUpload_adhar"
+                    android:text="@string/submit"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pancard_ll"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/attach_pancard"
+                    android:textAllCaps="true"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <ImageView
+                    android:id="@+id/imgView_pan"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_button1"
+                    android:orientation="horizontal"
+                    android:layout_alignParentTop="true"
+                    android:weightSum="2"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/clickimage_pancard"
+                        android:text="@string/click"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnChoose_pan"
+                        android:text="@string/choose"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnUpload_pan"
+                    android:text="@string/submit"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cheque_ll"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/attach_cheque"
+                    android:textAllCaps="true"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <ImageView
+                    android:id="@+id/imgView_cheque"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_button2"
+                    android:orientation="horizontal"
+                    android:layout_alignParentTop="true"
+                    android:weightSum="2"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/clickimage_cheque"
+                        android:text="@string/click"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnChoose_cheque"
+                        android:text="@string/choose"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnUpload_cheque"
+                    android:text="@string/submit"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:text="@string/powered_by"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:text="@string/name"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

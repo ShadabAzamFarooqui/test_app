@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_menu"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="left"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.app.mschooling.utils.BuzzTextView
+                            style="@style/Gotham_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:text="@string/general"
+                            android:textColor="@color/military_blue"
+                            android:textSize="@dimen/dp_16"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/noFilter"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@drawable/gradient_border_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.app.mschooling.utils.BuzzTextView
+                            style="@style/Gotham_Medium"
+                            android:textColor="@color/military_blue"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_20"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:text="@string/no_filter"
+                            android:textSize="@dimen/text_size_15" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_20"
+                            android:layout_height="16dp"
+                            android:layout_margin="@dimen/dp_10"
+                            android:src="@drawable/icon_next_grey" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@drawable/gradient_border_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/nameWise"
+                            style="@style/font"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/military_blue"
+                            android:text="@string/name"
+                            android:textSize="@dimen/text_size_15" />
+
+                        <EditText
+                            android:id="@+id/name"
+                            style="@style/font"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:hint="@string/enter_name"
+                            android:maxLength="20"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@drawable/gradient_border_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/enrollWise"
+                            style="@style/font"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/military_blue"
+                            android:text="@string/enrollment_id"
+                            android:textSize="@dimen/text_size_15" />
+
+                        <EditText
+                            android:id="@+id/enrolmentId"
+                            style="@style/font"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:hint="@string/enter_enrollment_id"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:paddingLeft="@dimen/dp_10" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@drawable/gradient_border_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/admissionDateWise"
+                            style="@style/font"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/military_blue"
+                            android:text="@string/admission_date"
+                            android:textSize="@dimen/text_size_15" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="left"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.app.mschooling.utils.BuzzTextView
+                            style="@style/Gotham_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:text="@string/gender_w_star"
+                            android:textColor="@color/military_blue"
+                            android:textSize="@dimen/dp_16"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@drawable/gradient_border_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/male"
+                            style="@style/font"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/military_blue"
+                            android:text="@string/male"
+                            android:textSize="@dimen/text_size_15" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@drawable/gradient_border_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/female"
+                            style="@style/font"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/military_blue"
+                            android:text="@string/female"
+                            android:textSize="@dimen/text_size_15" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="left"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.app.mschooling.utils.BuzzTextView
+                            style="@style/Gotham_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:text="@string/status"
+                            android:textColor="@color/military_blue"
+                            android:textSize="@dimen/dp_16"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@drawable/gradient_border_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/active"
+                            style="@style/font"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/military_blue"
+                            android:text="@string/active"
+                            android:textSize="@dimen/text_size_15" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@drawable/gradient_border_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/disabled"
+                            style="@style/font"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/military_blue"
+                            android:text="@string/disabled"
+                            android:textSize="@dimen/text_size_15" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:background="@drawable/gradient_border_selector"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/deleted"
+                            style="@style/font"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/military_blue"
+                            android:text="@string/deleted"
+                            android:textSize="@dimen/text_size_15" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/classWiseLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="left"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.app.mschooling.utils.BuzzTextView
+                            style="@style/Gotham_Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:text="@string/class_w_star"
+                            android:textColor="@color/military_blue"
+                            android:textSize="@dimen/sp_16"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/icon"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:rotation="90"
+                            android:src="@drawable/icon_next_grey"
+                            app:tint="@color/military_blue"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_3"
+                        android:visibility="gone">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/font"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/gradient_button"
+            android:text="@string/proceed"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/view_border3"
+        android:layout_height="@dimen/dp_50">
+
+        <com.app.mschooling.utils.BuzzTextView
+            android:id="@+id/date"
+            style="@style/Gotham_Medium"
+            android:background="@color/gallery_tittle"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_16"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/student"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/view_border3"
+        android:layout_height="@dimen/dp_50">
+        <TextView
+            android:id="@+id/attendance"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/p"
+            android:textColor="@color/grayish_black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

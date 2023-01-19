@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        tools:context="com.app.mschooling.birthday.activity.BirthdayActivity">
+
+
+        <LinearLayout
+            android:background="@drawable/bg_clickable"
+            android:id="@+id/close"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentEnd="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:src="@drawable/close"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:lottie_autoPlay="true"
+            android:layout_margin="-100dp"
+            app:lottie_fileName="happy_birthday.json"
+            app:lottie_loop="true"
+            app:lottie_speed="1"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:ignore="RelativeOverlap">
+
+            <ImageView
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_120"
+                android:src="@drawable/user"
+                tools:ignore="ContentDescription" />
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/name"
+                style="@style/Gotham_Black"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_25" />
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/dob"
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/classSection"
+                android:paddingTop="@dimen/dp_10"
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

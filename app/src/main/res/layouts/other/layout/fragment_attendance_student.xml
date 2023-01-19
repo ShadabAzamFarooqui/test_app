@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divider_menu"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_border"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/monthSpinner"
+                        style="@style/Gotham_Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:entries="@array/month"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_40"
+                        android:textAlignment="center"
+                        android:textColor="@color/military_blue"
+                        android:textSize="@dimen/dp_18" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/subjectSpinnerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/subjectSpinner"
+                    style="@style/Gotham_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:entries="@array/year"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_40"
+                    android:textAlignment="center"
+                    android:textColor="@color/military_blue"
+                    android:textSize="@dimen/dp_18" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/view0"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:background="@drawable/ractangle_diagonal"
+                        android:rotation="180">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dp_1"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:rotation="180"
+                            android:text="@string/attendance"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dp_1"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:rotation="180"
+                            android:text="@string/date"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_5" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

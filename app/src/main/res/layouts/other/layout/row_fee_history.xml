@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/transaction_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+
+            <RelativeLayout
+                android:id="@+id/date_ll"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#F2F2F2">
+
+                <com.app.mschooling.utils.BuzzTextView
+                    android:id="@+id/date"
+                    style="@style/Gotham_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/date_static"
+                    android:textColor="@color/black" />
+
+
+                <LinearLayout
+                    android:id="@+id/action"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".1"
+                        android:src="@drawable/three_dot"
+                        app:tint="@color/military_blue" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="10/10/2021"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />-->
+
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/amount"
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_ll"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="serif"
+                android:text="@string/rs_static"
+                android:textColor="@color/red"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/paidBy"
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_ll"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/enrollment_id_static"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_12"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/feeType"
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paidBy"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="string/fee_type"
+                android:textColor="@color/military_blue"
+                android:textSize="@dimen/dp_12"
+                android:textStyle="bold" />
+
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/lateFee"
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/feeType"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="string/fee_type"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dp_12"
+                android:textStyle="bold" />
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lateFee"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/time_static"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_12" />
+
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/time_static"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_12" />
+
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_margin="@dimen/dp_10"
+                    android:src="@drawable/receipt"
+                    app:tint="@color/military_blue" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

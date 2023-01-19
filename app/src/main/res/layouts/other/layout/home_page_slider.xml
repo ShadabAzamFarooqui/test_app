@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/profile_iv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_250"
+
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <com.app.mschooling.utils.BuzzTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="end"
+        android:visibility="gone"
+        android:text="@string/session_static"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/dp_10" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager_top"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="0dp" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignBottom="@+id/pager_top"
+        android:gravity="center">
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <com.mschooling.slider.library.SliderLayout
+
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:auto_cycle="true"
+        custom:indicator_visibility="visible"
+        custom:pager_animation="Accordion"
+        custom:pager_animation_span="1100" />
+</RelativeLayout>

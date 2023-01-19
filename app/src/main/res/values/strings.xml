@@ -1,0 +1,1468 @@
+<resources>
+    <string name="app_name">mSchooling</string>
+<!--        <string name="app_name">Little Steps</string>-->
+    <string name="school_contact">School Contact</string>
+    <string name="principal">(Principal)</string>
+    <string name="api_key">AIzaSyDcRd8kn1lhjYdEAkGR6Ns7VUPE5YsRIOs</string>
+    <!--        <string name="app_name">Chanakya</string>-->
+    <!--        <string name="school_contact">Chanakya Administration</string>-->
+    <!--        <string name="principal">(Principal Chanakya College)</string>-->
+
+    <!--    Test ads id-->
+    <!--    <string name="ad_app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+    <!--    <string name="interstitial_unit_id">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="banner_unit_id">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <!--    Live ads id-->
+    <string name="ad_app_id">ca-app-pub-2465479969938764~8886544691</string>
+    <string name="interstitial_unit_id">ca-app-pub-2465479969938764/2708805692</string>
+    <string name="banner_unit_id">ca-app-pub-2465479969938764/2351064111</string>
+    <string name="native_advanced_unit_id">ca-app-pub-2465479969938764/4594084077</string>
+
+    <string name="login">Sign In</string>
+    <string name="register">Register</string>
+    <string name="verify">Verify</string>
+    <string name="submit">Submit</string>
+    <string name="update">Update</string>
+    <string name="terms_condition"> (Terms &amp; Condition)</string>
+    <string name="alert_message">Alert Message</string>
+    <string name="invalid_token">Your Session has been Expired!</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="facebook_app_id">254590668733634</string>
+    <string name="fb_login_protocol_scheme">fb254590668733634</string>
+    <string name="ok">OK</string>
+    <string name="def">An Android activity is one screen of the Android apps user interface. In that way an Android activity is very similar to windows in a desktop application. An Android app may contain one or more activities, meaning one or more screens. The Android app starts by showing the main activity, and from there the app may make it possible to open additional activities.
+    When an Android app is first started the main activity is created. The activity then goes through 3 states before it is ready to serve the user: Created, started and resumed.
+If the main activity can open any other activities (screens) these activities will go through the same 3 states when they are opened.</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
+    <string name="ocr_header">Click &quot;Detect Text&quot; to detect text</string>
+    <string name="read_text">Detect Text</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="ocr_success">Text read successfully</string>
+    <string name="ocr_failure">No text captured</string>
+    <string name="ocr_error">"Error reading text: %1$s"</string>
+    <string name="send_email_text">Send Email</string>
+    <string name="mail_intent_chooser_text">Send mail…</string>
+    <string name="no_email_client_error">There are no email clients installed.</string>
+    <string name="copy_text">Copy to clipboard</string>
+    <string name="clipboard_copy_successful_message">Copied to clipboard.</string>
+    <string name="hint_enrol"><font size="12"> Enter Enrollment number</font></string>
+    <string name="hint_mobile"><font size="12"> Enter Mobile</font></string>
+    <string name="hint_name"><font size="12"> Enter Name</font></string>
+    <string name="hint_email"><font size="12"> Enter Email</font></string>
+    <string name="hint_school"><font size="12"> School Name</font></string>
+    <string name="hint_password"><font size="12"> Enter Password</font></string>
+    <string name="hint_dob"><font size="12"> Date Of Birth</font></string>
+    <string name="hint_address"><font size="12"> Enter Address</font></string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_home">Home</string>
+
+    <string name="title_notice">Notice</string>
+
+    <string name="title_complaint">Complaint</string>
+
+    <string name="title_menu">Menu</string>
+    <string name="syllabus">Syllabus</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="report">Report</string>
+    <string name="gallery">Gallery</string>
+    <string name="examination">Examination</string>
+    <string name="broad_cast">Broadcast</string>
+    <string name="inbox">Inbox</string>
+    <string name="file_upload">File Upload</string>
+    <string name="student">Student</string>
+    <string name="parent">Parents</string>
+    <string name="teacher">Teacher</string>
+    <string name="Student_list">Student List</string>
+    <string name="attendance">Attendance</string>
+    <string name="compliance">Complaints</string>
+    <string name="suggestions">Suggestions</string>
+    <!--    <string name="notice">NOTICE</string>-->
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+
+    <string name="add_student">Add Student</string>
+
+    <string name="wallet">Wallet</string>
+    <string name="download">Download</string>
+    <string name="write_file">This app needs access to your file storage so that it can write files.</string>
+    <string name="attach_excel_file">Attach Excel File</string>
+    <string name="attach_image_file">Select Images</string>
+    <string name="preview">Preview</string>
+    <string name="enter_title_here"><font size="12"> Enter title here...</font></string>
+    <string name="enter_notice_here"><font size="12">Enter notice here...</font></string>
+    <string name="email_message"><font size="12">Enter message here...</font></string>
+    <string name="broad_cast_message"><font size="12">Message should not be more than 145 character...</font></string>
+    <string name="support_share"><![CDATA[Support & Share]]></string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="title_activity_dummy">DummyActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_teacher">TeacherMainActivity</string>
+    <string name="title_activity_main_student">StudentMainActivity</string>
+    <string name="enter_reason">Enter reason</string>
+    <string name="enter_subject">Please Enter Subject</string>
+    <string name="enter_application">Enter Application…</string>
+    <string name="add_teacher">Add Teacher</string>
+    <string name="teacher_list">Teacher List</string>
+    <string name="mschooling">mSchooling is a professional, most trusted and verified school mobile app developed by mSchooling community to simplify the daily life of educators. mSchooling offers one of the best e-governance ERP and best-in-class mobile applications to educational institutions such as schools, coachings, and colleges across the india.</string>
+    <string name="mschooling2">mSchooling is a professional, most trusted and verified school mobile app developed by mSchooling community to simplify the daily life of educators. mSchooling offers one of the best e-governance ERP and best-in-class mobile applications to educational institutions such as schools, coachings, and colleges across the india. There are some following functionality provided by mSchooling.
+        \n<b>1.</b> Useful for CBSE, STATE, ICSE, IB Boards and Residential / Madrasa / Ashram Schools of any size and strength.
+\n<b>2.</b> Supports all latest technologies - RFID, on-Line payment, SMS, e-mail, Smart Phones.
+\n<b>3.</b> Assured On-site &amp; On-Line support.
+\n<b>4.</b> Technology - Cloud, Smart Phone, Client / Server or Web based
+\n<b>5.</b> Integrated, Multi-User, Time tested.
+\n<b>6.</b> User friendly interface. Easy to use.
+\n<b>7.</b> Multilingual Fonts - English / Hindi, Urdu… Fonts
+\n<b>8.</b> Immediate implementation.
+\n<b>9.</b> SMS &amp; Email alerts to all.
+\n<b>10.</b> Reports export to Word, Excel, PDF…
+\n<b>11.</b> High-level data security</string>
+    <string name="no_record">Oops! No record found</string>
+    <string name="aadhaar_back">Back Page of Aadhaar Card</string>
+    <string name="aadhaar_back_review">REVIEW AADHAAR BACK</string>
+
+
+    <string name="aadhaar_first">Front Page of Aadhaar Card</string>
+    <string name="aadhaar_front_review">REVIEW AADHAAR FRONT</string>
+    <string name="action_sign_in_short">Sign In</string>
+
+
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+
+    <string name="cheque_info">Click Image of Cheque</string>
+
+    <string name="cheque_review">REVIEW CHEQUE</string>
+
+    <string name="cio_info">Click Image of CIO</string>
+
+
+    <string name="coi_review">REVIEW COI</string>
+
+    <string name="description_info">Info</string>
+
+
+    <string name="file_limit_size_upload_format">Files must be less than %sMB</string>
+
+    <string name="pan_info">Front Page of PAN Card</string>
+
+    <string name="pancard_review">REVIEW PANCARD</string>
+
+
+    <string name="picture">Picture</string>
+
+    <string name="prompt_email">Enter Username</string>
+
+    <string name="prompt_password">Enter Password</string>
+    <string name="alert_other_is_sharing">You cannot start screen share while the other participant is sharing.</string>
+
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="sign_in_forgot_pwd">Forget Password</string>
+    <string name="sign_in_login">Sign In</string>
+    <string name="title_error_no_network">No Internet Connection</string>
+    <string name="message_error_no_network">Please check you internet connection !!!</string>
+    <string name="permission_camera_rationale_barcode">Access to the camera is needed for barcode detection.</string>
+    <string name="signup_message">\"</string>
+    <string name="quiz_without_completion">You won\'t be able to come out of this quiz without completion</string>
+    <string name="your_app_version">Your App Version</string>
+    <string name="available_app_version">Available App Version</string>
+    <string name="last_updated">Last Updated</string>
+    <string name="search">Search....</string>
+    <string name="title">Title *</string>
+    <string name="heading">Heading *</string>
+    <string name="enter_description">Enter Description *</string>
+    <string name="social_media_address">Social Media Address</string>
+    <string name="mobile">Mobile *</string>
+    <string name="email">Email *</string>
+    <string name="facebook_profile">Facebook profile </string>
+    <string name="twitter_profile">Twitter profile </string>
+    <string name="instagram_profile">Instagram profile </string>
+    <string name="inkedin_profile">LinkedIn profile </string>
+    <string name="quora_profile">Quora profile </string>
+    <string name="school_address">School Address</string>
+    <string name="flat_house_no">Flat/House No. *</string>
+    <string name="street_locality">Street/Locality *</string>
+    <string name="city">City *</string>
+    <string name="pin_code">Pin Code *</string>
+    <string name="state">State *</string>
+    <string name="country">Country *</string>
+    <string name="mark_your_location_on_map">Mark your location on map </string>
+    <string name="save">Save</string>
+    <string name="about_us">About Us</string>
+    <string name="enter_user_name">Enter user name</string>
+    <string name="class_amp_subject"><![CDATA[Class & Subject *]]></string>
+    <string name="details">Details *</string>
+    <string name="attach_image">Attach Image</string>
+    <string name="attach_pdf">Attach Pdf</string>
+    <string name="enter_question">Enter Question *</string>
+    <string name="add_option"><![CDATA[Add Option >]]></string>
+    <string name="category">Category *</string>
+    <string name="religion">Religion *</string>
+    <string name="blood_group">Blood Group *</string>
+    <string name="upload_aadhaar_card">Upload Aadhaar Card</string>
+    <string name="upload">UPLOAD</string>
+    <string name="aadhaar_number">Aadhaar Number</string>
+    <string name="save_amp_next"><![CDATA[Save & Next]]></string>
+    <string name="roll_number">Roll Number *</string>
+    <string name="doa">DOA</string>
+    <string name="last_school">Last School *</string>
+    <string name="last_class">Last Class *</string>
+    <string name="upload_previous_year_mark_sheet">Upload Previous Year Mark sheet</string>
+    <string name="class_incharge_name">Class Incharge Name *</string>
+    <string name="sport_incharge_name">Sport Incharge Name *</string>
+    <string name="music_incharge_name">Music Incharge Name</string>
+    <string name="pan_card_no">Pan Card No. *</string>
+    <string name="school_name">School Name *</string>
+    <string name="first_name">First Name *</string>
+    <string name="last_name">Last Name *</string>
+    <string name="last_name2">Last Name</string>
+    <string name="gender">Gender *</string>
+    <string name="dob">DOB</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="alternate_local_address">Alternate/Local Address</string>
+    <string name="landmark">Landmark</string>
+    <string name="check_if_local_address_is_same_as_permanent">Check if Local Address is same as permanent</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="flat_house_no_w_start">Flat/House No.</string>
+    <string name="street_locality_w_star">Street/Locality</string>
+    <string name="pin_code_w_start">Pin Code</string>
+    <string name="city_w_star">City </string>
+    <string name="state_w_star">State</string>
+    <string name="skip">SKIP</string>
+    <string name="aadhar_card">Aadhar Card</string>
+    <string name="pan_card">Pan Card</string>
+    <string name="upload_pan_card">Upload Pan Card</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="account_number">Account Number</string>
+    <string name="name_of_the_bank">Name of the Bank</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="ifsc_code">IFSC code</string>
+    <string name="bank_address">Bank Address</string>
+    <string name="class_section">Class (Section)</string>
+    <string name="sr_no">Sr No</string>
+    <string name="time_day">Time                    Day </string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="add_more_period">Add more period</string>
+    <string name="address">Address</string>
+    <string name="set_your_location">Set your Location</string>
+    <string name="choose_nearest_location">Choose nearest location</string>
+    <string name="print_amp_preview"><![CDATA[Print & Preview]]></string>
+    <string name="date">Date</string>
+    <string name="view">View</string>
+    <string name="select_class">Select Class</string>
+    <string name="send_via">Send Via *</string>
+    <string name="select_staff_faculty_student">Select Staff / Faculty / Student *</string>
+    <string name="select_class_amp_section"><![CDATA[Select Class & Section *]]></string>
+    <string name="enter_subject_w_dot">Enter Subject *</string>
+    <string name="enter_message">Enter Message *</string>
+    <string name="enter_old_passcode">Enter Old Passcode *</string>
+    <string name="enter_new_passcode">Enter New Passcode *</string>
+    <string name="confirm_passcode">Confirm Passcode *</string>
+    <string name="select_enrolled">Select Enrolled *</string>
+    <string name="select_class_star">Select Class *</string>
+    <string name="select_section">Select Section *</string>
+    <string name="select_section_w">Select Section</string>
+    <string name="next">Next</string>
+    <string name="change">Change</string>
+    <string name="enter_group">Enter Group *</string>
+    <string name="quiz_name">Quiz Name *</string>
+    <string name="difficulty_level">Difficulty Level *</string>
+    <string name="name">Name </string>
+    <string name="gender_w_star">Gender</string>
+    <string name="adhar_no">Adhar No.</string>
+    <string name="father_name">Father Name</string>
+    <string name="type">Type</string>
+    <string name="sub_type">Sub Type</string>
+    <string name="incorporation_date">Incorporation Date</string>
+    <string name="pan_no">Pan No</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="account_no_short">Account No.</string>
+    <string name="company_name">Company Name</string>
+    <string name="company_cin">Company CIN</string>
+    <string name="current_event">Current Event</string>
+    <string name="all_event">All Event</string>
+    <string name="we_are_happy_to_help_you">We are happy to help you!</string>
+    <string name="team">Team</string>
+    <string name="star">********</string>
+    <string name="_24_7_available">24/7 Available</string>
+    <string name="phone_static">9506228028</string>
+    <string name="email_static">info.mschooling@gmail.com</string>
+    <string name="version">version</string>
+    <string name="made_with">Made with</string>
+    <string name="heart_symbol"> 💓</string>
+    <string name="in_india">in India</string>
+    <string name="mschooling_name"> mSchooling</string>
+    <string name="your_digital_manager">YOUR DIGITAL MANAGER</string>
+    <string name="enrollment_id_static">0000001</string>
+    <string name="first_first">First (First)</string>
+    <string name="male">Male</string>
+    <string name="total_paid">Total Paid</string>
+    <string name="total_paid2">Total Paid : </string>
+    <string name="total_due">Total Due</string>
+    <string name="total_due2">Total Due : </string>
+    <string name="image">Image</string>
+    <string name="enter_limit">Enter limit</string>
+    <string name="open_multimedia_picker">Open Multimedia Picker</string>
+    <string name="general">General</string>
+    <string name="add_address">Add Address</string>
+    <string name="show_pdf">Show Pdf</string>
+    <string name="leave_calender">Leave Calender</string>
+    <string name="add_time_table">Add Time Table</string>
+    <string name="view_timetable">Timetables</string>
+    <string name="profile">Profile</string>
+    <string name="generate_qr_code">QR Code</string>
+    <string name="change_passcode">Change Passcode</string>
+    <string name="school_info">School Info</string>
+    <string name="share">Share</string>
+    <string name="setting">Setting</string>
+    <string name="_1_configurations">1. Configurations</string>
+    <string name="add_class">Add Class</string>
+    <string name="add_subject">Add Subject</string>
+    <string name="add_complaint_reason">Add Complaint Reason</string>
+    <string name="add_application_reason">Add Application Reason</string>
+    <string name="_2_applications">2. Applications</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="change_language">Change Language</string>
+    <string name="change_custom_font">Change Custom Font</string>
+    <string name="other">Other</string>
+    <string name="event_log">Event Log</string>
+    <string name="about_app">About App</string>
+    <string name="terms_and_condition">Terms and Condition</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="logout">Logout</string>
+    <string name="scan_aadhaar">Scan Aadhaar</string>
+    <string name="scan_pancard">Scan Pancard</string>
+    <string name="scan_chegue">Scan Chegue</string>
+    <string name="scan_cio">Scan CIO</string>
+    <string name="attach_a_front_of_aadhaar">Attach a Front of Aadhaar</string>
+    <string name="click">Click</string>
+    <string name="choose">Choose</string>
+    <string name="attach_back_of_aadhaar">Attach Back of Aadhaar</string>
+    <string name="attach_pancard">Attach Pancard</string>
+    <string name="attach_cheque">Attach Cheque</string>
+    <string name="powered_by">Powered by</string>
+    <string name="view_qr_code">View QR Code</string>
+    <string name="subject">Subject *</string>
+    <string name="teacher_star">Teacher *</string>
+    <string name="student_star">Student *</string>
+    <string name="select_date">Select Date *</string>
+    <string name="select_date_w_star">Select Date</string>
+    <string name="select_teacher">Select Teacher</string>
+    <string name="select_student">Select Student</string>
+    <string name="classz">Class *</string>
+    <string name="marks">Marks (per question) *</string>
+    <string name="attempts">Attempts *</string>
+    <string name="minutes">Minutes *</string>
+    <string name="select_subject">Select Subject</string>
+    <string name="select_subject_star">Select Subject *</string>
+    <string name="measurement">Measurement</string>
+    <string name="zero">0</string>
+    <string name="questions">Questions</string>
+    <string name="time">Time </string>
+    <string name="end_test">End Test</string>
+    <string name="clear_response">Clear Response</string>
+    <string name="configurations">Configurations</string>
+    <string name="applications">Applications</string>
+    <string name="sign_up_guide_1">1. Tap \'Sign Up\' on the welcome page.</string>
+    <string name="sign_up_guide_2">2.\tEnter the QR code text or Scan the QR code image provided by your School\'s Administration.</string>
+    <string name="sign_up_guide_3">3.\tAfter Step 2, A Sign Up page will be appear. Fill the details and submit it.</string>
+    <string name="sign_up_guide_4">4. After successful submission your application will be subjected for School\'s Administration approval.</string>
+    <string name="sign_up_guide_5">5. You will be get notified by SMS once it approved.</string>
+    <string name="welcome">Welcome</string>
+    <string name="a_complete_solution">A Complete Solution</string>
+    <string name="the_most_verified">The most Verified</string>
+    <string name="trusted">Trusted</string>
+    <string name="professional">Professional</string>
+    <string name="effected">Effected</string>
+    <string name="and_structured_way">And Structured way</string>
+    <string name="version_1_3_2">Version: 1.3.2</string>
+    <string name="obtainedmarks_totalmarks">ObtainedMarks/TotalMarks</string>
+    <string name="total_questions">Total Questions</string>
+    <string name="total_attempted">Total Attempted</string>
+    <string name="correct_attempted">Correct Attempted</string>
+    <string name="no_of_attempt">No Of Attempt</string>
+    <string name="level">Level</string>
+    <string name="start">Start</string>
+    <string name="starting">Starting</string>
+    <string name="logining">Logining…</string>
+    <string name="select_time">Select Time *</string>
+    <string name="select_time_w_star">Select Time</string>
+    <string name="d_p">D/P</string>
+    <string name="enter_class">Enter Class *</string>
+    <string name="enter_class_w">Please enter Class</string>
+    <string name="enter_description_w_star">Enter Description</string>
+    <string name="add_section"><![CDATA[Add Section >]]></string>
+    <string name="enter_reason_star">Enter Reason *</string>
+    <string name="enter_notice">Enter Notice *</string>
+    <string name="enter_event_name">Enter event name</string>
+    <string name="enter_event_description">Enter event description</string>
+    <string name="selected_date">Selected Date</string>
+    <string name="description">Description *</string>
+    <string name="description2">Description</string>
+    <string name="date_star">Date *</string>
+    <string name="last_name_w_star">Last Name</string>
+    <string name="student_parent_mobile_number">Student/Parent Mobile number *</string>
+    <string name="roll_number_w_star">Roll Number</string>
+    <string name="email_w_star">Email</string>
+    <string name="dob_star">DOB *</string>
+    <string name="optional_paper">Optional Paper</string>
+    <string name="upload_excel">Upload Excel</string>
+    <string name="father_s_detail">Father\'s Detail</string>
+    <string name="father_s_name">Father\'s Name</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="occupation">Occupation</string>
+    <string name="qualification">Qualification</string>
+    <string name="annual_income">Annual Income</string>
+    <string name="mother_s_detail">Mother\'s Detail</string>
+    <string name="candidate_s_id">Candidate\'s ID</string>
+    <string name="upload_candidate_s_aadhaar_card">Upload Candidate\'s Aadhaar Card</string>
+    <string name="father_s_id">Father\'s ID</string>
+    <string name="upload_father_s_aadhaar_card">Upload Father\'s Aadhaar Card</string>
+    <string name="father_s_aadhar_card_no">Father\'s Aadhar Card No.</string>
+    <string name="father_s_pan_card_no">Father\'s Pan Card No.</string>
+    <string name="transport">Transport *</string>
+    <string name="scholarship">Scholarship</string>
+    <string name="student_type">Student Type *</string>
+    <string name="sports">Sports *</string>
+    <string name="past_academic_detail">Past Academic Detail</string>
+    <string name="select_group">Please select group</string>
+    <string name="enter_subject_star">Enter Subject *</string>
+    <string name="select_subject_type">Select Subject Type *</string>
+    <string name="select_group_star">Select Group *</string>
+    <string name="jack">Jack</string>
+    <string name="address_static">201/34 BLock A, Sector 10, Noida UP</string>
+    <string name="father_husband_name">Father/Husband Name</string>
+    <string name="d_o_b">D.O.B</string>
+    <string name="show_all_details">View Details</string>
+    <string name="passcode">Passcode</string>
+    <string name="name_static">mSchooling Management</string>
+    <string name="enrollment_id">Enrollment Id</string>
+    <string name="class_w_star">Class</string>
+    <string name="mother_name">Mother Name</string>
+    <string name="enter_qr_code">Enter Qr Code</string>
+    <string name="type_your_suggestion_here">Type your suggestion here</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+    <string name="suggest_new_feature">Suggest New Feature</string>
+    <string name="attachment">Attachment</string>
+    <string name="coming_soon_details">Sorry, This Section is under development. Kindly update the application if available. \nThankyou</string>
+    <string name="team_mschooling">Team mSchooling</string>
+    <string name="month_2014">MONTH 2014</string>
+    <string name="sun">SUN</string>
+    <string name="mon">MON</string>
+    <string name="tue">TUE</string>
+    <string name="wed">WED</string>
+    <string name="thu">THU</string>
+    <string name="fri">FRI</string>
+    <string name="sat">SAT</string>
+    <string name="apply">Apply</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="dismiss">DISMISS</string>
+    <string name="scanning">Scanning…</string>
+    <string name="fetching_records">Fetching records…</string>
+    <string name="uploading">Uploading…</string>
+    <string name="testing">Testing</string>
+    <string name="test_notification_message_from_xml">this a test notification message from xml, it will b replace from the value of FCM.</string>
+    <string name="date_static">09 apr 2018</string>
+    <string name="select_date_range">Select Date Range</string>
+    <string name="from">FROM</string>
+    <string name="to">TO</string>
+    <string name="delete">Delete</string>
+    <string name="delete_this_record">Are you sure you want to delete this record?</string>
+    <string name="enter_reason_dot">Enter reason…</string>
+    <string name="success">Success</string>
+    <string name="please_check_your_internet_connection">Please check your internet connection, and try again.</string>
+    <string name="add_more">Add more</string>
+    <string name="alert">Alert</string>
+    <string name="want_to_cancel">Are you sure you want to delete?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="enter_delete_reason">Enter delete reason…</string>
+    <string name="sorry">Sorry</string>
+    <string name="no_internet">No Internet !</string>
+    <string name="retry">Retry</string>
+    <string name="regular">Regular</string>
+    <string name="additional">Additional</string>
+
+    <string name="icon">ICON</string>
+    <string name="camera">Camera</string>
+    <string name="update_required">Update Required</string>
+    <string name="digit_static">1</string>
+    <string name="disable">Disable</string>
+    <string name="enable">Enable</string>
+    <string name="write_your_review">Write your review</string>
+    <string name="please_give_you_valuable_feedback">Please give your valuable feedback</string>
+    <string name="love">Love</string>
+    <string name="happy">Happy</string>
+    <string name="not_sure">Not Sure</string>
+    <string name="sad">Sad</string>
+    <string name="list">List</string>
+    <string name="name_space">       Name</string>
+    <string name="day">Day</string>
+    <string name="female">Female</string>
+    <string name="add_by_attaching_excel_file_from_here">If you have to add more than one student you may add by attaching excel file from here.</string>
+    <string name="don_t_have_format">Don\'t have format?</string>
+    <string name="excel">Excel</string>
+    <string name="csv">CSV</string>
+    <string name="note_file_size_should_not_be_more_than_10mb">Note: File size should not be more than 10mb.</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="please_enter_your_mobile_number_associated">Please enter your mobile number associated with your Account / School</string>
+    <string name="header">Header</string>
+    <string name="footer">Footer</string>
+    <string name="session_static">Session 2018–2019</string>
+    <string name="administration_setup">Administration Setup</string>
+    <string name="setup">Register</string>
+    <string name="students">Students</string>
+    <string name="teachers">Teachers</string>
+    <string name="support">Support</string>
+    <string name="login_static">Login</string>
+    <string name="forget_enrolment_id">Forget Enrollment Id?</string>
+    <string name="verified">Verified</string>
+    <string name="select_board">Select board</string>
+    <string name="enter_enrollment_id">Enter Enrollment Id</string>
+    <string name="enter_enrollment_id_mobile">Enrollment Id/Mobile no.</string>
+    <string name="forget_enrolment_id_passcode">Forget Enrollment Id/Passcode?</string>
+    <string name="forget_passcode">Forget Passcode?</string>
+    <string name="staging">Staging</string>
+    <string name="production">Production</string>
+    <string name="select_attendance">Select Attendance *</string>
+    <string name="attendance_submitted">Attendance Submitted</string>
+    <string name="feedback">Feedback</string>
+    <string name="about_school">About School</string>
+    <string name="view_profile">View Profile</string>
+    <string name="id_card">Id Card</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="sent_four_digit_otp">We have sent four digit OTP on your registered mobile number +919506228028</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="enter_verification_code">Enter Passcode</string>
+    <string name="we_have_sent_you_a_4_digit_verification_code">We have sent you a 4 digit verification code</string>
+    <string name="show_quiz_for">Show Quiz for :</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="admission_date">Admission Date</string>
+    <string name="status">Status</string>
+    <string name="active">Active</string>
+    <string name="disabled">Disabled</string>
+    <string name="deleted">Deleted</string>
+    <string name="proceed">Proceed</string>
+    <string name="no_filter">No Filter</string>
+    <string name="joining_date">Joining Date</string>
+    <string name="subject_w_star">Subject</string>
+    <string name="role">ROLE</string>
+    <string name="_0000001">(0000001)</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_01">01</string>
+    <string name="_02">02</string>
+    <string name="_03">03</string>
+    <string name="_04">04</string>
+    <string name="_05">05</string>
+    <string name="_06">06</string>
+    <string name="_07">07</string>
+    <string name="_08">08</string>
+    <string name="_09">09</string>
+    <string name="_10">10</string>
+    <string name="_11">11</string>
+    <string name="_12">12</string>
+    <string name="_13">13</string>
+    <string name="_14">14</string>
+    <string name="_15">15</string>
+    <string name="_16">16</string>
+    <string name="_17">17</string>
+    <string name="_18">18</string>
+    <string name="_19">19</string>
+    <string name="_20">20</string>
+    <string name="_21">21</string>
+    <string name="_22">22</string>
+    <string name="_23">23</string>
+    <string name="_24">24</string>
+    <string name="_25">25</string>
+    <string name="_26">26</string>
+    <string name="_27">27</string>
+    <string name="_28">28</string>
+    <string name="_29">29</string>
+    <string name="_30">30</string>
+    <string name="_31">31</string>
+    <string name="_32">32</string>
+    <string name="_33">33</string>
+    <string name="_34">34</string>
+    <string name="_35">35</string>
+    <string name="_36">36</string>
+    <string name="report_an_issue">Report an Issue</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="suggest_new_features">Suggest Features</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="invalid_qr_code">Invalid QR code. Please contact your school Amdin for valid Qr Code/Image.</string>
+    <string name="need_help">Need Help?</string>
+    <string name="pancard">Pancard </string>
+    <string name="place_card_inside_the_box">Place Card inside the box</string>
+    <string name="review_pan_card">REVIEW PAN CARD</string>
+    <string name="retake">RETAKE</string>
+    <string name="class_description">Class (Description)</string>
+    <string name="add_subject_plus">ADD SUBJECT +</string>
+    <string name="no_record_found">No Record Found</string>
+    <string name="group_name">Group Name</string>
+    <string name="d_o_a">D.O.A</string>
+    <string name="mode">Mode</string>
+    <string name="profile_photo">Profile photo</string>
+    <string name="father_s_name_star">Father\'s Name *</string>
+    <string name="mobile_no_star">Mobile No. *</string>
+    <string name="name_star">Name *</string>
+    <string name="call_us">Call us</string>
+    <string name="sent">Sent</string>
+    <string name="_5th">5th</string>
+    <string name="class_wise">Class Wise</string>
+    <string name="full_name">Full Name</string>
+    <string name="first_name_w_star">First Name</string>
+    <string name="mobile_w_star">Mobile</string>
+    <string name="select">Select</string>
+    <string name="date_time_static">03/03/2019 2:49 AM</string>
+    <string name="posted_by">Posted By</string>
+    <string name="notice_title">Notice Title</string>
+    <string name="present">Present</string>
+    <string name="absent">Absent</string>
+    <string name="p">P</string>
+    <string name="star_1">*</string>
+    <string name="name_other">Name:</string>
+    <string name="enrl_id">Enrl. Id:</string>
+    <string name="time_other">Time:</string>
+    <string name="history">History</string>
+    <string name="pay">Pay</string>
+    <string name="rs_static">-1000</string>
+    <string name="time_static">12:45</string>
+    <string name="closing_amount">closing amount</string>
+    <string name="jan">JAN</string>
+    <string name="n_a">N/A</string>
+    <string name="total">Total</string>
+    <string name="comma_symbol">-</string>
+    <string name="paid">Paid</string>
+    <string name="equal_symbol">=</string>
+    <string name="due">Due</string>
+    <string name="an_hour_ago">An hour ago</string>
+    <string name="student_name">Student Name</string>
+    <string name="remove">Remove</string>
+    <string name="always_on_time">Always on time</string>
+    <string name="class_other">Class :</string>
+    <string name="first_a">FIRST (A)</string>
+    <string name="first_name_other">First Name:</string>
+    <string name="last_name_other">Last Name:</string>
+    <string name="mobile_number_other">Mobile Number:</string>
+    <string name="father_name_other">Father Name:</string>
+    <string name="mother_name_other">Mother Name:</string>
+    <string name="gender_other">Gender:</string>
+    <string name="requested_on_other">Requested On:</string>
+    <string name="decline">DECLINE</string>
+    <string name="accept">ACCEPT</string>
+
+    <string name="roll_number_other">Roll Number:</string>
+    <string name="email_other">Email:</string>
+    <string name="section_other">Section:</string>
+    <string name="dob_other">DOB:</string>
+    <string name="_0">0</string>
+    <string name="start_time_other">Start Time:</string>
+    <string name="duration_other">Duration:</string>
+    <string name="password_other">Password:</string>
+    <string name="subject_other">Subject :</string>
+    <string name="hindi">HINDI</string>
+    <string name="husband_father_other">Husband/Father:</string>
+    <string name="father_husband_other">Father/Husband:</string>
+    <string name="from_to">From-To</string>
+    <string name="school_name_static">G.A.S. Memorial Public School</string>
+    <string name="open">Open</string>
+    <string name="first">First</string>
+    <string name="close">Close</string>
+    <string name="school_code">School Code</string>
+    <string name="qrcode">qrCode</string>
+    <string name="qr_code">QR Code</string>
+
+    <string name="office">(Office)</string>
+    <string name="contact_no">Contact No.</string>
+    <string name="adminname">adminName</string>
+    <string name="admin">(Admin)</string>
+    <string name="principalname">PrincipalName</string>
+
+    <string name="section">Section</string>
+    <string name="sect">Section :</string>
+    <string name="section_star">Section *</string>
+    <string name="write_application">Write Application *</string>
+    <string name="write_application_w">Write Application</string>
+    <string name="add_bo">Add BO</string>
+    <string name="edit_bo_name">Edit BO name:</string>
+    <string name="input_a_bo_name">input a bo name</string>
+    <string name="bo_members">BO members:</string>
+    <string name="delete_bo">Delete BO</string>
+    <string name="save_bo_name">Save BO Name</string>
+    <string name="add_question">Add Question</string>
+    <string name="all">All</string>
+    <string name="my">My</string>
+    <string name="answered">Answered</string>
+    <string name="dismissed">Dismissed</string>
+    <string name="bo1">bo1</string>
+    <string name="assign">Assign</string>
+    <string name="user1">user1</string>
+    <string name="assign_to">Assign to</string>
+    <string name="move_to">Move to</string>
+    <string name="username">UserName</string>
+    <string name="username_s">UserName *</string>
+    <string name="password">Password</string>
+    <string name="password_s">Password *</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="chats">Chats</string>
+    <string name="more">More</string>
+    <string name="item">Item</string>
+    <string name="powered_by_mschooling">mSchooling</string>
+    <string name="join_bo">Join Bo</string>
+    <string name="request_for_help">Request for Help</string>
+    <string name="connecting">Connecting…</string>
+    <string name="wait_host_to_start_this_meeting">Wait host to start this meeting…</string>
+    <string name="please_wait_the_meeting_host_will_let_you_in_soon">Please wait, the meeting host will let you in soon.</string>
+    <string name="pending">Pending</string>
+    <string name="timetable">Timetable</string>
+    <string name="homework">Homework</string>
+    <string name="notification">Notifications</string>
+    <string name="network_error_msg">Something went wrong, Please check your internet connection and try again.</string>
+    <string name="register_message">If your school is not register with mSchooling, Please register it now (Only for Administration)</string>
+    <string name="please_select_class">Please select class</string>
+    <string name="please_select_class_section">Please select class/section</string>
+    <string name="please_select_class_and_subject">Please select class and subject</string>
+    <string name="enter_meeting_subject">Enter meeting subject</string>
+    <string name="select_role">Select role</string>
+    <string name="discussion">Discussion</string>
+    <string name="application_reason">Application Reason</string>
+    <string name="subs_mgs">mSchooling offers a paid plan for you, Please buy our subscription plan.</string>
+    <string name="subs_mgs2">Your school has not subscribed our service. Kindly reach out to your school administration.</string>
+    <string name="apply_subs">Apply for Subscription</string>
+    <string name="applied_subs">Applied for Subscription</string>
+    <string name="plan">Plan</string>
+    <string name="per_st_per_mnth">Per student per month</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="video_name">Enter video name *</string>
+    <string name="enter_url">Enter/Paste url *</string>
+
+    <string name="open_time">Open time *</string>
+    <string name="close_time">Close time *</string>
+    <string name="gstin">GSTIN</string>
+    <string name="address_details">Address Details</string>
+    <string name="building_no">Building No. *</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="school_contact2">School Contact *</string>
+    <string name="school_email">School Email *</string>
+    <string name="admin_details">Admin Details</string>
+    <string name="email2">Email</string>
+    <string name="principal_detail">Principal Details</string>
+    <string name="social_media">Social Media</string>
+    <string name="welcome_to_mschooling">Welcome to mSchooling !</string>
+    <string name="mschooling_description">mSchooling is a professional, most trusted and verified school mobile app developed by mSchooling community an internal entity of Innobins Decision Science Pvt Ltd. to simplify the daily life of educators. mSchooling offers one of the best e-governance ERP and best-in-class mobile applications to educational institutions such as schools, coaching, and colleges across the india.</string>
+    <string name="step1">Step 1</string>
+    <string name="all_class_message">Please add all of the classes.</string>
+    <string name="step2">Step 2</string>
+    <string name="add_all_subject">Please add all the Mandatory and Optional Subjects.</string>
+    <string name="edit">EDIT</string>
+    <string name="delete2">DELETE</string>
+    <string name="share_qr_msg">Share this QR code to your students and teachers, so that they can register in your school.</string>
+    <string name="share_qr">Share QR Code</string>
+    <string name="call">Call</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="email_new">Email</string>
+    <string name="sms">SMS</string>
+    <string name="event_name">Event Name *</string>
+
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_mobile_number">Please enter mobile number</string>
+    <string name="please_valid_mobile_number">Please enter valid mobile number</string>
+    <string name="please_select_dob">Please select date of birth</string>
+    <string name="tool_parents_detail">Parents Detail</string>
+    <string name="tool_address_detail">Address Details</string>
+    <string name="tool_identification">Identification</string>
+    <string name="tool_other_details">Other Details</string>
+    <string name="enter_your_last_school">Enter your last school</string>
+    <string name="enter_your_last_class">Enter your last class</string>
+    <string name="tool_add_students">Add Students</string>
+    <string name="please_select_file">Please select file</string>
+    <string name="file_success_fully_downloaded">File successfully downloaded!</string>
+    <string name="no_application_found_open_the_file">No application found which can open the file</string>
+    <string name="file_successfully_uploaded">File successfully uploaded</string>
+    <string name="tool_image">Image</string>
+    <string name="album">Album</string>
+    <string name="tap_to_select">Tap to select</string>
+    <string name="select_profile_image">Select profile image</string>
+    <string name="please_enter_father_husband_name">Please enter father/husband name</string>
+    <string name="tool_identification_detail">Identification Details</string>
+    <string name="tool_bank_details">Bank Details</string>
+    <string name="classes">Classes</string>
+    <string name="subjects">Subjects</string>
+    <string name="tool_complaint_reason">Complaint Reason</string>
+    <string name="please_write_your_message">Please write your message</string>
+    <string name="tool_update_video">Update Video</string>
+    <string name="tool_add_video">Add Video</string>
+    <string name="enter_url_w_star">Enter/Paste url</string>
+    <string name="enter_valid_url">Enter valid url</string>
+    <string name="videos">Videos</string>
+    <string name="adhaar_card">Aadhaar Card</string>
+    <string name="place_adhaar_card_inside_the_box">Place front adhaar card inside the box</string>
+    <string name="place_pancard_inside_the_box">Place pancard inside the box</string>
+    <string name="focuse_camera_account_number_for_better_result">FOCUS CAMERA ON ACCOUNT NUMBER FOR BETTER RESULT</string>
+    <string name="focuse_camera_on_cin_for_better_result">FOCUS CAMERA ON CIN FOR BETTER RESULT</string>
+    <string name="place_adhaar_card_backside_the_box">Place aadhaar backside inside the box</string>
+    <string name="select_aadhaar_front">Select Aadhaar front</string>
+    <string name="select_adhaar_back">Select Aadhaar back</string>
+    <string name="all_allow">Allow All</string>
+    <string name="remind_me_later">Remind Me Later</string>
+    <string name="check_runtiome_permission_message"><![CDATA[\"<p>Dear User, </p><p>Seems like you have <b>\"Denied\"</b> the minimum requirement permission to access more features of application.</p><p>You must have to <b>\"Allow\"</b> all permission. We will not share your data with anyone else.</p><p>Do you want to enable all requirement permission ?</p><p>Go To : Settings >> App > \"]]></string>
+    <string name="count">\" COUNT: \"</string>
+    <string name="select_enrolled_w_star">Select Enrolled</string>
+    <string name="academic">Academic</string>
+    <string name="tool_parent">Parent</string>
+    <string name="basic">Basic</string>
+    <string name="bank">Bank</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="personal">Personal</string>
+    <string name="create_questions">Create Questions</string>
+    <string name="update_questions">Update Questions</string>
+    <string name="enter_option">\"Enter option \"</string>
+    <string name="select_right_answer">\"Select right answer \"</string>
+    <string name="create_quiz">Create Quiz</string>
+    <string name="please_enter_quiz_name">Please enter quiz name</string>
+    <string name="please_select_quiz_type">Please select quiz type</string>
+    <string name="assign_quiz">Assign Quiz</string>
+    <string name="please_select_subject">Please select subject</string>
+    <string name="please_enter_marks">Please enter marks</string>
+    <string name="please_enter_no_of_attempts">Please enter no. of attempts</string>
+    <string name="please_enter_time">Please enter time</string>
+    <string name="end_this_test">Are you sure you want to end this test?</string>
+    <string name="submit_this_test">Are you sure you want to submit this test?</string>
+    <string name="hour">hr</string>
+    <string name="minute">min</string>
+    <string name="test_time_up">Your time is up, Please submit the quiz.</string>
+    <string name="scorecard">Scorecard</string>
+    <string name="student_or_date">Student/Date</string>
+    <string name="email_subject_message">Query Regarding mSchooling App</string>
+    <string name="whatsapp_not_exist">WhatsApp not exist</string>
+    <string name="you_have_added_any_reason">You have added any reason</string>
+    <string name="update_class">Update Class</string>
+    <string name="enter_section_name">Please enter section name</string>
+    <string name="cant_create_more_section">Sorry you can\'t create more than 6 section</string>
+    <string name="add_omplaint">Add Complaint</string>
+    <string name="please_select_reason">Please select reason.</string>
+    <string name="please_enter_message">Please enter message.</string>
+    <string name="select_reason">Select Reason</string>
+    <string name="select_reason_s">Select Reason *</string>
+    <string name="add_event">Add Event</string>
+    <string name="update_event">Update Event</string>
+    <string name="please_enter_event_name">Please enter event name</string>
+    <string name="please_enter_event_description">Please enter event description</string>
+    <string name="enter_title">Enter heading </string>
+    <string name="error_msg_something_went_wrong">Some thing went wrong, Please try again.</string>
+    <string name="add_notice">Add Notice</string>
+    <string name="please_enter_notice_title">Please enter notice title.</string>
+    <string name="please_enter_notice">PLease enter notice.</string>
+    <string name="location">Location</string>
+    <string name="location_not_enable">Location not enabled!</string>
+    <string name="open_location_setting">Open location settings</string>
+    <string name="location_not_support_device">Location not supported in this device</string>
+    <string name="unable_to_create_maps">Sorry! unable to create maps</string>
+    <string name="google_play_services_not_available">\"Google Play Services is not available: \"</string>
+    <string name="update_subject">Update Subject</string>
+    <string name="admin_login_message">You have logged in with ADMIN role. This role is restricted to unauthorized users if you are not authorized to use it please log out immediately.</string>
+    <string name="backpress_message">Press back again to exit</string>
+    <string name="app_update_message">A new version of mSchooling is available. Please update to version</string>
+    <string name="now">\" now.\"</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="enter_complete_old_passcode">Enter complete Old Passcode</string>
+    <string name="enter_complete_new_passcode">Enter complete new Passcode</string>
+    <string name="enter_confirm_passcode">Enter Confirm Passcode</string>
+    <string name="enter_complete_confirm_passcode">Enter complete confirm Passcode</string>
+    <string name="password_confirm_does_not_match">Password and confirm does not match</string>
+    <string name="Ppease_select_at_least_class_section">Please select at least a class/section</string>
+    <string name="please_select_the_class">Please select the class</string>
+    <string name="tool_complaints">Complaints</string>
+    <string name="tool_add_group">Add Group</string>
+    <string name="update_add_group">Update Group</string>
+    <string name="enter_group_name">Enter group name</string>
+    <string name="tool_events">Events</string>
+    <string name="please_give_the_feedback">Please give the feedback</string>
+
+    <string name="forget">Forget</string>
+    <string name="tool_groups">Groups</string>
+    <string name="help">Help</string>
+    <string name="please_suggest_new_features">Please suggest new features</string>
+    <string name="tool_i_cards">I-Cards</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="please_insert_image">Please insert image</string>
+    <string name="please_insert_pdf">Please insert pdf</string>
+    <string name="tool_select_language">Select Language</string>
+    <string name="tool_login">Login</string>
+    <string name="login_privacy_poicy">By continuing, you are indicating that you have read and agree to the Terms of Use and  Privacy Policy</string>
+    <string name="invalid_enrollment_id">Invalid Enrollment Id</string>
+    <string name="tool_notices">Notices</string>
+    <string name="tool_verify_passcode">Verify Passcode</string>
+    <string name="enter_complete_otp">Enter complete OTP</string>
+    <string name="time_remaining">Time Remaining: </string>
+    <string name="done">done!</string>
+    <string name="tool_timetable">Timetable</string>
+    <string name="update_student">Updated Student</string>
+    <string name="download_pdf_viewer">Download a PDF Viewer to see the generated PDF</string>
+    <string name="qr_code_not_generated">QR Code Is not Generated</string>
+    <string name="enter_school_name">Enter school name</string>
+    <string name="enter_school_description">Enter school description</string>
+    <string name="select_opening_time">Select opening time</string>
+    <string name="select_closing_time">Select closing time</string>
+    <string name="enter_building_number">Enter building number</string>
+    <string name="enter_street_locality_number">Enter street/locality number</string>
+    <string name="enter_city_number">Enter city number</string>
+    <string name="enter_pin_code">Enter pin code</string>
+    <string name="enter_valid_pin_code">Enter valid pin code</string>
+    <string name="select_state">Select state</string>
+    <string name="select_geo_location">Select geo location</string>
+    <string name="enter_school_contact_number">Enter school contact number</string>
+    <string name="enter_school_email">Enter school email</string>
+    <string name="enter_valid_school_email">Enter valid school email</string>
+    <string name="enter_valid_admin_email">Enter valid admin email</string>
+    <string name="enter_admin_name">Enter admin name</string>
+    <string name="enter_admin_mobile">Enter admin mobile</string>
+    <string name="enter_valid_admin_mobile">Enter valid admin mobile</string>
+    <string name="enter_principle_name">Enter principal name</string>
+    <string name="enter_principle_mobile">Enter principal mobile</string>
+    <string name="enter_valid_principle_mobile">Enter valid principal mobile</string>
+    <string name="location_marked_on_map">Your location has been marked on map</string>
+    <string name="type_your_issue">Type your issue</string>
+    <string name="please_add_report_an_issue">Please add report an issue</string>
+    <string name="please_select_report_an_issue">Please select report an issue</string>
+
+    <string name="message_is_not_working">Messaging is not working</string>
+    <string name="notification_is_not_working">Notification is not working properly</string>
+    <string name="student_details_not_working">Student detail is not working</string>
+    <string name="not_able_to_add_remove_student">Not able to add/remove student</string>
+    <string name="not_able_to_add_remove_teacher">Not able to add/remove teacher</string>
+    <string name="tool_salary">Salary</string>
+    <string name="school_details">School Details</string>
+    <string name="tool_student_details">Information</string>
+    <string name="tool_teacher_details">Information</string>
+    <string name="tool_guide">Guide</string>
+    <string name="are_you_sure">Are you sure you want to </string>
+    <string name="question_symbol">\?</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="tool_filter">Filter</string>
+    <string name="end_date_should_be_greater">End date should be greater than start date!</string>
+    <string name="tool_subjects">Subjects</string>
+    <string name="tool_absence">Absence</string>
+    <string name="you_cant_delete_this_record">You can\'t delete this record</string>
+    <string name="you_cant_disable_this_record">You can\'t disable this record</string>
+    <string name="title_delete">Delete?</string>
+    <string name="are_you_sure_to_delete_record">Are you sure you want to delete?</string>
+    <string name="whatsApp_not_installed">WhatsApp not Installed</string>
+    <string name="email_not_found">Email not found</string>
+    <string name="there_is_no_email_client_installed">There is no email client installed.</string>
+    <string name="tool_upload_yllabus">Add Syllabus</string>
+    <string name="tool_update_yllabus">Update Syllabus</string>
+    <string name="please_scan_only_qr_code">Please scan only QR Code!</string>
+    <string name="please_enter_subject">Please enter subject.</string>
+    <string name="please_write_application">Please write application.</string>
+    <string name="first_school">This is my first school</string>
+    <string name="first_admission">This is my first admission</string>
+    <string name="enter_street">Enter Street</string>
+    <string name="enter_city_name">Enter city name</string>
+    <string name="please_select_image">Please select image</string>
+    <string name="enter_father_name">Enter father name</string>
+    <string name="enter_fathers_mobile">Enter father \'s mobile</string>
+    <string name="enter_mother_name">Enter mother name</string>
+    <string name="enter_flat_number">Enter Flat Number</string>
+    <string name="enter_account_holder_ame">Enter Account Holder Name</string>
+    <string name="enter_account_number">Enter Account Number</string>
+    <string name="enter_name_of_the_bank">Enter Name of the Bank</string>
+    <string name="enter_branch_name">Enter Branch Name</string>
+    <string name="enter_bank_address">Enter Bank Address</string>
+    <string name="enter_ifsc_code">Enter IFSC code</string>
+    <string name="tool_meetings">Meetings</string>
+    <string name="failed_initialize_mschooling_sdk">\"Failed to initialize mSchooling SDK. Error: \"</string>
+    <string name="live_plugin_not_supported_android_version">Live plugin is not supported on android version</string>
+    <string name="class_not_started_now">Class not started now</string>
+    <string name="tool_add_meeting">Add Meeting</string>
+    <string name="tool_update_meeting">Update Meeting</string>
+    <string name="enter_class_subject">Enter class subject</string>
+    <string name="failed">Failed</string>
+    <string name="you_need_enter_user_and_pass">You need to enter user name and password.</string>
+    <string name="mschooling_sdk_msg">mSchooling SDK has not been initialized successfully or sdk is logging in.</string>
+    <string name="mschooling_sdk_not_initialized">mSchooling Sdk has not been initialized successfully</string>
+    <string name="login_failed_result_code">\"Login failed please enter correct id and password = \"</string>
+    <string name="failed_to_initialize_wait_15_second">\"Failed to initialize please wait 15 second. Error: \"</string>
+    <string name="lower_all_hands_successfully">Lower all hands successfully</string>
+    <string name="reclaim_host_successfully">Reclaim host successfully</string>
+    <string name="need_password_or_display_name">Need password or displayName</string>
+    <string name="end_meeting">End meeting</string>
+    <string name="end">End</string>
+    <string name="leave_meeting">Leave meeting</string>
+    <string name="leave">Leave</string>
+    <string name="leave_bo">Leave BO</string>
+    <string name="meeting_fail">Meeting Fail</string>
+    <string name="error">Error:</string>
+    <string name="need_register_to_join_this_webinar_meeting">\"Need register to join this webinar meeting \"</string>
+    <string name="meeting_alert">Meeting Alert</string>
+    <string name="end_or_start_meeting">You have a meeting that is currently in-progress. Please end it to start a new meeting.</string>
+    <string name="end_other_meeting">End Other Meeting</string>
+    <string name="the_host_is_inviting_you_to_join_breakout_room">\"The host is inviting you to join Breakout Room: \"</string>
+    <string name="later">Later</string>
+    <string name="join">Join</string>
+    <string name="joining">Joining</string>
+    <string name="action">Action</string>
+    <string name="add_success_anonymously">Add success anonymously:</string>
+    <string name="add_fail_anonymously">Add fail anonymously:</string>
+    <string name="fails">fail</string>
+    <string name="first_create_break_room">first create break room</string>
+    <string name="break_rooms_already_exists">break rooms already exists</string>
+    <string name="close_all_bo">Close All BO</string>
+    <string name="open_all_bo">Open All BO</string>
+    <string name="join_successfully">Join successfully</string>
+    <string name="join_failed">Join failed</string>
+    <string name="all_participants_breakout_rooms">All participants have been assigned to Breakout Rooms.</string>
+    <string name="note_video">Note: Please enter/paste only youtube url (link)</string>
+    <string name="mark_attendance">Mark Attendance</string>
+    <string name="tool_quiz">Quiz</string>
+    <string name="no_subject_found">No Subject Found</string>
+    <string name="select_font">Select Font</string>
+    <string name="scan_enter_qr_code">Scan/Enter QR Code</string>
+    <string name="pleaselook_the_form_and_filled_it_carefully">Please look the form and filled it carefully</string>
+    <string name="are_you_sure_you_want_to">Are you sure you want to </string>
+    <string name="session_expire">Your session has been expired please login again.</string>
+    <string name="setup2">Setup</string>
+    <string name="username2">USERNAME</string>
+    <string name="password2">PASSWORD</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="please_enter_user_name">Please enter user name</string>
+    <string name="update_Setup">Update Setup</string>
+    <string name="create_examination">Create Exam</string>
+    <string name="enter_exam_name">Enter exam name *</string>
+    <string name="please_enter_exam">Please enter exam</string>
+    <string name="select_exam_type">Select exam type</string>
+    <string name="select_exam_type_star">Select exam type *</string>
+    <string name="update_examination">Update Exam</string>
+    <string name="select_exam_star">Exam *</string>
+    <string name="select_exam">Select exam</string>
+    <string name="enter_total_mark">Enter total marks (Selected Subject) *</string>
+    <string name="tatal_mark">Total Marks :</string>
+    <string name="obtained_mark">Obtained Marks</string>
+    <string name="mark">Marks</string>
+    <string name="please_enter_tatal_mark">Please enter total marks</string>
+    <string name="clas">Class : </string>
+    <string name="sub">Subject :</string>
+    <string name="theory">Theory</string>
+    <string name="practical">Practical</string>
+    <string name="enter_subject_code">Enter subject code</string>
+    <string name="enter_priority">Enter Priority (Display order)</string>
+    <string name="upgrade_to_premium">Upgrade to Premium</string>
+    <string name="video_category">"Category Name *"</string>
+    <string name="enter_category_name">Enter category name</string>
+    <string name="categories">Categories</string>
+    <string name="add_category">Add Category</string>
+    <string name="update_category">Update Category</string>
+    <string name="enter_zoom_email_id">Enter zoom email id *</string>
+    <string name="enter_zoom_password">Enter zoom password *</string>
+    <string name="zoom_credentials">Zoom Credentials</string>
+    <string name="add_study_material">Add Study Material</string>
+    <string name="update_study_material">Update Study Material</string>
+    <string name="study_material">Study Material</string>
+    <string name="zoom_correct_login_id_password">You need to enter correct user name and password.</string>
+    <string name="select_category">Select category</string>
+    <string name="zoom">Zoom Credential</string>
+
+    <string name="upload__aadhaar_card">Upload Aadhaar Card</string>
+    <string name="pan_number">Pan Number</string>
+    <string name="enrollment_id_s">Enrollment Id *</string>
+    <string name="group_name_cant_other">Group name can not be Other</string>
+    <string name="priority">Priority</string>
+    <string name="note_attendance_mode">Note: You won\'t be able change further, So think before submit.</string>
+    <string name="select_s">Select Mode *</string>
+    <string name="attendance_mode_error_message">Sorry, Attendance mode is not setup, Kindly contact to your school administration.</string>
+    <string name="result">Result</string>
+    <string name="fee_payment_not_working">Fee payment not working</string>
+
+    <string name="fees">Fees</string>
+    <string name="fee_details">Fee Details</string>
+    <string name="add_fee">Add Fee</string>
+    <string name="update_fee">Update Fee</string>
+    <string name="enter_fee_amount">Enter fee amount (Yearly)*</string>
+    <string name="enter_fee_type_name_s">Enter fee type name *</string>
+    <string name="enter_fee_type_name">Enter fee type name</string>
+    <string name="enter_fee_amount_msg">Enter fee amount</string>
+    <string name="select_fee">Select Fee</string>
+    <string name="select_fee_s">Select Fee *</string>
+    <string name="select_student_s">Select Student *</string>
+    <string name="enter_amount">Enter Amount *</string>
+    <string name="enter_late_fee">Enter Late Fee (if applied)</string>
+    <string name="enter_note">Enter note</string>
+    <string name="enter_paid_fee">Enter paid fee *</string>
+    <string name="publish">Publish</string>
+    <string name="unpublish">Un-Publish</string>
+    <string name="published">Published</string>
+    <string name="publish_confirmation">Are you sure you want to publish?</string>
+    <string name="unpublish_confirmation">Are you sure you want to un-publish?</string>
+    <string name="request_submitted">Request Submitted</string>
+    <string name="enter_prayer_s">Enter prayer *</string>
+    <string name="enter_prayer">Enter prayer </string>
+    <string name="enter_title_s">Enter title *</string>
+    <string name="add_prayer">Add Prayer</string>
+    <string name="update_prayer">Update Prayer</string>
+    <string name="pay_fee">Pay Fee</string>
+    <string name="prayer">Prayer</string>
+    <string name="verify_otp">Verify OTP</string>
+
+
+    <string-array name="class_arr">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4rd</item>
+    </string-array>
+    <string-array name="subject_type">
+        <item>MANDATORY</item>
+        <item>OPTIONAL</item>
+        <item>OTHER</item>
+    </string-array>
+    <string-array name="select_dept">
+        <item>TEACHER</item>
+        <item>STUDENT</item>
+    </string-array>
+    <string-array name="send_via">
+        <!--        <item>Email</item>-->
+        <item>SMS</item>
+    </string-array>
+    <string-array name="session_arr">
+        <item>2017 – 2018</item>
+        <item>2018 – 2019</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+
+    </string-array>
+
+    <string-array name="exam">
+        <item>ASSESSMENT</item>
+        <item>GRADING</item>
+
+    </string-array>
+    <string-array name="quizType">
+        <item>Select</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+
+    </string-array>
+
+
+    <string-array name="attendance">
+        <item>Tab to mark</item>
+        <item>Present</item>
+        <item>Absent</item>
+        <item>Leave</item>
+        <!--        <item>Half Day</item>-->
+
+    </string-array>
+    <string-array name="bloodGroup">
+        <item>Not Confirmed</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+
+    </string-array>
+    <string-array name="transport">
+        <item>Self</item>
+        <item>Schools Transport</item>
+        <item>No need</item>
+
+    </string-array>
+    <string-array name="student_type">
+        <item>Regular</item>
+        <item>Distance</item>
+    </string-array>
+    <string-array name="sport">
+        <item>Cricket</item>
+        <item>Hockey</item>
+        <item>Football</item>
+        <item>Volleyball</item>
+
+    </string-array>
+    <string-array name="category">
+        <item>General</item>
+        <item>OBC</item>
+        <item>SC</item>
+        <item>ST</item>
+
+    </string-array>
+    <string-array name="religion">
+        <item>Hindu</item>
+        <item>Islam</item>
+        <item>Cristian</item>
+        <item>Sikh</item>
+        <item>Other</item>
+
+    </string-array>
+    <string-array name="blood">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+
+    </string-array>
+    <string-array name="state">
+        <item>Select State</item>
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+
+    </string-array>
+    <string-array name="last_school">
+        <item>This is my first school</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="last_class">
+        <item>This is my first admission</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="country">
+        <item>India</item>
+    </string-array>
+
+
+    <string-array name="states">
+        <item>Andaman and Nicobar Islands</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chandigarh</item>
+        <item>Chhattisgarh</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Delhi</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Lakshadweep</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Pondicherry</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>JANUARY</item>
+        <item>FEBUARY</item>
+        <item>MARCH</item>
+        <item>APRIL</item>
+        <item>MAY</item>
+        <item>JUNE</item>
+        <item>JULY</item>
+        <item>AUGUST</item>
+        <item>SEPTEMBER</item>
+        <item>OCTOBER</item>
+        <item>NOVEMBER</item>
+        <item>DECEMBER</item>
+
+    </string-array>
+
+
+    <string-array name="year">
+        <item>2020</item>
+        <item>2021</item>
+    </string-array>
+
+
+    <string-array name="days">
+        <item>ALL</item>
+        <item>MONDAY</item>
+        <item>TUESDAY</item>
+        <item>WEDNESDAY</item>
+        <item>THURSDAY</item>
+        <item>FRIDAY</item>
+        <item>SATURDAY</item>
+        <item>SUNDAY</item>
+    </string-array>
+
+    <string-array name="select_role">
+        <item>SELECT</item>
+        <item>TEACHER</item>
+        <item>STUDENT</item>
+    </string-array>
+
+
+    <string-array name="role">
+        <item>ALL</item>
+        <item>TEACHER</item>
+        <item>STUDENT</item>
+    </string-array>
+
+    <string-array name="select_enrolled">
+        <item>ENROLLED</item>
+    </string-array>
+
+    <string name="min40">40 min</string>
+    <string name="please_select_student">Please select student</string>
+    <string name="academic_session">Academics</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="linkedIn">LinkedIn</string>
+    <string name="scroll">Scroll right to left</string>
+    <string name="are_you_sure2">Are you sure you want to do?</string>
+    <string name="enter_content">Enter content</string>
+    <string name="content">Content *</string>
+    <string name="start_time">Quiz Start Time *</string>
+    <string name="end_time">Quiz End Time *</string>
+    <string name="create_result">Create Result</string>
+    <string name="quiz">Quiz</string>
+    <string name="assignment">Assignment</string>
+    <string name="update_quiz">Update Quiz</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="assigned_quiz">Assigned Quiz</string>
+    <string name="start_time_cant_less">End time can\'t be less than Start time</string>
+    <string name="select_quiz_s">Select Quiz *</string>
+    <string name="select_quiz">Select Quiz</string>
+    <string name="please_select_quiz">Please select quiz</string>
+    <string name="total_marks">Total Marks</string>
+    <string name="total_attempts">Total Attempts</string>
+    <string name="start_time2">Start Time</string>
+    <string name="end_time2">End Time</string>
+    <string name="total_time">Total Time</string>
+    <string name="unassigned">Unassign</string>
+    <string name="edit2">Edit</string>
+    <string name="are_you_sure_you_want_to_unassigned">Are you sure you want to Unassigned</string>
+    <string name="enter_name_s">Enter Name *</string>
+    <string name="share_app">Share App</string>
+    <string name="claz">Class</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="enter_valid_qr_code">Enter valid QR code</string>
+    <string name="cant_create_more_options">You can\'t create more than 6 options</string>
+    <string name="same_as_monday">Same as Monday</string>
+    <string name="same_as_tuesday">Same as Tuesday</string>
+    <string name="same_as_wednesday">Same as Wednesday</string>
+    <string name="same_as_thursday">Same as Thursday</string>
+    <string name="same_as_friday">Same as Friday</string>
+    <string name="same_as_saturday">Same as Saturday</string>
+    <string name="public_resource">PUBLIC RESOURCE</string>
+    <string name="defaults">DEFAULT</string>
+    <string name="percentage">Percentage</string>
+    <string name="fee_type">Fee Type</string>
+    <string name="total_fee">Total Fee : </string>
+    <string name="paid_fee">Paid Fee : </string>
+    <string name="late_fee_charges">Late Fee Charges : </string>
+    <string name="mark_per_question">Mark per Question</string>
+    <string name="something_went_wrong_please_try_again">Sorry ! Something went wrong please try again.</string>
+    <string name="clear">Clear</string>
+    <string name="clear_all">Clear All</string>
+    <string name="you_will_receive_otp">(You will receive OTP on this number)</string>
+    <string name="not_found">Not found</string>
+    <string name="change_mobile_number">Change Mobile Number</string>
+    <string name="new_mobile_number">Enter new mobile number *</string>
+    <string name="please_check_form">Please check the form</string>
+    <string name="homework_detail">Homework detail</string>
+    <string name="reject">REJECT</string>
+    <string name="rejected">REJECTED</string>
+    <string name="accepted">ACCEPTED</string>
+    <string name="not_submitted_yet">Not Submitted yet</string>
+    <string name="upload_fresh">Upload Fresh</string>
+    <string name="birthday">Birthday</string>
+    <string name="session_migration">Migrate Session</string>
+    <string name="enter_session_name">Enter session name</string>
+    <string name="enter_session_name_s">Enter session name *</string>
+    <string name="migrate">Migrate</string>
+    <string name="admin_name">Admin Name *</string>
+    <string name="new_school">New School</string>
+    <string name="free_to_use">Free to use</string>
+    <string name="student_teacher">Student/Teacher</string>
+    <string name="obtained_mark_cant_be">Obtained mark can\'t be greater than total mark</string>
+    <string name="copied">Copied</string>
+    <string name="change_session">Change Session</string>
+    <string name="change_session_small">change session</string>
+    <string name="enter_passcode">Enter passcode</string>
+    <string name="enter_complete_passcode">Enter complete passcode</string>
+
+
+
+</resources>

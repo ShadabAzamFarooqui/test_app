@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLayout"
+    android:layout_height="match_parent"
+    android:background="@color/divider_menu"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_back"/>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:layout_height="match_parent">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/dp_10"
+           android:layout_marginBottom="@dimen/dp_40"
+           style="@style/font"
+           android:textAlignment="center"
+           android:textColor="@color/black"
+           android:textSize="@dimen/dp_16"
+           android:text="@string/add_by_attaching_excel_file_from_here"/>
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dp_40"
+           android:id="@+id/attachExcel"
+           android:layout_marginLeft="@dimen/dp_30"
+           android:layout_marginRight="@dimen/dp_30"
+           android:layout_marginBottom="@dimen/dp_10"
+           android:layout_gravity="center_vertical"
+           android:gravity="center_horizontal"
+           android:background="@drawable/dotted_bg">
+           <TextView
+               android:id="@+id/attachedFile"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:text="@string/attach_excel_file"
+               style="@style/font"
+               android:layout_gravity="center_vertical"
+               android:gravity="center_vertical"
+               android:textSize="@dimen/dp_16"
+               android:textColor="@color/colorPrimary"
+               android:textAlignment="center"/>
+
+           <ImageView
+               android:layout_width="@dimen/dp_20"
+               android:layout_height="@dimen/dp_20"
+               android:src="@drawable/attachment"
+               android:layout_marginLeft="@dimen/dp_10"
+               android:layout_marginRight="@dimen/dp_10"
+               android:layout_gravity="center_vertical"/>
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_gravity="center"
+           android:gravity="center"
+
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:orientation="vertical"
+               android:padding="5dp">
+
+               <TextView
+                   android:id="@+id/profile_reset"
+                   android:fontFamily="serif-monospace"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/black"
+                   android:text="@string/don_t_have_format"/>
+
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:orientation="vertical"
+               android:id="@+id/excel"
+               android:padding="5dp">
+
+               <TextView
+                   android:fontFamily="serif-monospace"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/blue"
+                   android:text="@string/excel"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_alignLeft="@+id/profile_reset"
+                   android:layout_alignRight="@+id/profile_reset"
+                   android:layout_below="@+id/profile_reset"
+                   android:visibility="visible"
+                   android:background="@color/blue"/>
+           </LinearLayout>
+
+
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:id="@+id/csv"
+               android:layout_marginLeft="@dimen/dp_10"
+               android:orientation="vertical"
+               android:padding="5dp">
+
+               <TextView
+                   android:fontFamily="serif-monospace"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/blue"
+                   android:text="@string/csv"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_alignLeft="@+id/profile_reset"
+                   android:layout_alignRight="@+id/profile_reset"
+                   android:layout_below="@+id/profile_reset"
+                   android:visibility="visible"
+                   android:background="@color/blue"/>
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           style="@style/font"
+           android:text="@string/note_file_size_should_not_be_more_than_10mb"
+           android:layout_marginTop="@dimen/dp_5"
+           android:textAlignment="center"/>
+
+
+       <Button
+           android:id="@+id/submit"
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:textColor="#ffffff"
+           android:layout_marginLeft="@dimen/dp_30"
+           android:layout_marginRight="@dimen/dp_30"
+           style="@style/font"
+           android:layout_marginTop="@dimen/dp_30"
+           android:layout_marginBottom="@dimen/dp_10"
+           android:textAllCaps="false"
+           android:background="@drawable/gradient_button"
+           android:textSize="@dimen/text_size_16"
+           android:text="@string/submit" />
+
+   </LinearLayout>
+</LinearLayout>
+

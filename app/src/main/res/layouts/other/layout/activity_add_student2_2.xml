@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:background="@color/divider_menu"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_back"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/rollError"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                app:errorTextAppearance="@style/WelcomeErrorAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginEnd="@dimen/dp_10"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/roll_number"
+                    android:textSize="@dimen/sp_12" />
+
+                <EditText
+                    android:id="@+id/rollNumber"
+                    style="@style/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_15"
+                    tools:ignore="Autofill,LabelFor" />
+            </LinearLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/dateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/gradient_border"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/dob_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    style="@style/font"
+                    android:text="@string/doa"
+                    android:textSize="@dimen/sp_12"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                    android:id="@+id/doa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/dob_tv"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    style="@style/font"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+
+                <ImageView
+                    android:id="@+id/datePicker"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBaseline="@+id/dob_tv"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:src="@drawable/date_icon" />
+            </RelativeLayout>
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lastSchoolError"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                app:errorTextAppearance="@style/WelcomeErrorAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    style="@style/font"
+                    android:text="@string/last_school"
+                    android:textSize="@dimen/dp_12" />
+
+                <Spinner
+                    android:id="@+id/lastSchoolSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    style="@style/font"
+                    android:entries="@array/last_school"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName|textCapWords"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:maxLength="50"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+
+
+
+
+
+                    <EditText
+                        android:id="@+id/lastSchool"
+                        style="@style/font"
+                        android:background="@drawable/gradient_border"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_width="match_parent"
+                        android:paddingLeft="@dimen/dp_15"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:maxLength="150"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lastClassError"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                app:errorTextAppearance="@style/WelcomeErrorAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    style="@style/font"
+                    android:text="@string/last_class"
+                    android:textSize="@dimen/dp_12" />
+
+                <Spinner
+                    android:id="@+id/lastClassSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    style="@style/font"
+                    android:entries="@array/last_class"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName|textCapWords"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:maxLength="50"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+
+
+                <EditText
+                    android:id="@+id/lastClass"
+                    style="@style/font"
+                    android:background="@drawable/gradient_border"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_width="match_parent"
+                    android:paddingStart="@dimen/dp_15"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:inputType="textPersonName|textCapWords"
+                    android:padding="10dp"
+                    android:maxLength="50"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_15" />
+            </LinearLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/uploadLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:text="@string/upload_previous_year_mark_sheet"
+                    android:textSize="@dimen/dp_12" />
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="@dimen/dp_150"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:background="@drawable/dotted_bg">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp_5"
+                        android:src="@drawable/marksheet_image"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:id="@+id/upload"
+                    android:layout_weight="1"
+                    android:elevation="@dimen/dp_1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/accept">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/dp_45"
+                        android:layout_marginLeft="@dimen/dp_45"
+                        android:padding="@dimen/dp_7"
+                        android:text="@string/upload"
+                        android:textColor="@color/red" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/gradient_button"
+                style="@style/font"
+                android:text="@string/save_amp_next"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_16" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

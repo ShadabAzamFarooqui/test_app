@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/gradient_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5">
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:text="@string/date_time_static"
+                        android:textAlignment="textStart"
+                        android:textSize="@dimen/dp_12" />
+
+                    <TextView
+                        android:id="@+id/postedBy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingRight="@dimen/dp_5"
+                        android:text="@string/posted_by"
+                        android:textAlignment="textEnd"
+                        android:textSize="@dimen/dp_12" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_5">
+
+                    <com.app.mschooling.utils.BuzzTextView
+                        android:id="@+id/title"
+                        style="@style/Gotham_Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/delete"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:text="@string/notice_title"
+                        android:textColor="@color/military_blue"
+                        android:textSize="@dimen/dp_16" />
+
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/icon_delete1" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@color/divider_menu" />
+
+                <TextView
+                    android:autoLink="all"
+                    android:id="@+id/application"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:ellipsize="end"
+                    android:text="@string/def"
+                    android:textColor="@color/black" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:id="@+id/marginLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_80"
+                android:visibility="visible">
+
+            </View>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
+
+
+

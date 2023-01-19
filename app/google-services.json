@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "746588841166",
+    "firebase_url": "https://m-schooling-pro.firebaseio.com",
+    "project_id": "m-schooling-pro",
+    "storage_bucket": "m-schooling-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746588841166:android:ae32a5f53a7eb6b3921c9f",
+        "android_client_info": {
+          "package_name": "com.app.mschooling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746588841166-6tun7gd3316m6rto72sbm13u130koe5e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.mschooling",
+            "certificate_hash": "2f3057b53b066c27a3cb2c086ddce6f4ebb5c2a9"
+          }
+        },
+        {
+          "client_id": "746588841166-n3ltjvsbk7hs853648aqlp8cu2jj63mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA495PhIRgZtPAme4f4_zbILySwJWGiV5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746588841166-n3ltjvsbk7hs853648aqlp8cu2jj63mi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-2465479969938764~8886544691"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746588841166:android:e8f637b17e1bd32e921c9f",
+        "android_client_info": {
+          "package_name": "com.app.mschooling.msch4u01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746588841166-n3ltjvsbk7hs853648aqlp8cu2jj63mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA495PhIRgZtPAme4f4_zbILySwJWGiV5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746588841166-n3ltjvsbk7hs853648aqlp8cu2jj63mi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746588841166:android:ca83e66b686a52c0921c9f",
+        "android_client_info": {
+          "package_name": "com.mschooling.chanakya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746588841166-n3ltjvsbk7hs853648aqlp8cu2jj63mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA495PhIRgZtPAme4f4_zbILySwJWGiV5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746588841166-n3ltjvsbk7hs853648aqlp8cu2jj63mi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

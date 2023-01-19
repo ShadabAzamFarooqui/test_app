@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="oval">
+            <gradient
+                android:angle="180"
+                android:endColor="@color/buttonStartColor"
+                android:startColor="@color/buttonEndColor" />
+        </shape>
+    </item>
+    <item
+        android:bottom="1.5dp"
+        android:left="1.5dp"
+        android:right="1.5dp"
+        android:top="1.5dp">
+        <shape
+            android:shape="oval">
+            <size
+                android:width="40dp"
+                android:height="40dp"/>
+        </shape>
+    </item>
+</layer-list>

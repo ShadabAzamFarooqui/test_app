@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_menu"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_back" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_10">
+
+                <com.app.mschooling.utils.BuzzTextView
+                    style="@style/Gotham_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_guide_1"
+                    android:textColor="@color/military_blue" />
+
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_400"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_10"
+                    android:scaleType="fitXY"
+                     />
+
+                <com.app.mschooling.utils.BuzzTextView
+                    style="@style/Gotham_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_guide_2"
+                    android:textColor="@color/military_blue" />
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_400"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_10"
+                    android:scaleType="fitXY"
+                   />
+
+                <com.app.mschooling.utils.BuzzTextView
+                    style="@style/Gotham_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_guide_3"
+                    android:textColor="@color/military_blue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="@dimen/dp_150"
+                        android:layout_height="@dimen/dp_350"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/dp_10" />
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="@dimen/dp_150"
+                        android:scaleType="fitXY"
+                        android:layout_height="@dimen/dp_350"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/dp_10" />
+                </LinearLayout>
+
+                <com.app.mschooling.utils.BuzzTextView
+                    style="@style/Gotham_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_guide_4"
+                    android:textColor="@color/military_blue" />
+
+                <ImageView
+                    android:id="@+id/image5"
+                    android:layout_width="@dimen/dp_200"
+                    android:layout_height="@dimen/dp_400"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:layout_margin="@dimen/dp_10"
+                    />
+
+
+                <com.app.mschooling.utils.BuzzTextView
+                    android:layout_width="wrap_content"
+                    style="@style/Gotham_Medium"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_guide_5"
+                    android:textColor="@color/military_blue" />
+
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="@dimen/dp_220"
+                    android:layout_height="@dimen/dp_220"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_10"
+                    android:scaleType="fitXY"
+                    />
+
+                <com.app.mschooling.utils.BuzzTextView
+                    style="@style/Gotham_Medium"
+                    android:onClick="help"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="@drawable/gradient_button_rounded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_30"
+                    android:paddingRight="@dimen/dp_30"
+                    android:paddingTop="@dimen/dp_12"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:text="@string/help_support"
+                    android:textSize="@dimen/dp_16"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

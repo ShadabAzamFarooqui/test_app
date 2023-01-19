@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="file_picker_app_name" translatable="false">मटेरियल फाइल पिकर</string>
+    <string name="action_close">बंद करें</string>
+    <string name="empty_directory_hint">खाली निर्देशिका</string>
+    <string name="type_archive">पुरालेख</string>
+    <string name="type_certificate">प्रमाणपत्र</string>
+    <string name="type_directory">निर्देशिका</string>
+    <string name="type_document">फ़ाइल</string>
+    <string name="type_drawing">चित्र</string>
+    <string name="type_excel">स्प्रेडशीट</string>
+    <string name="type_image">छवि</string>
+    <string name="type_music">वीडियो</string>
+    <string name="type_video">वीडियो</string>
+    <string name="type_pdf">पीडीएफ दस्तावेज</string>
+    <string name="type_power_point">प्रस्तुति</string>
+    <string name="type_word">दस्तावेज़</string>
+    <string name="type_apk">एपीके</string>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_menu">
+
+
+    <include layout="@layout/no_record" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:layout_height="0dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:padding="@dimen/dp_10"
+               android:layout_margin="@dimen/dp_10"
+               android:background="@drawable/gradient_border"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:textAlignment="textEnd"
+                       android:layout_height="wrap_content"
+                       android:text="@string/total_fee" />
+
+                   <com.app.mschooling.utils.BuzzTextView
+                       android:id="@+id/totalFee"
+                       style="@style/Gotham_Medium"
+                       android:layout_weight="1"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/military_blue"
+                       android:layout_marginStart="@dimen/dp_10"
+                       android:text="0.0"
+                       ads:ignore="HardcodedText" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:textAlignment="textEnd"
+                       android:layout_height="wrap_content"
+                       android:text="@string/total_paid2" />
+
+                   <com.app.mschooling.utils.BuzzTextView
+                       android:id="@+id/totalPaid"
+                       style="@style/Gotham_Medium"
+                       android:layout_weight="1"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/military_blue"
+                       android:layout_marginStart="@dimen/dp_10"
+                       android:text="0.0"
+                       ads:ignore="HardcodedText" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:textAlignment="textEnd"
+                       android:layout_height="wrap_content"
+                       android:text="@string/total_due2" />
+
+                   <com.app.mschooling.utils.BuzzTextView
+                       android:id="@+id/totalDue"
+                       style="@style/Gotham_Medium"
+                       android:layout_weight="1"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/military_blue"
+                       android:layout_marginStart="@dimen/dp_10"
+                       android:text="0.0"
+                       ads:ignore="HardcodedText" />
+               </LinearLayout>
+
+           </LinearLayout>
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recyclerView"
+               android:layout_width="match_parent"
+               android:paddingTop="@dimen/dp_5"
+               android:paddingBottom="@dimen/dp_5"
+               android:layout_height="match_parent"
+               android:visibility="visible" />
+
+       </LinearLayout>
+        <Button
+            android:id="@+id/submit"
+            style="@style/font"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/gradient_button"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

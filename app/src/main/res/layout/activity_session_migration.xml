@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/divider_menu"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.mschooling.session.activity.SessionMigrationActivity">
+
+    <include layout="@layout/header_back"/>
+
+    <LinearLayout
+        android:id="@+id/firstNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/gradient_border"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <TextView
+            style="@style/font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/enter_session_name_s"
+            android:textSize="@dimen/sp_12" />
+
+        <EditText
+            android:id="@+id/sessionName"
+            style="@style/font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_15"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLength="50"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/font"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/gradient_button"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_size_16" />
+
+
+</LinearLayout>

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/view0"
+        android:layout_width="199dp"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/ractangle_diagonal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/teacher"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_01"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_02"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_03"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_04"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_05"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_06"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_07"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_08"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_09"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_10"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_11"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_12"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_13"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_14"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_15"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_16"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_17"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_18"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_19"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_20"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_21"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_22"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_23"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_24"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_25"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_26"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_27"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_28"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout29"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_29"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout30"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_30"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout31"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/gallery_tittle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/_31"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5">
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/name"
+                style="@style/Gotham_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_5"
+                android:text="Shadab Azam Farooqui"
+                android:textColor="@color/military_blue"
+                android:textSize="@dimen/dp_16" />
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/enrollmentId"
+                style="@style/Gotham_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_5"
+                android:text="(0000001)"
+                android:textColor="@color/grayish_black"
+                android:textSize="@dimen/dp_12" />
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/rollNumber"
+                style="@style/Gotham_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_5"
+                android:text="(0000001)"
+                android:textColor="@color/grayish_black"
+                android:textSize="@dimen/dp_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="wrap_content"
+                android:background="@color/military_blue" />
+
+            <com.app.mschooling.utils.BuzzEditText
+                android:id="@+id/theory"
+                style="@style/Gotham_Medium"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="_____"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_14" />
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="wrap_content"
+                android:background="@color/military_blue" />
+
+            <com.app.mschooling.utils.BuzzEditText
+                android:id="@+id/practical"
+                style="@style/Gotham_Medium"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="_____"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_14" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/military_blue" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="visible"
+    android:id="@+id/toolbar_layout"
+    android:elevation="0dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/colorPrimary">
+
+        <com.app.mschooling.utils.BuzzTextView
+            style="@style/Gotham_Bold"
+            android:id="@+id/title"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_50"
+            android:textSize="@dimen/sp_17"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:text="@string/app_name"
+            android:textColor="@color/white" />
+
+
+        <EditText
+            android:id="@+id/search"
+            android:visibility="gone"
+            android:hint="@string/search"
+            android:paddingStart="@dimen/dp_7"
+            android:layout_marginTop="@dimen/dp_7"
+            android:layout_marginBottom="@dimen/dp_7"
+            style="@style/font"
+            android:background="@drawable/search_bg"
+            android:layout_marginRight="@dimen/dp_50"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:importantForAutofill="no"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_15"
+                android:src="@drawable/back_white2"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/search_btn"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@id/title"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_40"
+                android:src="@drawable/search_white"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/close"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@id/search"
+            android:layout_marginStart="@dimen/dp_6"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:src="@drawable/close"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

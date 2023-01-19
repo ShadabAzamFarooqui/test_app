@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_menu"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@drawable/gradient_border"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        style="@style/font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="@string/select_s"
+                        android:textSize="@dimen/dp_12" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        style="@style/font"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dp_15" />
+                </LinearLayout>
+
+                <com.app.mschooling.utils.BuzzTextView
+                    android:id="@+id/note"
+                    style="@style/Gotham_Medium"
+                    android:textColor="@color/military_blue"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:text="@string/note_attendance_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+                <EditText
+                    android:id="@+id/enterReason"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@drawable/gradient_border"
+                    android:elevation="@dimen/dp_1"
+                    android:gravity="start"
+                    android:hint="@string/enter_subject"
+                    android:inputType="textCapSentences"
+                    android:minHeight="@dimen/dp_40"
+                    android:padding="@dimen/dp_10" />
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/font"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/dp_30"
+                android:background="@drawable/gradient_button"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

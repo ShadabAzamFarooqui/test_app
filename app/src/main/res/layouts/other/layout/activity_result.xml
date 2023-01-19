@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/divider_menu"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/header_back" />
+
+        <LinearLayout
+            android:id="@+id/download"
+            android:layout_width="@dimen/dp_50"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_height="@dimen/dp_50">
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:src="@drawable/printer"
+                android:layout_height="@dimen/dp_20"
+                app:tint="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/no_record2" />
+
+
+
+   <WebView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/webView"/>
+
+
+</LinearLayout>

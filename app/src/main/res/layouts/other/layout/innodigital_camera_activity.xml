@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:visibility="visible"
+        android:id="@+id/cameraframe_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@android:color/black">
+
+        <!--<TextView-->
+            <!--android:id="@+id/texthintabove"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="95dp"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="Front page of Card"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="18sp"/>-->
+
+
+        <SurfaceView
+            android:id="@+id/imgSurface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pancard"
+            android:id="@+id/texthintabove"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:textSize="18sp"/>
+
+
+        <!--<TextView-->
+            <!--android:visibility="visible"-->
+            <!--android:id="@+id/upload_tv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:background="@drawable/bg_record_video"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_marginTop="40dp"-->
+            <!--android:layout_marginRight="40dp"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text="Upload"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="14sp" />-->
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:id="@+id/upload_tv"
+            android:visibility="gone"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_galery"/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/llImageModificationBottomOptions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imgImageDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.25"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/loadingPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlCaptureOption"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.75"
+                android:orientation="horizontal"
+                android:visibility="visible">
+                <TextView
+
+                    android:id="@+id/hintTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="@string/place_card_inside_the_box"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/imgChangeCamera"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:padding="10dp"-->
+                <!--android:src="@drawable/ic_change_camera" />-->
+
+
+                <LinearLayout
+
+                    android:id="@+id/middleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imgCapture"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/ic_capture" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:visibility="visible"
+                    android:id="@+id/imgFlashOnOff"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_flash_auto" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:background="@color/white">
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/powered_by"
+                android:textColor="@color/grayish_black"
+                android:textSize="12sp"
+                />
+
+            <com.app.mschooling.utils.BuzzTextView
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/grayish_black"
+                android:textSize="12sp"
+                />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/image_preview_pan">
+
+        <ImageView
+            android:id="@+id/imgShow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+          />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/outline_clear_white_36"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/close_box"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/review_msg"
+            android:text="@string/review_pan_card"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:id="@+id/undo_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/retake"
+                android:background="@drawable/camera_sideview"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_80"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/front_click_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload"
+                android:background="@drawable/camera_sideview"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_80"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/pancard_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload"
+                android:textAllCaps="true"
+                android:background="@drawable/camera_sideview"
+                android:textStyle="bold"
+                android:textColor="@color/grey_80"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/cheque_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload"
+                android:textAllCaps="true"
+                android:background="@drawable/camera_sideview"
+                android:textStyle="bold"
+                android:textColor="@color/grey_80"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/cio_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload"
+                android:textAllCaps="true"
+                android:background="@drawable/camera_sideview"
+                android:textStyle="bold"
+                android:textColor="@color/grey_80"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/final_click_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload"
+                android:textAllCaps="true"
+                android:background="@drawable/camera_sideview"
+                android:textStyle="bold"
+                android:textColor="@color/grey_80"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+   <!-- <android.support.v7.widget.CardView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_marginLeft="@dimen/dp_2"
+        android:layout_marginRight="@dimen/dp_2"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/search_layout"
+        android:visibility="visible"
+        android:layout_margin="2dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:background="@null"
+            android:padding="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:drawableLeft="@drawable/ic_magnify_grey600_24dp"
+            android:drawablePadding="5dp"
+            android:hint="Search here"
+            android:id="@+id/search"/>
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:id="@+id/close"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_margin="16dp"
+                android:background="@drawable/close"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:id="@+id/recyclerView"/>
+
+    <include layout="@layout/no_record2"/>
+
+</LinearLayout>

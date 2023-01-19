@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:visibility="visible"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/toolbar_layout"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="@dimen/dp_25"
+            android:background="@drawable/circle_military"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_marginRight="@dimen/dp_3"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:padding="@dimen/dp_4"
+                android:visibility="visible"
+                android:src="@drawable/mschooling_logo"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/info"
+            android:orientation="vertical">
+            <com.app.mschooling.utils.BuzzTextView
+                style="@style/Gotham_Bold"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15.1dp"
+                android:text="@string/mschooling_name"
+                android:textColor="@color/military_blue" />
+            <TextView
+                style="@style/Gotham_Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp_8"
+                android:layout_marginTop="-2dp"
+                android:layout_marginBottom="@dimen/dp_3"
+                android:text="@string/your_digital_manager"
+                android:textColor="@color/military_blue" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

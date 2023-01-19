@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_5">
+
+    <RadioButton
+        android:id="@+id/rb_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/always_on_time"
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/grey_level1"/>
+</LinearLayout>

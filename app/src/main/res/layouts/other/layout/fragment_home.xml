@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/divider_menu"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+           <include layout="@layout/home_page_slider"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_3">
+
+                <com.app.mschooling.utils.BuzzTextView
+                    android:id="@+id/adminHeading"
+                    style="@style/Gotham_Medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_18"
+                    android:padding="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/administration_setup"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/indicatorView"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false">
+
+
+                        <LinearLayout
+                            android:id="@+id/m1"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/dp_100">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                app:cardUseCompatPadding="true">
+
+
+                                <RelativeLayout
+                                    android:background="@drawable/selector"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <ImageView
+                                        android:layout_width="@dimen/dp_35"
+                                        android:layout_height="@dimen/dp_35"
+                                        android:layout_marginTop="@dimen/dp_25"
+                                        android:layout_centerHorizontal="true"
+                                        android:src="@drawable/clas"
+                                        app:tint="@color/military_blue"
+                                        tools:ignore="ContentDescription,TooDeepLayout" />
+
+                                    <LinearLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+
+                                        android:minHeight="@dimen/dp_25"
+                                        android:orientation="vertical">
+
+                                        <com.app.mschooling.utils.BuzzTextView
+
+                                            style="@style/Gotham_Medium"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:text="@string/claz"
+                                            android:textAlignment="center"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/military_blue" />
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+
+
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/m2"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_100"
+
+                                app:cardUseCompatPadding="true">
+
+
+                                <RelativeLayout
+                                    android:background="@drawable/selector"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <ImageView
+                                        android:layout_width="@dimen/dp_35"
+                                        android:layout_height="@dimen/dp_35"
+                                        android:layout_marginTop="@dimen/dp_25"
+                                        android:layout_centerHorizontal="true"
+                                        android:src="@drawable/subject"
+                                        app:tint="@color/military_blue"
+                                        tools:ignore="ContentDescription" />
+
+                                    <LinearLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+
+                                        android:minHeight="@dimen/dp_25"
+                                        android:orientation="vertical">
+
+                                        <com.app.mschooling.utils.BuzzTextView
+
+                                            style="@style/Gotham_Medium"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:text="@string/subject_w_star"
+                                            android:textAlignment="center"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/military_blue" />
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/m3"
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+
+                            <include layout="@layout/row_home_fragment"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <com.mlsdev.animatedrv.AnimatedRecyclerView
+                        android:id="@+id/adminRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:nestedScrollingEnabled="false" />
+                </RelativeLayout>
+
+
+                <com.app.mschooling.utils.BuzzTextView
+                    android:id="@+id/studentHeading"
+                    style="@style/Gotham_Medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_18"
+                    android:padding="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/students"/>
+
+                <com.mlsdev.animatedrv.AnimatedRecyclerView
+                    android:id="@+id/studentRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:nestedScrollingEnabled="false" />
+
+
+                <com.app.mschooling.utils.BuzzTextView
+                    android:id="@+id/teacherHeading"
+                    style="@style/Gotham_Medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_18"
+                    android:padding="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teachers"/>
+
+                <com.mlsdev.animatedrv.AnimatedRecyclerView
+                    android:id="@+id/teacherRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:nestedScrollingEnabled="false" />
+
+                <com.app.mschooling.utils.BuzzTextView
+                    android:id="@+id/otherHeading"
+                    style="@style/Gotham_Medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_18"
+                    android:padding="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other"/>
+
+                <com.mlsdev.animatedrv.AnimatedRecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:nestedScrollingEnabled="false" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
+

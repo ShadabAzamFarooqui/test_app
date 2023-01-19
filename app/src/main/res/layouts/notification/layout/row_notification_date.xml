@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context="com.app.mschooling.notification.activity.NotificationListActivity">
+
+
+        <include layout="@layout/no_record2" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="#F2F2F2">
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/date"
+                style="@style/Gotham_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/date_static"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/military_blue" />
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView"/>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:elevation="@dimen/dp_5"
+        android:visibility="visible"
+        app:cardCornerRadius="@dimen/dp_1"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:layout_height="wrap_content">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_margin="@dimen/dp_10"
+                 android:layout_height="wrap_content">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:text="@string/_1"
+                     android:id="@+id/count"
+                     android:gravity="center"
+                     android:textSize="@dimen/dp_14"/>
+                 <com.app.mschooling.utils.BuzzTextView
+                     style="@style/Gotham_Medium"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/dp_16"
+                     android:paddingLeft="@dimen/dp_10"
+                     android:id="@+id/fullName"
+                     android:text="@string/full_name"/>
+             </LinearLayout>
+          </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/divider_menu"
+                android:layout_marginBottom="@dimen/dp_5"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/first_name_other" />
+
+                <TextView
+                    android:id="@+id/firstName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black"
+                     />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/last_name_other" />
+
+                <TextView
+                    android:id="@+id/lastName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/black"
+                     />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mobile_number_other" />
+
+                <com.app.mschooling.utils.BuzzTextView
+                    style="@style/Gotham_Medium"
+                    android:id="@+id/mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity=""
+                    android:textColor="@color/grayish_black"
+                     />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/clazzLayout"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/class_other" />
+
+                <TextView
+                    android:id="@+id/clazz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/father_name_other" />
+
+                <TextView
+                    android:id="@+id/fatherName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                     />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mother_name_other" />
+
+                <TextView
+                    android:id="@+id/motherName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gender_other" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/requested_on_other" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                     />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+
+                   android:layout_marginRight="@dimen/dp_10"
+                   android:layout_height="wrap_content">
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="@dimen/dp_10"
+                       android:id="@+id/decline"
+                       android:layout_weight="1"
+                       android:elevation="@dimen/dp_1"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:background="@drawable/accept">
+
+
+                       <ImageView
+                           android:layout_width="@dimen/dp_10"
+                           android:layout_height="@dimen/dp_10"
+                           android:tint="@color/red"
+                           android:src="@drawable/close"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:gravity="center"
+                           android:padding="@dimen/dp_7"
+                           android:text="@string/decline"
+                           android:textColor="@color/red" />
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_margin="@dimen/dp_10"
+                       android:layout_weight="1"
+                       android:id="@+id/accept"
+                       android:elevation="@dimen/dp_1"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:background="@drawable/accept">
+
+                       <View
+                           android:layout_width="@dimen/dp_12"
+                           android:layout_height="@dimen/dp_12"
+                           android:background="@drawable/tick_green"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:gravity="center"
+                           android:padding="@dimen/dp_7"
+                           android:text="@string/accept"
+                           android:textColor="@color/green" />
+
+                   </LinearLayout>
+               </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

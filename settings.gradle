@@ -1,0 +1,4 @@
+include ':YouTubeAndroidPlayerApi'
+include ':app', ':OnBarcode.AndroidBarcode', ':mediapicker'
+include ':image_slider','pdf_viewer'/*,'pdf_picker'*/
+rootProject.name='mSchooling'

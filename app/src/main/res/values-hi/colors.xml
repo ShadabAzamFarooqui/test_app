@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff8c1a</color>
+    <color name="colorPrimaryDark">#ff8c1a</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="grayish_black">#2F4F4F</color>
+
+    <color name="black">#000000</color>
+    <color name="military_blue">#38507e</color>
+    <color name="default_text">#808080</color>
+    <color name="blue">#4F33FF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#008000</color>
+    <color name="light_grey">#B8B8B8</color>
+    <color name="light_greyish">#EBEBEB</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="transparent_blk">#99000000</color>
+
+    <color name="student_theme_color">#2c508c</color>
+    <color name="lesswhitetransparent">#20FFFFFF</color>
+    <color name="lesswhite1transparent">#40FFFFFF</color>
+
+    <color name="lesswhite2transparent">#60FFFFFF</color>
+    <color name="lesswhite3transparent">#70FFFFFF</color>
+    <color name="lesswhite4transparent">#75FFFFFF</color>
+    <color name="lesswhite5transparent">#95FFFFFF</color>
+
+    <color name="yellow_dark">#ffa508</color>
+    <color name="yellow_light">#eec65d</color>
+
+    <color name="sky_blue">#07D6F1</color>
+    <color name="blue_less">#f3f8fd</color>
+    <color name="parent_dark_blue">#0098db</color>
+    <color name="blue_dialoge">#01B8CA</color>
+    <color name="green_color">#008000</color>
+    <color name="grey">#e2e2e2</color>
+    <color name="grey_level1">#7e807f</color>
+    <color name="grey_level2">#828282</color>
+    <color name="grey_level3">#d1d1d1</color>
+    <color name="grey_level4">#e6e6e6</color>
+    <color name="divider_menu">#ffe0e0e0</color>
+    <color name="gallery_tittle">#77000000</color>
+    <color name="gallery_tittle2">#ffa64d</color>
+
+    <color name="week_color">#51B6B9</color>
+    <color name="day_disabled_background_color">#F1F5F8</color>
+    <color name="day_disabled_text_color">#DEDEDE</color>
+    <color name="selected_day_background">#03A7E9</color>
+    <color name="current_day_of_month">#03A7E9</color>
+    <color name="window_background_color">#7AA7E0</color>
+    <color name="red">#FF0000</color>
+    <color name="profile15fontGray2">#bababa</color>
+    <color name="ligh_grey">#7e7e7e</color>
+    <color name="grey_80">#686868</color>
+    <color name="whatsapp">#25D366</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="text_color">#164c62</color>
+</resources>

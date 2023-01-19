@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:elevation="0dp"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/hamburger"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_3"
+            android:background="@drawable/profile_bg"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/infoImg"
+                android:layout_width="@dimen/dp_26"
+                android:layout_height="@dimen/dp_26"
+                android:src="@drawable/little_steps"
+                android:visibility="visible"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:orientation="vertical">
+
+            <com.app.mschooling.utils.BuzzTextView
+                android:id="@+id/tv_title"
+                style="@style/Gotham_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="15.1sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notification"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/dp_10"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_50"
+            android:src="@drawable/notification"
+            android:visibility="visible"
+            app:tint="@color/white"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+</RelativeLayout>

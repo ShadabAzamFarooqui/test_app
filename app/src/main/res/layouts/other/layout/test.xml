@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/header_back"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/messageTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Text here" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp_10"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp"
+        android:background="@drawable/gradient_border"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+
+
+            <TextView
+                style="@style/font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="First Name *"
+                android:textSize="@dimen/dp_12" />
+
+            <EditText
+                style="@style/font"
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="10dp"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_15" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Text here" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@drawable/gradient_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/dp_18"
+                android:textColor="@color/black"
+                android:hint="Select Name"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_15"
+                android:paddingLeft="@dimen/dp_10"
+
+                />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@drawable/icon_next_grey"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp_7"
+            android:paddingLeft="@dimen/dp_5"
+            android:textColor="@color/colorAccent"
+            android:paddingRight="@dimen/dp_5"
+            android:textSize="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:text="Enter Name"/>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_15"
+            android:background="@drawable/gradient_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/dp_18"
+                android:textColor="@color/black"
+                android:text="Select Name"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_15"
+                android:paddingLeft="@dimen/dp_10"
+
+                />
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@drawable/icon_next_grey"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:text="Enter Name"/>
+    </RelativeLayout>
+</LinearLayout>
