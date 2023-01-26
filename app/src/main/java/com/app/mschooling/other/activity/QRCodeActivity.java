@@ -3,42 +3,28 @@ package com.app.mschooling.other.activity;
 import static android.graphics.Color.BLACK;
 import static android.graphics.Color.WHITE;
 
-import android.Manifest;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.pdf.PdfDocument;
-import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
-import android.print.PrintAttributes;
-import android.print.PrintDocumentAdapter;
-import android.print.PrintJob;
-import android.print.PrintManager;
-import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
-import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 import androidx.cardview.widget.CardView;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
 
 import com.app.mschooling.base.activity.BaseActivity;
@@ -62,6 +48,7 @@ import java.io.IOException;
 import java.util.EnumMap;
 import java.util.Map;
 
+
 public class QRCodeActivity extends BaseActivity {
     String input_data;
     ImageView mImageView;
@@ -75,57 +62,38 @@ public class QRCodeActivity extends BaseActivity {
     Bitmap bitmap;
 
 
+    File myExternalFile;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_generate_qrcode);
         toolbarClick(getString(R.string.qr_code));
-        mainLayout = (LinearLayout) findViewById(R.id.mainLayout);
-        mImageView = (ImageView) findViewById(R.id.image_view);
+        mainLayout = findViewById(R.id.mainLayout);
+        mImageView = findViewById(R.id.image_view);
         copy = findViewById(R.id.copy);
-        description = (TextView) findViewById(R.id.description);
-        codeNameTxt = (TextView) findViewById(R.id.codeNameTxt);
-        share = (CardView) findViewById(R.id.share);
+        description = findViewById(R.id.description);
+        codeNameTxt = findViewById(R.id.codeNameTxt);
+        share = findViewById(R.id.share);
         mainLayout.setVisibility(View.GONE);
         apiCallBack(getApiCommonController().getSchoolInfo());
-        share.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.R)
-            @Override
-            public void onClick(View v) {
-                if (ContextCompat.checkSelfPermission(QRCodeActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                    ActivityCompat.requestPermissions(QRCodeActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 2);
-                } else {
-//                    if (!Environment.isExternalStorageManager()) {
-//                        Intent permissionIntent = new Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION);
-//                        startActivity(permissionIntent);
-//                    } else {
-                        createPdf(Helper.getBitmapFromView(mainLayout));
-//                    }
 
-                }
-            }
-        });
+        myExternalFile = new File(getExternalFilesDir("mSchooling"), "QrCode.pdf");
+        share.setOnClickListener((View.OnClickListener) v -> createPdf(Helper.getBitmapFromView(mainLayout)));
 
-        copy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ClipboardManager myClipboard = myClipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-                ClipData myClip = ClipData.newPlainText("text", codeNameTxt.getText().toString());
-                myClipboard.setPrimaryClip(myClip);
-                Toast.makeText(getApplicationContext(), getString(R.string.copied),
-                        Toast.LENGTH_SHORT).show();
-            }
+        copy.setOnClickListener((View.OnClickListener) v -> {
+            ClipboardManager myClipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+            ClipData myClip = ClipData.newPlainText("text", codeNameTxt.getText().toString());
+            myClipboard.setPrimaryClip(myClip);
+            Toast.makeText(getApplicationContext(), getString(R.string.copied),
+                    Toast.LENGTH_SHORT).show();
         });
 
     }
 
     public Bitmap barcodeBitmap(String input_data, int width, int height) {
 
-        try {
-            bitmap = encodeAsBitmap(input_data, BarcodeFormat.QR_CODE, width, height);
-        } catch (WriterException e) {
-            e.printStackTrace();
-        }
+
         return bitmap;
     }
 
@@ -140,12 +108,12 @@ public class QRCodeActivity extends BaseActivity {
     }
 
     public static Bitmap encodeAsBitmap(String contents, BarcodeFormat format, int img_width, int img_height) throws WriterException {
-        String contentsToEncode = contents;
-        if (contentsToEncode == null) {
+
+        if (contents == null) {
             return null;
         }
         Map<EncodeHintType, Object> hints = null;
-        String encoding = guessAppropriateEncoding(contentsToEncode);
+        String encoding = guessAppropriateEncoding(contents);
         if (encoding != null) {
             hints = new EnumMap<EncodeHintType, Object>(EncodeHintType.class);
             hints.put(EncodeHintType.CHARACTER_SET, encoding);
@@ -153,7 +121,7 @@ public class QRCodeActivity extends BaseActivity {
         MultiFormatWriter writer = new MultiFormatWriter();
         BitMatrix result;
         try {
-            result = writer.encode(contentsToEncode, format, img_width, img_height, hints);
+            result = writer.encode(contents, format, img_width, img_height, hints);
         } catch (IllegalArgumentException iae) {
             // Unsupported format
             return null;
@@ -173,7 +141,7 @@ public class QRCodeActivity extends BaseActivity {
         return bitmap;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+
     private void createPdf(Bitmap bitmap) {
         MyProgressDialog.getInstance(QRCodeActivity.this).show();
         WindowManager wm = (WindowManager) QRCodeActivity.this.getSystemService(Context.WINDOW_SERVICE);
@@ -196,11 +164,8 @@ public class QRCodeActivity extends BaseActivity {
         paint.setColor(Color.BLACK);
         canvas.drawBitmap(bitmap, 0, 0, null);
         document.finishPage(page);
-
-        File filePath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS + "/QrCode.pdf");
-
         try {
-            document.writeTo(new FileOutputStream(filePath));
+            document.writeTo(new FileOutputStream(myExternalFile));
         } catch (IOException e) {
             e.printStackTrace();
             Toast.makeText(getApplicationContext(), "Something wrong: " + e.toString(), Toast.LENGTH_LONG).show();
@@ -218,7 +183,7 @@ public class QRCodeActivity extends BaseActivity {
 //                previewPdf(filePath);
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_SEND);
-                intent.putExtra(Intent.EXTRA_STREAM, FileProvider.getUriForFile(QRCodeActivity.this, QRCodeActivity.this.getPackageName() + ".provider", filePath));
+                intent.putExtra(Intent.EXTRA_STREAM, FileProvider.getUriForFile(QRCodeActivity.this, QRCodeActivity.this.getPackageName() + ".provider", myExternalFile));
                 intent.setType("application/pdf");
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Link");
                 intent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.app.mschooling");
@@ -228,54 +193,15 @@ public class QRCodeActivity extends BaseActivity {
 
     }
 
-    private void previewPdf(File path) {
-
-        Intent intent = new Intent(Intent.ACTION_VIEW);
-        try {
-            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
-                intent.setDataAndType(Uri.parse(path.toString()), "application/pdf");
-            } else {
-                Uri uri;
-                if (path.exists()) {
-                    uri = FileProvider.getUriForFile(QRCodeActivity.this, QRCodeActivity.this.getPackageName() + ".provider", path);
-                    intent.setDataAndType(uri, "application/pdf");
-                    intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                }
-            }
-
-            intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-            startActivity(intent);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    private void createWebPrintJob(WebView webView) {
-
-        // Get a PrintManager instance
-        PrintManager printManager = (PrintManager) QRCodeActivity.this
-                .getSystemService(Context.PRINT_SERVICE);
-
-        // Get a print adapter instance
-        PrintDocumentAdapter printAdapter = webView.createPrintDocumentAdapter();
-
-        // Create a print job with name and adapter instance
-        String jobName = getString(R.string.app_name) + " Document";
-        PrintJob printJob = printManager.print(jobName, printAdapter,
-                new PrintAttributes.Builder().build());
-    }
-
 
     @Subscribe
-    public void getResponse(GetSchoolInfoResponse response) {
+    public void getResponse(GetSchoolInfoResponse response) throws WriterException {
         if (Status.SUCCESS.value().equals(response.getStatus().value())) {
             input_data = ParameterConstant.getMSchoolingText() + "#" + response.getSchoolInfo().getQrCode();
             schoolName = response.getSchoolInfo().getName().replace(" ", "_");
             description.setText(response.getSchoolInfo().getName());
             codeNameTxt.setText(response.getSchoolInfo().getQrCode());
-            Bitmap bitmap = barcodeBitmap(input_data, 1200, 1000);
+            Bitmap bitmap = encodeAsBitmap(input_data, BarcodeFormat.QR_CODE, 1200, 1000);
             if (bitmap != null) {
                 MyProgressDialog.setDismiss();
                 mImageView.setImageBitmap(bitmap);
@@ -286,7 +212,6 @@ public class QRCodeActivity extends BaseActivity {
         } else {
             dialogFailed(response.getMessage().getMessage());
         }
-
     }
 
 }

@@ -9,13 +9,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
 import android.print.PdfPrint;
 import android.print.PrintAttributes;
 import android.print.PrintDocumentAdapter;
 import android.print.PrintManager;
-import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
@@ -26,7 +24,6 @@ import androidx.core.content.FileProvider;
 
 import com.app.mschooling.base.activity.BaseActivity;
 import com.app.mschooling.com.R;
-import com.app.mschooling.utils.Helper;
 import com.app.mschooling.utils.Preferences;
 import com.app.mschooling.utils.progress_dialog.MyProgressDialog;
 import com.mschooling.transaction.common.api.Common;
@@ -48,13 +45,14 @@ public class PrintIdCardActivity extends BaseActivity {
 
     @BindView(R.id.webView)
     WebView webView;
-     @BindView(R.id.progressBar)
-     ProgressBar progressBar;
-     @BindView(R.id.printer)
-     LinearLayout printer;
+    @BindView(R.id.progressBar)
+    ProgressBar progressBar;
+    @BindView(R.id.printer)
+    LinearLayout printer;
     String result = null;
     String enrollmentId;
-    String name;
+    String fileName;
+    File myExternalFile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,9 +67,9 @@ public class PrintIdCardActivity extends BaseActivity {
             enrollmentId = getIntent().getStringExtra("id");
         }
         if (getIntent().getStringExtra("name") == null) {
-            name = "student";
+            fileName = "student.pdf";
         } else {
-            name = getIntent().getStringExtra("name");
+            fileName = getIntent().getStringExtra("name") + ".pdf";
         }
 
 
@@ -79,6 +77,8 @@ public class PrintIdCardActivity extends BaseActivity {
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setUseWideViewPort(true);
         webView.getSettings().setLoadWithOverviewMode(true);
+
+        myExternalFile = new File(getExternalFilesDir("mSchooling"), "");
 
         new Thread(new Runnable() {
             @Override
@@ -91,10 +91,10 @@ public class PrintIdCardActivity extends BaseActivity {
         printer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                createWebPrintJob(webView);
-//                PrintManager printManager = (PrintManager) getSystemService(
-//                        Context.PRINT_SERVICE);
-//                printManager.print(name + ".pdf", webView.createPrintDocumentAdapter(), null);
+//                createWebPrintJob(webView);
+                PrintManager printManager = (PrintManager) getSystemService(
+                        Context.PRINT_SERVICE);
+                printManager.print(fileName, webView.createPrintDocumentAdapter(), null);
 
 //                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
 //                    if (!Environment.isExternalStorageManager()) {
@@ -170,7 +170,6 @@ public class PrintIdCardActivity extends BaseActivity {
                 .setResolution(new PrintAttributes.Resolution("pdf", "pdf", 500, 500))
                 .setMinMargins(PrintAttributes.Margins.NO_MARGINS).build();
 
-        final File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS );
         PdfPrint pdfPrint = new PdfPrint(attributes);
         PrintDocumentAdapter adapter;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -178,14 +177,13 @@ public class PrintIdCardActivity extends BaseActivity {
         } else {
             adapter = webView.createPrintDocumentAdapter();
         }
-        pdfPrint.print(adapter, path, name + ".pdf");
+        pdfPrint.print(adapter, myExternalFile, fileName);
         MyProgressDialog.getInstance(this).show();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 MyProgressDialog.setDismiss();
-//                dialogSuccess(path.toString() + "/" + name + ".pdf");
-                File pdf=new File(path, name + ".pdf");
+                File pdf = new File(myExternalFile, fileName);
                 if (pdf.exists()) {
                     Intent intent = new Intent();
                     intent.setAction(Intent.ACTION_SEND);

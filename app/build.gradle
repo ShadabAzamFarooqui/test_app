@@ -6,11 +6,11 @@ android {
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.app.mschooling"
-        versionCode 185
-        versionName "2.8.5"
+        versionCode 187
+        versionName "2.8.7"
 //        applicationId "com.app.mschooling.msch4u01"
-//        versionCode 22
-//        versionName "1.2.2"
+//        versionCode 23
+//        versionName "1.2.3"
 
         minSdkVersion 21
         targetSdkVersion 31

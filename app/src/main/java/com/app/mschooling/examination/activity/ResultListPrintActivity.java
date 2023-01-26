@@ -52,6 +52,9 @@ public class ResultListPrintActivity extends BaseActivity {
 
     String result = null;
 
+    File myExternalFile;
+
+    String fileName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +68,10 @@ public class ResultListPrintActivity extends BaseActivity {
         webView.getSettings().setUseWideViewPort(true);
         webView.getSettings().setLoadWithOverviewMode(true);
 
+        myExternalFile = new File(getExternalFilesDir("mSchooling"), "");
+
+        fileName = getIntent().getStringExtra("className") + "_" + getIntent().getStringExtra("examName") + ".pdf";
+
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -76,27 +83,10 @@ public class ResultListPrintActivity extends BaseActivity {
         download.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                createWebPrintJob(webView);
-
-//                PrintManager printManager = (PrintManager) getSystemService(
-//                        Context.PRINT_SERVICE);
-//                printManager.print(getIntent().getStringExtra("className") +
-//                                "_" +
-//                                getIntent().getStringExtra("examName") +
-//                                ".pdf"
-//                        , webView.createPrintDocumentAdapter(), null);
-
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-//                    if (!Environment.isExternalStorageManager()) {
-//                        Intent permissionIntent = new Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION);
-//                        startActivity(permissionIntent);
-//                    } else {
-//                        createWebPrintJob(webView);
-//                    }
-//                }else {
-//                    createWebPrintJob(webView);
-//                }
+                PrintManager printManager = (PrintManager) getSystemService(
+                        Context.PRINT_SERVICE);
+                printManager.print(fileName, webView.createPrintDocumentAdapter(fileName), null);
+//                createWebPrintJob(webView);
             }
         });
 
@@ -161,21 +151,17 @@ public class ResultListPrintActivity extends BaseActivity {
                 .setResolution(new PrintAttributes.Resolution("pdf", "pdf", 500, 500))
                 .setMinMargins(PrintAttributes.Margins.NO_MARGINS).build();
 
-        final File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS );
+//        final File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS );
         PdfPrint pdfPrint = new PdfPrint(attributes);
         PrintDocumentAdapter adapter;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            adapter = webView.createPrintDocumentAdapter(jobName);
-        } else {
-            adapter = webView.createPrintDocumentAdapter();
-        }
-        pdfPrint.print(adapter, path, getIntent().getStringExtra("className") + "_" + getIntent().getStringExtra("examName") + ".pdf");
+        adapter = webView.createPrintDocumentAdapter(jobName);
+        pdfPrint.print(adapter, myExternalFile, fileName);
         MyProgressDialog.getInstance(this).show();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 MyProgressDialog.setDismiss();
-                dialogSuccess(path.toString() + "/" + getIntent().getStringExtra("className") + "_" + getIntent().getStringExtra("examName") + ".pdf");
+                dialogSuccess(myExternalFile.getPath() + "/" + fileName);
 
             }
         }, 1 * 1000);

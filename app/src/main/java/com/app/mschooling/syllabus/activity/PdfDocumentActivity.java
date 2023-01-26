@@ -2,9 +2,12 @@ package com.app.mschooling.syllabus.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
+import android.print.PrintManager;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -12,6 +15,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.core.content.FileProvider;
 
 import com.app.mschooling.base.activity.BaseActivity;
 import com.app.mschooling.com.R;
@@ -53,6 +57,10 @@ public class PdfDocumentActivity extends BaseActivity implements DownloadFile.Li
 
     ImageView imageIndicator;
 
+    String fileName;
+    String url;
+    File myExternalFile;
+
     @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -64,11 +72,15 @@ public class PdfDocumentActivity extends BaseActivity implements DownloadFile.Li
         progressBar = findViewById(R.id.progressBar);
         remotePDFViewPager = findViewById(R.id.pdfViewPager);
         imageIndicator = findViewById(R.id.imageIndicator);
+        fileName = getIntent().getStringExtra("name") + ".pdf";
+        url = getIntent().getStringExtra("url");
+        toolbarClick(fileName);
 
-        toolbarClick(getIntent().getStringExtra("name"));
+        setDownloadButtonListener(url);
 
-        setDownloadButtonListener(getIntent().getStringExtra("url"));
-     
+
+
+        myExternalFile = new File(getExternalFilesDir("mSchooling"), "");
 
         download.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,7 +89,7 @@ public class PdfDocumentActivity extends BaseActivity implements DownloadFile.Li
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        downloadFile(PdfDocumentActivity.this, getIntent().getStringExtra("url"), getIntent().getStringExtra("name")+".pdf");
+                        downloadFile(PdfDocumentActivity.this, url, fileName);
                     }
                 }).start();
             }
@@ -166,8 +178,8 @@ public class PdfDocumentActivity extends BaseActivity implements DownloadFile.Li
             urlConnection.connect();
 
 
-            File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS), ParameterConstant.getFolderName());
-            File directory=new File(file,name);
+            File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), ParameterConstant.getFolderName());
+            File directory = new File(myExternalFile, fileName);
             InputStream inputStream = urlConnection.getInputStream();
             FileOutputStream fileOutputStream = new FileOutputStream(directory);
             int totalSize = urlConnection.getContentLength();
@@ -184,7 +196,12 @@ public class PdfDocumentActivity extends BaseActivity implements DownloadFile.Li
                 @Override
                 public void run() {
                     MyProgressDialog.setDismiss();
-                    dialogSuccess(directory.getAbsolutePath());
+//                    dialogSuccess(directory.getAbsolutePath());
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setDataAndType(FileProvider.getUriForFile(context, getApplicationContext().getPackageName() + ".provider", directory), "application/pdf");
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                    startActivity(intent);
                 }
             });
         } catch (FileNotFoundException e) {
@@ -195,6 +212,8 @@ public class PdfDocumentActivity extends BaseActivity implements DownloadFile.Li
             e.printStackTrace();
         }catch (Exception e) {
             e.printStackTrace();
+        }finally {
+            MyProgressDialog.setDismiss();
         }
     }
 

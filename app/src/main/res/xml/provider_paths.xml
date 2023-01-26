@@ -18,4 +18,6 @@
     <files-path
         name="files"
         path="." />
+    <external-path path="Android/data/com.app.mschooling/" name="files_root" />
+    <external-path path="." name="external_storage_root" />
 </paths>

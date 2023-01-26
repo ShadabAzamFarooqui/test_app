@@ -54,6 +54,10 @@ public class ResultActivityActivity extends BaseActivity {
 
     String result = null;
 
+    String fileName;
+
+    File myExternalFile;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +71,10 @@ public class ResultActivityActivity extends BaseActivity {
         webView.getSettings().setUseWideViewPort(true);
         webView.getSettings().setLoadWithOverviewMode(true);
 
+        fileName=getIntent().getStringExtra("name") + ".pdf";
+
+        myExternalFile = new File(getExternalFilesDir("mSchooling"), "");
+
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -79,23 +87,10 @@ public class ResultActivityActivity extends BaseActivity {
             @RequiresApi(api = Build.VERSION_CODES.R)
             @Override
             public void onClick(View v) {
-                createWebPrintJob(webView);
-//                PrintManager printManager = (PrintManager) getSystemService(
-//                        Context.PRINT_SERVICE);
-//                printManager.print(getIntent().getStringExtra("name") + ".pdf", webView.createPrintDocumentAdapter(), null);
-//
-
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-//                    if (!Environment.isExternalStorageManager()) {
-//                        Intent permissionIntent = new Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION);
-//                        startActivity(permissionIntent);
-//                    } else {
-//                        createWebPrintJob(webView);
-//                    }
-//                }else {
-//                    createWebPrintJob(webView);
-//                }
-
+                PrintManager printManager = (PrintManager) getSystemService(
+                        Context.PRINT_SERVICE);
+                printManager.print(fileName, webView.createPrintDocumentAdapter(fileName), null);
+//                createWebPrintJob(webView);
             }
         });
 
@@ -151,32 +146,26 @@ public class ResultActivityActivity extends BaseActivity {
 
 
     private void createWebPrintJob(WebView webView) {
-
-
         String jobName = getString(R.string.app_name) + " Document";
         PrintAttributes attributes = new PrintAttributes.Builder()
                 .setMediaSize(PrintAttributes.MediaSize.ISO_A4)
                 .setResolution(new PrintAttributes.Resolution("pdf", "pdf", 500, 500))
                 .setMinMargins(PrintAttributes.Margins.NO_MARGINS).build();
 
-        final File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS );
+//        final File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS);
         PdfPrint pdfPrint = new PdfPrint(attributes);
         PrintDocumentAdapter adapter;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            adapter = webView.createPrintDocumentAdapter(jobName);
-        } else {
-            adapter = webView.createPrintDocumentAdapter();
-        }
-        pdfPrint.print(adapter, path, getIntent().getStringExtra("name") + ".pdf");
+        adapter = webView.createPrintDocumentAdapter(jobName);
+        pdfPrint.print(adapter, myExternalFile, fileName);
         MyProgressDialog.getInstance(this).show();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 MyProgressDialog.setDismiss();
-                dialogSuccess(path.toString() + "/" + getIntent().getStringExtra("name") + ".pdf");
+                dialogSuccess(myExternalFile.getPath() + "/" + fileName);
 
             }
-        }, 1 * 1000);
+        }, 1000);
     }
 
 

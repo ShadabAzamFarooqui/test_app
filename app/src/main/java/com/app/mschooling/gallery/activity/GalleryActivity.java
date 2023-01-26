@@ -177,7 +177,10 @@ public class GalleryActivity extends BaseActivity {
             imageList = data.getParcelableArrayListExtra(GalleryPickerActivity.INTENT_EXTRA_SELECTED_IMAGES);
             Intent intent = new Intent(getApplicationContext(), ImageUploadActivity.class);
             intent.putParcelableArrayListExtra(GalleryPickerActivity.INTENT_EXTRA_SELECTED_IMAGES, imageList);
-            startActivity(intent);
+            startActivityForResult(intent,1);
+        }else if(requestCode==1 && resultCode == RESULT_OK ) {
+            pageNo = 0;
+            apiCallBack(getApiCommonController().galleryList(pageNo));
         }
     }
 }
